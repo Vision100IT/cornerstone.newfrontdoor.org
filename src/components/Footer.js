@@ -20,7 +20,7 @@ class Footer extends Component {
       <div className="content">
         <div className="footer-address text-center">
       <i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>
-      <p><a href="https://goo.gl/maps/yF5VjdUgXPq">Tarremah School</a><br />27 Nautilus Grove, Huntingfield, Tasmania</p>
+      <p><a href="https://goo.gl/maps/PKiLAX2hxFq">Cornerstone Presbyterian Church</a><br />45 Melville St, West Hobart TAS 7000</p>
       </div> {/* /footer-address */}  </div>
       </div>  </div>
                 </div> {/* /footer-first-column-region */}
@@ -34,7 +34,7 @@ class Footer extends Component {
       <div className="content">
         <div className="footer-mail text-center">
       <i className="icon ion-ios7-email-outline size-32 margin-bottom-20"></i>
-      <p><a href="mailto:info@summerleaschurch.org">info@summerleaschurch.org</a><br /><a href="mailto:feedback@summerleaschurch.org">feedback@summerleaschurch.org</a></p>
+      <p><a href="mailto:info@">info@</a><br /><a href="mailto:feedback@">feedback@</a></p>
       </div> {/* /footer-mail */}  </div>
       </div>  </div>
                 </div> {/* /footer-second-column-region */}
@@ -48,7 +48,7 @@ class Footer extends Component {
       <div className="content">
         <div className="footer-phone text-center">
       <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i>
-      <p><a href="http://facebook.com/summerleaschristianchurch">facebook.com/summerleaschristianchurch</a><br /><a href="http://instagram.com/summerleaschurch">instagram.com/summerleaschurch</a></p>
+      <p><a href="https://www.facebook.com/cornerstonehobart/">www.facebook.com/cornerstonehobart</a></p>
       </div>  </div>
       </div>  </div>
                 </div> {/* /footer-third-column-region */}
