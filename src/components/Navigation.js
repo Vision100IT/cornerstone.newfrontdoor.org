@@ -46,7 +46,7 @@ class Navigation extends Component {
           <div className="nav-collapse  always-show">
           <ul  className="tb-megamenu-nav nav level-0 items-5">
           <li className="tb-megamenu-item level-1 mega dropdown">
-            <a href="#"  className="dropdown-toggle" title="Visit Us">Visit Us<span className="caret"></span></a>
+            <a href="javascript:void()"  className="dropdown-toggle" title="Visit Us">Visit Us<span className="caret"></span></a>
             <div style={{width: "750px"}} className="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
               <div className="mega-dropdown-inner">
                 <div  className="tb-megamenu-row row-fluid">
@@ -106,7 +106,7 @@ class Navigation extends Component {
       </div>
       </li>
       <li className="tb-megamenu-item level-1 mega dropdown">
-        <a href="#"  className="dropdown-toggle" title="Visit Us">Get Involved<span className="caret"></span></a>
+        <a href="javascript:void()"  className="dropdown-toggle" title="Visit Us">Get Involved<span className="caret"></span></a>
         <div style={{width: "750px"}} className="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
           <div className="mega-dropdown-inner">
             <div  className="tb-megamenu-row row-fluid">
@@ -164,7 +164,7 @@ class Navigation extends Component {
         </li>
 
       <li className="tb-megamenu-item level-1 mega dropdown">
-      <a href="#"  className="dropdown-toggle" title="Resources">Resources<span className="caret"></span></a>
+      <a href="javascript:void()"  className="dropdown-toggle" title="Resources">Resources<span className="caret"></span></a>
       <div  data-width="" className="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
       <div className="mega-dropdown-inner">
         <div  className="tb-megamenu-row row-fluid">

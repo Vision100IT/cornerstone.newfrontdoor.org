@@ -12,8 +12,8 @@ class WhereToFindUs extends Component {
               <h2 >Where to Find Us</h2>
               <div className="content">
                 <div id="map_canvas" className="google-map" style={{maxHeight:"270px"}}></div>
-                <div><a href="https://goo.gl/maps/yF5VjdUgXPq">Tarremah School</a></div>
-                <div>27 Nautilus Grove</div>
+                <div><a href="https://goo.gl/maps/bgsEwUyCTBK2">Cornerstone Presbyterian</a></div>
+                <div>45 Melville Street</div>
                 <div>Huntingfield, Tasmania</div>  </div>
               </div>
             </div>

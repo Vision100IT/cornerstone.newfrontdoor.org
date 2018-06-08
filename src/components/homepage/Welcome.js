@@ -22,8 +22,13 @@ class Welcome extends Component {
         <div className="content">
           <div className="field field-name-body field-type-text-with-summary field-label-hidden"><div className="field-items">
           <div className="field-item even">
-            <p>Welcome to Summerleas Christian Church. We are a community passionate about loving and following Jesus and sharing His love with others.</p>
-            <p>If you want to know more about us, check out <a href="#">Our Vision</a>.</p>
+            <p>Welcome to Cornerstone Presbyterian Church.
+            At Cornerstone Presbyterian we love Jesus and His Word the Bible, and we love to take His Word out to the city of Hobart. If you would like to know more about us, check out <a href="/WhatWeBelieve">What We Believe</a>.</p>
+
+            <br />
+            <br />
+
+            <p><em>Some placeholder items from Summerleas Church are below.</em></p>
           </div>
           </div></div>  </div>
 
