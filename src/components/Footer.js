@@ -34,7 +34,7 @@ class Footer extends Component {
       <div className="content">
         <div className="footer-mail text-center">
       <i className="icon ion-ios7-email-outline size-32 margin-bottom-20"></i>
-      <p><a href="mailto:info@">info@</a><br /><a href="mailto:feedback@">feedback@</a></p>
+      <p><a href="mailto:campbell.markham@gmail.com">campbell.markham@gmail.com</a></p>
       </div> {/* /footer-mail */}  </div>
       </div>  </div>
                 </div> {/* /footer-second-column-region */}
@@ -48,7 +48,7 @@ class Footer extends Component {
       <div className="content">
         <div className="footer-phone text-center">
       <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i>
-      <p><a href="https://www.facebook.com/cornerstonehobart/">www.facebook.com/cornerstonehobart</a></p>
+      <p><a href="https://www.facebook.com/cornerstonehobart/">facebook.com/CornerstoneHobart</a></p>
       </div>  </div>
       </div>  </div>
                 </div> {/* /footer-third-column-region */}
