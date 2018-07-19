@@ -35,7 +35,7 @@ class OurPeople extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-
+                          <p>This page is still under construction.</p>
                         </div>
 
 
