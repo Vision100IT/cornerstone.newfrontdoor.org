@@ -18,7 +18,7 @@ class GrowthGroup extends Component {
                   <div className="breadcrumbs">
                     <a href="/">Home</a>
                     <span className="delimiter">›</span>
-                    <span title="" className="nolink">Page Category</span>
+                    <span title="" className="nolink">Get Involved</span>
                   </div>
                 </div>
               </div>
@@ -34,31 +34,33 @@ class GrowthGroup extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-                          <div className="field field-name-body field-type-text-with-summary field-label-hidden">
-                          <div className="field-items">
-                          <div className="field-item even">
-                          <p><div className="media media-element-container media-default">
-                            <div className="content">
-                              <img height="191" width="286" className="media-element file-default" data-delta="1" src="https://summerleaschurch.org/sites/summerleaschurch.org/files/congregation_0.png" alt="" />  </div>
+                          <div className="row">
+                            <div className=" col-md-6 col-xs-12">
+                              <img style={{marginTop: "33px", paddingRight: "10px"}} src="http://cornerstonehobart.com/wp-content/uploads/2016/09/Bible-Study.jpg" width="585" height="309" />
+                              <h3 className="header-blue">Bible Study and <br/>Growth Groups</h3>
+                              <p>
+                                <strong>Matthew 18:20:<br/>
+                                <em>"For where two or three come together in my name, there I am with them.."</em></ strong>
+                              </p>
                             </div>
+                            <div className=" col-md-6 col-xs-12">
+                            <strong>Monday Night</strong> in New Town 7.30pm at the Van Emmeriks’, 10 Archer Street. Contact David on 6278 1668<br/><br/>
+                            <strong>Tuesday Night</strong> in Kingston 7.30pm at the Vonk’s, 48 Corlacus Drive, Kingston. 6267 1113<br/><br/>
+                            <strong>Wednesdays Ladies’ Group</strong> 9:30am for coffee & chat, study starts @10am, at Libby Dilger’s, 40 Phoenix St, Howrah. Phone 0448 554 845<br/><br/>
+                            <strong>Wednesday Night</strong> in Blackmans Bay  7.30pm - Contact Ian and Kym Headley 0419 525 292 <br/><br/>
+                            <strong>Women’s Bible Study</strong><br/>
+                            Thusday 1:30 - 3pm at Annie Bartlett, West Hobart. Led by Melanie MUGGERIDGE. Contact Annie Bartlett: 62319493, 0466 980 887<br/><br/>
 
-                          </p><blockquote>Content For Growth Groups Here </blockquote>
+                            <strong>Thursday Night</strong> in Lindisfarne 7.30pm at James and Cristiane Bakers. Contact leader Matt Delphin 0478 769 009<br/><br/>
 
-                          <p><div className="media media-element-container media-default">
-                          <div className="content">
-                            <img height="251" width="300" className="media-element file-default" data-delta="1" src="https://summerleaschurch.org/sites/summerleaschurch.org/files/welcome.png" alt="" />
+                            <strong>Thursday Night</strong> 7:30pm-8:30pm in West Hobart with the Bartlett Family. Starting 8/2/2018, following school terms. Studying Luke. For teenagers and older. Contact Paul Bartlett 0406 605 419<br/><br/>
+
+                            <strong>Bible study for Mums</strong> with young children. <br/>
+                            Thursday 9.30 am at 101 Norma Street, Howrah. Hosted by Elodie McCausland, Led by Anna Gee, 6247 8976<br/><br/>
+                            </div>
                           </div>
+
                       </div>
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at metus feugiat enim aliquet aliquet. Etiam fringilla vel diam eu consectetur. Nunc eget volutpat massa. Vestibulum lorem purus,
-                    dapibus in ullamcorper non, ullamcorper sed nibh. Aliquam vitae est euismod, elementum mauris ut, mollis purus. Nam dui justo, congue quis enim sit amet, mollis mattis velit. Maecenas ac velit eu
-                    ipsum finibus imperdiet.
-                    <br />
-                    <br/>
-                    Nullam at maximus mi. Sed interdum magna et ex sodales tincidunt. Morbi tristique erat ultricies mauris scelerisque, eu finibus erat tempus. Curabitur et purus vehicula, accumsan enim eget, porttitor
-                    urna. Ut pellentesque varius magna et ornare. Nam elit magna, bibendum et felis et, aliquam congue lectus. Cras tincidunt eros ut lorem egestas, eu consequat enim pharetra. Suspendisse ante elit,
-                    convallis non tincidunt vel, lacinia et nunc. Curabitur magna metus, faucibus at rhoncus pellentesque, rhoncus vel ipsum. Aenean eu est tempor, fermentum justo eu, dignissim purus.
-                    </p></div></div></div></div>
 
 
 

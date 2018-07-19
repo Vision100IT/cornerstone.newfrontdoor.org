@@ -1,0 +1,37 @@
+.header-blue{
+  color: #035ea3;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.header-lightBlue{
+  color: #1493c9;
+  font-weight: 400;
+  line-height: 40px;
+font-family: 'Century Gothic';
+font-style: normal;
+}
+
+.ministry-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h3{
+  padding-top: 20px;
+}
+
+.header-red{
+  color: #b52b2b;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.red-text{
+  color: #b52b2b;
+}
+
+.red-text-bold{
+  color: #b52b2b;
+  font-weight: bold;
+}

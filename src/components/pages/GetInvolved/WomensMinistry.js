@@ -9,7 +9,7 @@ class WomensMinistry extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Women&apos;s Ministry</h1>
+                  <h1>Growth Groups</h1>
                 </div>
               </div>
 
@@ -18,7 +18,7 @@ class WomensMinistry extends Component {
                   <div className="breadcrumbs">
                     <a href="/">Home</a>
                     <span className="delimiter">›</span>
-                    <span title="" className="nolink">Page Category</span>
+                    <span title="" className="nolink">Get Involved</span>
                   </div>
                 </div>
               </div>
@@ -34,31 +34,42 @@ class WomensMinistry extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-                          <div className="field field-name-body field-type-text-with-summary field-label-hidden">
-                          <div className="field-items">
-                          <div className="field-item even">
-                          <p><div className="media media-element-container media-default">
-                            <div className="content">
-                              <img height="191" width="286" className="media-element file-default" data-delta="1" src="https://summerleaschurch.org/sites/summerleaschurch.org/files/congregation_0.png" alt="" />  </div>
+                          <div className="row">
+                            <div className=" col-md-6 col-xs-12">
+                              <h3>Why T2 Women?</h3>
+                              <p className="ministry-text"><strong>Biblically, a Titus 2 Woman is defined by , Titus 2:3-5,</strong><br/>
+                              “Likewise, teach the older women to be reverent in the way they live, not to be slanderers, or addicted to much wine, but to teach what is good. Then they can train the younger women to love their husbands and children, to be self-controlled and pure, to be busy at home, to be kind, and to be subject to their husbands, so that no one will malign the word of God.”
+                              <br/><br/>
+                              The Titus 2 woman resides in relationships: with her God, her husband, her children and her friends. Her sphere of influence radiates from her relationship with God, her Father, her Lord and Saviour, and the Ruler of her heart.
+                              <br/><br/>
+                              <strong>Contact</strong> Cristiane Baker<br/>
+                              0404392812<br/>
+                              c9baker@gmail.com</p>
                             </div>
+                            <div className="col-md-6 col-xs-12">
+                            <h3>Annual Event</h3>
+                            <p className="ministry-text">June - July - August<br/><br/>
 
-                          </p><blockquote>Women&apos;s Minsitry Content Here </blockquote>
+                            We look forward each year to the <strong>"Women's Winter Festival"</strong> where the Women of Tasmania gather to Learn and grow in wisdom and grace.
+                            Combined Church Event Co-ordinated by: Cornerstone Hobart, Soul Church, Crossroads Church and Mount Stuart Church.<br/><br/>
 
-                          <p><div className="media media-element-container media-default">
-                          <div className="content">
-                            <img height="251" width="300" className="media-element file-default" data-delta="1" src="https://summerleaschurch.org/sites/summerleaschurch.org/files/welcome.png" alt="" />
+                            <strong>Contact :</strong> Gail Forder 0422 022 733</p>
+
+                            <br/><br/>
+                            <h3>Women&apos;s Winter Festival 2018</h3>
+                            <p><strong>Diary dates:&nbsp;</strong><br/>
+                            <strong>Saturday</strong> 2 June 2018 5pm - 8pm<br/>
+                            <strong>Speaker : Christine Jolly</strong><br/>
+                            <strong>Saturday</strong> 7 July 2018&nbsp;5pm - 8pm<br/>
+                            <strong>Speaker : Amanda-Sue Markham</strong><br/>
+                            <strong>Saturday</strong> 4 August 2018&nbsp;5pm - 8pm<br/>
+                            <strong>Speaker :&nbsp;</strong></p>
+
+
+                            </div>
                           </div>
+
                       </div>
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at metus feugiat enim aliquet aliquet. Etiam fringilla vel diam eu consectetur. Nunc eget volutpat massa. Vestibulum lorem purus,
-                    dapibus in ullamcorper non, ullamcorper sed nibh. Aliquam vitae est euismod, elementum mauris ut, mollis purus. Nam dui justo, congue quis enim sit amet, mollis mattis velit. Maecenas ac velit eu
-                    ipsum finibus imperdiet.
-                    <br />
-                    <br/>
-                    Nullam at maximus mi. Sed interdum magna et ex sodales tincidunt. Morbi tristique erat ultricies mauris scelerisque, eu finibus erat tempus. Curabitur et purus vehicula, accumsan enim eget, porttitor
-                    urna. Ut pellentesque varius magna et ornare. Nam elit magna, bibendum et felis et, aliquam congue lectus. Cras tincidunt eros ut lorem egestas, eu consequat enim pharetra. Suspendisse ante elit,
-                    convallis non tincidunt vel, lacinia et nunc. Curabitur magna metus, faucibus at rhoncus pellentesque, rhoncus vel ipsum. Aenean eu est tempor, fermentum justo eu, dignissim purus.
-                    </p></div></div></div></div>
 
 
 

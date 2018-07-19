@@ -28,6 +28,8 @@ import './assets/css/fontyourface/font.css';
 
 import './assets/nestor/css/color/blue.css';
 
+import './assets/css/custom.css';
+
 class App extends Component {
   render() {
     return (

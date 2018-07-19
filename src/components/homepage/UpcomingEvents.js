@@ -16,7 +16,7 @@ class UpcomingEvents extends Component {
 
           <div className="content" style={{marginTop:0}}>
           <Iframe url="https://summerleas.elvanto.com.au/calendar_embed/?c[]=9f425cbf-05c1-11e6-8c36-063ef7799403&amp;ca[]=services&events=1&upcoming[count]=3&upcoming[timeframe]=m&max=5" marginWidth="0" width="100%" height="300px" position="relative" />
-          <p>For a full calendar, <a href="#" title="View full calendar">click here</a>.</p>  </div>
+          <p>For a full calendar, <a href="/Events" title="View full calendar">click here</a>.</p>  </div>
           </div>  </div>
           </div>
 
