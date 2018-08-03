@@ -54,8 +54,7 @@ class Sermons extends Component {
           <tr key={_.uniqueId()} className="odd even">
             { sermon.node_title ? <td style={tdPadding} dangerouslySetInnerHTML={{__html: sermon.node_url}} /> : <td style={tdPadding}></td> }
             <td style={tdPadding}>{ sermon.sermonseries ?  decode(sermon.sermonseries) : '' }</td>
-            {/*<td style={tdPadding}>{ sermon.text ?  decode(sermon.text): '' }</td>*/}
-            <td style={tdPadding}>Temporarily Unavailable</td>
+            <td style={tdPadding}>{ sermon.text ?  decode(sermon.text): '' }</td>
             <td style={tdPadding}>{decode(sermon.preacher)}</td>
             <td style={tdPadding}>{sermon.datepreached}</td>
             <td style={tdPadding}><a href={sermon.url} target="_blank"> [Download]</a></td>

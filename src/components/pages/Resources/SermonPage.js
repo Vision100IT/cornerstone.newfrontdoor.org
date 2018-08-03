@@ -65,8 +65,7 @@ class Cornerpost extends Component {
               <div className="field field-name-field-bible-book-s- field-type-taxonomy-term-reference field-label-above">
             <div className="field-label">Bible Passage(s):&nbsp;</div>
             <div className="field-items">
-              {/*<div className="field-item even">{decode(sermon.text)}</div>*/}
-              <div className="field-item even">Temporarily Unavailable</div>
+              <div className="field-item even">{decode(sermon.text)}</div>
             </div></div>
             </section>
 

@@ -118,11 +118,9 @@ class Sermons extends Component {
       var sermons = _.map(this.state.sermons, (sermon) => {
         return (
           <tr key={_.uniqueId()} className="odd even">
-            {/*<td style={{padding: "5px 10px 5px 5px"}}>{ sermon.node_title ?  decode(sermon.node_title) : '' }</td>*/}
             { sermon.node_title ? <td style={tdPadding} dangerouslySetInnerHTML={{__html: sermon.node_url}} /> : <td style={tdPadding}></td> }
             <td style={tdPadding}>{ sermon.sermonseries ?  decode(sermon.sermonseries) : '' }</td>
-            {/*<td style={tdPadding}>{ sermon.text ?  decode(sermon.text): '' }</td>*/}
-            <td style={tdPadding}>Temporarily Unavailable</td>
+            <td style={tdPadding}>{ sermon.text ?  decode(sermon.text): '' }</td>
             <td style={tdPadding}>{decode(sermon.preacher)}</td>
             <td style={tdPadding}>{sermon.datepreached}</td>
             <td style={tdPadding}><a href={sermon.url} target="_blank"> [Download]</a></td>
