@@ -35,3 +35,19 @@ h3{
   color: #b52b2b;
   font-weight: bold;
 }
+
+
+.sermon-search-button {
+  padding: 2px 35px !important;
+  border-color: #65AAD5;
+  color: #65AAD5;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  border-color: #65AAD5 !important;
+  background-color: #65AAD5 !important;
+}
+
+.bg-color-theme {
+  background-color: #65AAD5;
+}

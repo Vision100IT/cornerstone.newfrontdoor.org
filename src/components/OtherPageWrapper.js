@@ -14,7 +14,9 @@ import YoungAdults from './pages/GetInvolved/YoungAdults';
 
 import Cornerpost from './pages/Resources/Cornerpost';
 import EngagedCouples from './pages/Resources/EngagedCouples';
+import AllSermons from './pages/Resources/AllSermons';
 import Sermons from './pages/Resources/Sermons';
+import SermonPage from './pages/Resources/SermonPage';
 import SystematicTheologyNotes from './pages/Resources/SystematicTheologyNotes';
 import WestminsterConfession from './pages/Resources/WestminsterConfession';
 
@@ -42,7 +44,10 @@ class OtherPageWrapper extends Component {
 
           <Route exact path="/Cornerpost" component={Cornerpost} />
           <Route exact path="/EngagedCouples" component={EngagedCouples} />
+          <Route exact path="/AllSermons" component={AllSermons} />
           <Route exact path="/Sermons" component={Sermons} />
+          <Route exact path="/node/:nid" component={SermonPage} />
+          <Route exact path="/node/:nid/:title" component={SermonPage} />
           <Route exact path="/SystematicTheologyNotes" component={SystematicTheologyNotes} />
           <Route exact path="/WestminsterConfession" component={WestminsterConfession} />
 

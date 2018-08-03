@@ -13,7 +13,7 @@ class Welcome extends Component {
 
                   <div className="region region-content">
 
-        <div className="block block-system">
+
 
 
         <div className="content">
@@ -28,13 +28,13 @@ class Welcome extends Component {
             <br />
             <br />
 
-            <p><em>Some placeholder items from Summerleas Church are below.</em></p>
+            <p><em>The events below are placeholder items from Summerleas Church.</em></p>
           </div>
           </div></div>  </div>
 
         </div>
         </div>
-        </div>  </div>
+        </div>
 
               </div> {/* /main-content-region */}
             </div> {/* /row */}
