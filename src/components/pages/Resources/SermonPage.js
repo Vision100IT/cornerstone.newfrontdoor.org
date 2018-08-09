@@ -8,7 +8,7 @@ import {getFromDrupalAPI, searchDrupalSermons} from '../../../utils/fetchJSON';
 
 import '../../../assets/css/audioplayer.css'
 
-class Cornerpost extends Component {
+class SermonPage extends Component {
   constructor(props){
     super(props);
     this.state = {sermon: null,
@@ -24,53 +24,64 @@ class Cornerpost extends Component {
 
 
   render() {
+    var sermonTitle = "Sermon Title";
     if(this.state.sermon)
     {
-      var sermonDetails = _.map(this.state.sermon, (sermon) => {
-        return(
-          <section>
-          <div className="content">
-            <div className="field field-name-field-date-preached field-type-datetime field-label-above">
-            <div className="field-label">Date Preached:&nbsp;</div><div className="field-items">
-            <div className="field-item even">
-              <span className="date-display-single">{sermon.datepreached}</span>
-            </div>
-            </div>
-            </div>
-            <div className="field field-name-field-preacher field-type-text field-label-above">
-              <div className="field-label">Preacher:&nbsp;</div>
-              <div className="field-items">
-                <div className="field-item even">Dave Lynch</div>
-              </div>
-            </div>
-            <div className="field field-name-field-sermon field-type-file field-label-above">
-              <div className="field-label">Sermon:&nbsp;</div>
-              <div className="field-items">
+      if(this.state.sermon.length > 0)
+      {
+        var sermonDetails = _.map(this.state.sermon, (sermon) => {
+          sermonTitle = sermon.node_title;
+          return(
+            <section key={_.uniqueId()}>
+            <div className="content">
+              <div className="field field-name-field-date-preached field-type-datetime field-label-above">
+              <div className="field-label">Date Preached:&nbsp;</div><div className="field-items">
               <div className="field-item even">
-
-              <AudioPlayer playlist={[{url: sermon.url, displayText: decode(sermon.node_title)}]} controls={['playpause', 'spacer', 'progress']} />
-
-              <div className="mediaelement-download-link"><a href={sermon.url}>Download</a></div>
-            </div>
-            </div>
-            </div>
-          </div>
-
-            <div className="field field-name-field-sermon-series field-type-node-reference field-label-above">
-              <div className="field-label">Sermon Series:&nbsp;</div>
-              <div className="field-items">
-                <div className="field-item even">{decode(sermon.sermonseries)}</div>
-                </div>
+                <span className="date-display-single">{sermon.datepreached}</span>
               </div>
-              <div className="field field-name-field-bible-book-s- field-type-taxonomy-term-reference field-label-above">
-            <div className="field-label">Bible Passage(s):&nbsp;</div>
-            <div className="field-items">
-              <div className="field-item even">{decode(sermon.text)}</div>
-            </div></div>
-            </section>
+              </div>
+              </div><br/>
+              <div className="field field-name-field-preacher field-type-text field-label-above">
+                <div className="field-label">Preacher:&nbsp;</div>
+                <div className="field-items">
+                  <div className="field-item even">Dave Lynch</div>
+                </div>
+              </div><br/>
+              <div className="field field-name-field-sermon field-type-file field-label-above">
+                <div className="field-label">Sermon:&nbsp;</div>
+                <div className="field-items">
+                <div className="field-item even">
 
-        )
-      });
+                <span style={{padding: "0"}} className="col-md-5 col-xs-12"><AudioPlayer playlist={[{url: sermon.url, title: decode(sermon.node_title)}]} controls={['playpause', 'spacer', 'progress']} /></span>
+                <br/><br/>
+
+                <div className="mediaelement-download-link"><a href={sermon.url}>Download</a></div>
+              </div>
+              </div>
+              </div>
+            </div>
+
+              <br/><div className="field field-name-field-sermon-series field-type-node-reference field-label-above">
+                <div className="field-label">Sermon Series:&nbsp;</div>
+                <div className="field-items">
+                  <div className="field-item even">{decode(sermon.sermonseries)}</div>
+                  </div>
+                </div>
+                <br/><div className="field field-name-field-bible-book-s- field-type-taxonomy-term-reference field-label-above">
+              <div className="field-label">Bible Passage(s):&nbsp;</div>
+              <div className="field-items">
+                <div className="field-item even">{decode(sermon.text)}</div>
+              </div></div>
+              </section>
+
+          )
+        });
+      }
+      else{
+        var sermonDetails = (<div className="content"><p>Sorry, that sermon could not be found.</p>
+        <p>You can find all of our available sermons on <a href="/allsermons">this page.</a> </p></div>)
+      }
+
     }
     else{
       var sermonDetails = <div className="content">Loading, please wait.</div>
@@ -83,7 +94,7 @@ class Cornerpost extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Cornerpost</h1>
+                  <h1>{sermonTitle !== "Sermon Title" ? sermonTitle : "Sermon Title"}</h1>
                 </div>
               </div>
 
@@ -111,10 +122,6 @@ class Cornerpost extends Component {
         {/* Rendering of the main content */}
 
         <div id="main-content-region" className="main-content col-xs-12">
-
-          {/* Rendering the tabs to view and edit nodes */}
-                      <div id="admin-tabs" className="text-center">
-                          </div> {/* /admin-tabs */}
 
           {/* Output the messages */}
 
@@ -162,4 +169,4 @@ class Cornerpost extends Component {
   }
 }
 
-export default Cornerpost;
+export default SermonPage;

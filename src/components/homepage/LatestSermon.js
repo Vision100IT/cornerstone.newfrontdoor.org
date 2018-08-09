@@ -33,7 +33,7 @@ class LatestSermon extends Component {
       var sermonDetails = <div>Sermon deets locked</div>
       var sermonDetails = _.map(this.state.latestSermon, (sermon) => {
         return (
-          <div className="content">
+          <div key={_.uniqueId()} className="content">
             <div className="view view-latest-sermon view-id-latest_sermon view-display-id-block view-dom-id-78390e62fd38513a05d7e159bfdf897a">
               <div className="view-content">
                 <div className="views-row views-row-1 views-row-odd views-row-first views-row-last">
