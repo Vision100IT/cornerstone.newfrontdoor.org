@@ -25,10 +25,7 @@ class Welcome extends Component {
             <p>Welcome to Cornerstone Presbyterian Church.
             At Cornerstone Presbyterian we love Jesus and His Word the Bible, and we love to take His Word out to the city of Hobart. If you would like to know more about us, check out <a href="/WhatWeBelieve">What We Believe</a>.</p>
 
-            <br />
-            <br />
 
-            <p><em>The events below are placeholder items from Summerleas Church.</em></p>
           </div>
           </div></div>  </div>
 
