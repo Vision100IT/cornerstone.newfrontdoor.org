@@ -53,9 +53,9 @@ class MensMinistry extends Component {
                             </p>
                           </div>
                           <div className=" col-md-4 col-xs-12">
-                            <h1 className="header-lightBlue">Contact</h1>
+                            <h2 className="header-lightBlue">Contact</h2>
                             <p>
-                              James Baker<br/>
+                              <strong>James Baker</strong><br/>
                               Mobile: 0400791190
                             </p>
                           </div>

@@ -31,16 +31,18 @@ class Parking extends Component {
             <div className="row">
               <div id="main-content-region" className="main-content col-xs-12">
                 <div className="region region-content">
-                  <div id="block-system-main" className="block block-system">
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-                          <p>This page is still under construction.</p>
+                        <h2 className="header-lightBlue">Sunday Parking</h2>
+                          <p>We have a small amount of onsite parking available, and the Red Cross have given permission for us to use their small carpark directly across the road from church.</p>
+                          <p>If these are full, the Hobart Central Carpark is 200m further along Melville St, across the Elizabeth Street
+                          intersection, with three hours of free parking on Sunday.</p>
+                          <p><strong><em>Please be careful parking on the street, meters operate on Sunday.</em></strong></p>
                         </div>
 
 
 
-                </div>
                   </div>
                 </div>  </div>
 

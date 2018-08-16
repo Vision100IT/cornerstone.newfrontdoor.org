@@ -37,8 +37,8 @@ class GrowthGroup extends Component {
                         <div className="content">
                           <div className="row">
                             <div className=" col-md-6 col-xs-12">
-                              <img style={{marginTop: "33px", paddingRight: "10px"}} src="http://cornerstonehobart.com/wp-content/uploads/2016/09/Bible-Study.jpg" width="585" height="309" />
-                              <h3 className="header-blue">Bible Study and <br/>Growth Groups</h3>
+                              <img style={{marginTop: "33px", paddingRight: "50px"}} src="http://cornerstonehobart.com/wp-content/uploads/2016/09/Bible-Study.jpg" width="585" height="309" />
+                              <h2 className="header-lightBlue">Bible Study and <br/>Growth Groups</h2>
                               <p>
                                 <strong>Matthew 18:20:<br/>
                                 <em>"For where two or three come together in my name, there I am with them.."</em></ strong>

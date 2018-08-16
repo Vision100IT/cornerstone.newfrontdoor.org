@@ -9,9 +9,9 @@ class WhereToFindUs extends Component {
         <div className="col-md-4 col-xs-12">
           <div className="region region-content-2-2">
             <div className="block block-block">
-              <h2 >Where to Find Us</h2>
+              <h2 className="header-lightBlue">Where to Find Us</h2>
               <div className="content">
-                <div id="map_canvas" className="google-map" style={{maxHeight:"270px"}}></div>
+                <div id="map_canvas" className="google-map" style={{maxHeight:"360px"}}></div>
                 <div><a href="https://goo.gl/maps/bgsEwUyCTBK2">Cornerstone Presbyterian</a></div>
                 <div>45 Melville Street</div>
                 <div>Huntingfield, Tasmania</div>  </div>

@@ -30,14 +30,13 @@ class QuarryYouth extends Component {
             <div className="row">
               <div id="main-content-region" className="main-content col-xs-12">
                 <div className="region region-content">
-                  <div id="block-system-main" className="block block-system">
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
                           <div className="row">
                             <div className="col-xs-12">
-                              <p><strong>Youth Group</strong><br/>
-                              Years 6-12<br/><br/>
+                            <h3 className="header-lightBlue">Quarry Youth Group</h3>
+                              <p><strong>A Youth Group for students in Years 6-12</strong><br/><br/>
 
                               <strong>Time:</strong><br/>
                               Friday Night @ 7-9pm<br/>
@@ -50,7 +49,6 @@ class QuarryYouth extends Component {
                               Elya Richardson 0428 496 745;</p>
                             </div>
                           </div>
-                        </div>
 
 
 

@@ -40,7 +40,7 @@ class LatestSermon extends Component {
 
                   <div className="views-field views-field-field-front-page-thumbnail">
                   <div className="field-content">
-                    <img src={sermonSeriesImage} width="600" height="450" />
+                    <img className="latestSermon-img" src={sermonSeriesImage} width="600" height="450" />
                   </div>
                 </div>
 
@@ -72,7 +72,7 @@ class LatestSermon extends Component {
       <section>
             <div className="col-md-4 col-xs-12">  <div className="region region-content-2-1">
               <div className="block block-views">
-                    <h2 >Latest Sermon</h2>
+                    <h2 className="header-lightBlue">Latest Sermon</h2>
                       {sermonDetails}
                   </div>
                 </div>

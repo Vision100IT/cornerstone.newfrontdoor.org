@@ -9,7 +9,7 @@ class WomensMinistry extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Growth Groups</h1>
+                  <h1>Women&apos;s Ministry</h1>
                 </div>
               </div>
 
@@ -36,7 +36,7 @@ class WomensMinistry extends Component {
                         <div className="content">
                           <div className="row">
                             <div className=" col-md-6 col-xs-12">
-                              <h3>Why T2 Women?</h3>
+                              <h2 className="header-lightBlue">Why T2 Women?</h2>
                               <p className="ministry-text"><strong>Biblically, a Titus 2 Woman is defined by , Titus 2:3-5,</strong><br/>
                               “Likewise, teach the older women to be reverent in the way they live, not to be slanderers, or addicted to much wine, but to teach what is good. Then they can train the younger women to love their husbands and children, to be self-controlled and pure, to be busy at home, to be kind, and to be subject to their husbands, so that no one will malign the word of God.”
                               <br/><br/>
@@ -47,7 +47,7 @@ class WomensMinistry extends Component {
                               c9baker@gmail.com</p>
                             </div>
                             <div className="col-md-6 col-xs-12">
-                            <h3>Annual Event</h3>
+                            <h2 className="header-lightBlue">Annual Event</h2>
                             <p className="ministry-text">June - July - August<br/><br/>
 
                             We look forward each year to the <strong>"Women's Winter Festival"</strong> where the Women of Tasmania gather to Learn and grow in wisdom and grace.
@@ -56,7 +56,7 @@ class WomensMinistry extends Component {
                             <strong>Contact :</strong> Gail Forder 0422 022 733</p>
 
                             <br/><br/>
-                            <h3>Women&apos;s Winter Festival 2018</h3>
+                            <h2 className="header-lightBlue">Women&apos;s Winter Festival 2018</h2>
                             <p><strong>Diary dates:&nbsp;</strong><br/>
                             <strong>Saturday</strong> 2 June 2018 5pm - 8pm<br/>
                             <strong>Speaker : Christine Jolly</strong><br/>

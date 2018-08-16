@@ -34,12 +34,12 @@ class WorshipServices extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-                        <h1 className="header-lightBlue">Worship</h1>
+                        <h2 className="header-lightBlue">Worship</h2>
                         <p className="ministry-text">We seek to worship God in every part of life: hour to hour, day to day, and year after year.
                         "So whether you eat or drink or whatever you do, do it all for the glory of God!" (1 Corinthians 10:31).<br/><br/>
                         Our Sunday service is a special time of corporate worship.  We praise Jesus by singing, praying, reading and preaching His Word, and celebrating the sacraments of baptism and the Lord&apos;s Supper.</p>
 
-                        <h1 className="header-lightBlue">Our Services</h1>
+                        <h2 className="header-lightBlue">Our Services</h2>
                         <p className="ministry-text">
                           At <strong>Cornerstone Presbyterian</strong> we love Jesus and His Word the Bible, and we love to take His Word out to the city of Hobart.<br /><br />
 

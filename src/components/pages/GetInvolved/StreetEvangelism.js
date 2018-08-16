@@ -36,7 +36,7 @@ class StreetEvangelism extends Component {
                         <div className="content">
                           <div className="row">
                             <div className="col-xs-12">
-                            <h2>Outreach - by David Gee</h2>
+                            <h2 className="header-lightBlue">Outreach - by David Gee</h2>
                             <p>We are discovering that one of the keys to victory over sin has to do with what we think about the most. Paul tells us in Romans 6 to“reckon yourselves dead to sin but alive to God.” This means that we take what is already true and bring it into our experience through active thought..
                             Our mission is to make the life-changing wisdom of the Bible understandable and accessible to all.<br/><br/>
 
