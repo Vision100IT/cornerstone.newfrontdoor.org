@@ -138,7 +138,7 @@ class Sermons extends Component {
   <div className="content-1 bg-color-theme text-color-light">
               <div className="container">
           <div className="row">
-                          <div className="col-md-3 col-xs-12">  <div className="region region-content-1-1">
+                          <div className="col-md-3 col-xs-12 text-center-sm">  <div className="region region-content-1-1">
 
 <div id="block-views-featured-sermon-1-block-2" className="block block-views">
 
@@ -161,7 +161,7 @@ class Sermons extends Component {
 </div>  </div>
 </div>  </div>
 </div>
-                                      <div className="col-md-3 col-xs-12">  <div className="region region-content-1-2">
+                                      <div className="col-md-3 col-xs-12 text-center-sm">  <div className="region region-content-1-2">
 
 <div id="block-views-sermon-series-block" className="block block-views">
 
@@ -187,7 +187,7 @@ class Sermons extends Component {
 </div>  </div>
 </div>  </div>
 </div>
-                                      <div className="col-md-3 col-xs-12">  <div className="region region-content-1-3">
+                                      <div className="col-md-3 col-xs-12 text-center-sm">  <div className="region region-content-1-3">
 
 <div id="block-views-featured-sermon-1-block" className="block block-views">
 
@@ -215,7 +215,7 @@ class Sermons extends Component {
 </div>  </div>
 </div>  </div>
 </div>
-                                      <div className="col-md-3 col-xs-12">  <div className="region region-content-1-4">
+                                      <div className="col-md-3 col-xs-12 text-center-sm">  <div className="region region-content-1-4">
 
 <div id="block-views-featured-sermon-1-block-1" className="block block-views">
 
@@ -253,7 +253,7 @@ class Sermons extends Component {
 
 <div id="block-views-sermon-series-block-1" className="block block-views">
 
-              <h2 className="header-lightBlue">Recent Series</h2>
+              <h2 className="header-lightBlue text-center-sm">Recent Series</h2>
 
   <div className="content">
     <div className="view view-sermon-series view-id-sermon_series view-display-id-block_1 row view-dom-id-3caabb555162fe14980733c2e80b0a53">
@@ -294,7 +294,7 @@ class Sermons extends Component {
 
 <div id="block-views-all-sermons-block-1" className="block block-views">
 
-              <h2 className="header-lightBlue">All Sermons</h2>
+              <h2 className="header-lightBlue text-center-sm">All Sermons</h2>
 
   <div className="content">
     <div className="view view-All-Sermons view-id-All_Sermons view-display-id-block_1 view-dom-id-f3bb1cab640987c3e343139ca9822fc5">

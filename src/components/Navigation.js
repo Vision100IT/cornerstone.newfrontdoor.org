@@ -24,16 +24,17 @@ class Navigation extends Component {
         <nav className="navbar nestor-main-menu" role="navigation">
           {/* Menu button for mobile display */}
           <div className="navbar-header">
-            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">MENU</button>
+            <button style={{marginTop: "25px"}} type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">MENU</button>
           </div>
 
           {/* Navigation links */}
           <div className="collapse navbar-collapse navbar-ex1-collapse">
             <ul className="nav navbar-nav navbar-right">
               <li className="active"><a href="/" title="" className="active">Home</a></li>
-              <li><a href="#" title="">Visit us @ 9:30 Sundays</a></li>
-              <li><a href="#" title="">Talks</a></li><li><a href="#" title="">Contact Us</a></li>
-              <li><a href="#" title="">Find Out What&#039;s On</a></li></ul>
+              <li><a href="/WhatWeBelieve" title="">What We Believe</a></li>
+              <li><a href="/WorshipServices" title="">Visit us @ 10am Sundays</a></li>
+              <li><a href="/ContactUs" title="">Contact Us</a></li>
+              <li><a href="/Sermons" title="">Sermons</a></li></ul>
           </div> {/* /navbar-collapse */}
         </nav>
       </div>

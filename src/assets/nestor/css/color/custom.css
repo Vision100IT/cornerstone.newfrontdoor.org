@@ -63,7 +63,7 @@ a {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #2ac5ee;
+  color: #0071c1;
 }
 
 /** Nestor Main Menu **/
@@ -75,22 +75,22 @@ a {
 .nestor-main-menu .nav > li > a:focus,
 .nestor-main-menu .nav > li:hover > a,
 .nestor-main-menu .nav > li:focus > a {
-  color: #2ac5ee;
+  color: #0071c1;
 }
 
 .nestor-main-menu .dropdown-menu > .active > a,
 .nestor-main-menu .dropdown-menu > li > a:hover,
 .nestor-main-menu .dropdown-menu > li > a:focus {
-  color: #2ac5ee;
+  color: #0071c1;
 }
 
 @media (max-width: 767px) {
-  
+
   .nestor-main-menu .navbar-toggle {
-    border: 1px solid #2ac5ee;
-    background: #2ac5ee;
+    border: 1px solid #0071c1;
+    background: #0071c1;
   }
-  
+
 }
 
 
