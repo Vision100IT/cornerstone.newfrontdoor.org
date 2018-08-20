@@ -44,7 +44,7 @@ class SermonPage extends Component {
               <div className="field field-name-field-preacher field-type-text field-label-above">
                 <div className="field-label">Preacher:&nbsp;</div>
                 <div className="field-items">
-                  <div className="field-item even">Dave Lynch</div>
+                  <div className="field-item even">{decode(sermon.preacher)}</div>
                 </div>
               </div><br/>
               <div className="field field-name-field-sermon field-type-file field-label-above">
