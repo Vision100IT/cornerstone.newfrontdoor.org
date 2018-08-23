@@ -12,7 +12,7 @@ class WhereToFindUs extends Component {
               <h2 className="header-lightBlue">Where to Find Us</h2>
               <div className="content">
                 <div id="map_canvas" className="google-map" style={{maxHeight:"360px"}}></div>
-                <div><a href="https://goo.gl/maps/bgsEwUyCTBK2">Cornerstone Presbyterian Church</a></div>
+                <div><a href="https://goo.gl/maps/NsYQcj7oGi52">Cornerstone Presbyterian Church</a></div>
                 <div>45 Melville Street</div>
                 <div>Hobart, Tasmania</div>  </div>
               </div>

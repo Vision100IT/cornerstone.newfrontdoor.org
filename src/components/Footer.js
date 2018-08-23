@@ -20,7 +20,7 @@ class Footer extends Component {
       <div className="content">
         <div className="footer-address text-center">
       <i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>
-      <p><a href="https://goo.gl/maps/bgsEwUyCTBK2">Cornerstone Presbyterian Church</a><br />45 Melville St, Hobart TAS 7000</p>
+      <p><a href="https://goo.gl/maps/NsYQcj7oGi52">Cornerstone Presbyterian Church</a><br />45 Melville St, Hobart TAS 7000</p>
       </div> {/* /footer-address */}  </div>
       </div>  </div>
                 </div> {/* /footer-first-column-region */}

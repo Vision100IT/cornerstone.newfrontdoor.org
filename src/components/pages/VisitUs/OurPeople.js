@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //They want to use silouettes until new images have been created
-//Will update when I find some decent sillouettes
+//Will update when I find some decent sillouettesj
 import Campbell from '../../../assets/people/Campbell.jpg';
 import Rafael from '../../../assets/people/Rafael.jpg';
 import Simon from '../../../assets/people/Simon.jpg';
