@@ -36,6 +36,11 @@ h3{
   font-weight: bold;
 }
 
+.lightBlue-text-bold{
+  color: #1493c9;
+  font-weight: bold;
+}
+
 
 .sermon-search-button {
   padding: 2px 35px !important;

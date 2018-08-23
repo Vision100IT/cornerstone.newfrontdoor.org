@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+//They want to use silouettes until new images have been created
+//Will update when I find some decent sillouettes
 import Campbell from '../../../assets/people/Campbell.jpg';
 import Rafael from '../../../assets/people/Rafael.jpg';
 import Simon from '../../../assets/people/Simon.jpg';
@@ -7,7 +9,7 @@ import Des from '../../../assets/people/Des.jpg';
 import Derrick from '../../../assets/people/Derrick.jpg';
 import Nathaniel from '../../../assets/people/Nathaniel.jpg';
 
-import Patrisha from '../../../assets/people/Patrisha.jpg';
+import Trish from '../../../assets/people/Trish.jpg';
 import David from '../../../assets/people/David.jpg';
 import Jane from '../../../assets/people/Jane.jpg';
 import Libby from '../../../assets/people/Libby.jpg';
@@ -49,10 +51,10 @@ class OurPeople extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
                           <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-md-12">
                               <h2 className="header-lightBlue text-center">Elders</h2>
 
-                              <div className="person-container col-md-4">
+                              <div className="person-container col-md-3">
                                   <div className="person-image">
                                     <img className="image-center" src={Campbell} alt=""/>
                                   </div>
@@ -64,7 +66,19 @@ class OurPeople extends Component {
                                   </div>
                               </div>
 
-                              <div className="person-container col-md-4">
+                              <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Des} alt=""/>
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Des Richardson
+                                  </div>
+                                  <div className="person-title text-center">
+                                    Session Clerk
+                                  </div>
+                              </div>
+
+                              <div className="person-container col-md-3">
                                   <div className="person-image">
                                     <img className="image-center" src={Rafael} alt=""/>
                                   </div>
@@ -76,7 +90,7 @@ class OurPeople extends Component {
                                   </div>
                               </div>
 
-                              <div className="person-container col-md-4">
+                              <div className="person-container col-md-3">
                                   <div className="person-image">
                                     <img className="image-center" src={Simon} alt=""/>
                                   </div>
@@ -88,19 +102,9 @@ class OurPeople extends Component {
                                   </div>
                               </div>
 
-                              <div className="person-container col-md-4">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Des} alt=""/>
-                                  </div>
-                                  <div className="person-name text-center">
-                                    Des Richardson
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Elder
-                                  </div>
-                              </div>
 
-                              <div className="person-container col-md-4">
+
+                              <div className="person-container col-md-3">
                                   <div className="person-image">
                                     <img className="image-center" src={Derrick} alt=""/>
                                   </div>
@@ -112,7 +116,7 @@ class OurPeople extends Component {
                                   </div>
                               </div>
 
-                              <div className="person-container col-md-4">
+                              <div className="person-container col-md-3">
                                   <div className="person-image">
                                     <img className="image-center" src={Nathaniel} alt=""/>
                                   </div>
@@ -123,25 +127,38 @@ class OurPeople extends Component {
                                     Elder
                                   </div>
                               </div>
-                            </div>
 
-                            <div className="col-md-6">
-                            <div className="row">
-                              <h2 className="header-lightBlue text-center">Deacons</h2>
-
-                              <div className="person-container col-md-4">
+                              <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Patrisha} alt=""/>
+                                    <img className="image-center" src="" alt=""/>
                                   </div>
                                   <div className="person-name text-center">
-                                    Patrisha <br/> Smith
+                                    James Baker
+                                  </div>
+                                  <div className="person-title text-center">
+                                    Elder
+                                  </div>
+                              </div>
+
+                            </div>
+                            <div className="row">
+                            <div className="col-md-12">
+
+                              <h2 className="header-lightBlue text-center">Deacons</h2>
+
+                              <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Trish} alt=""/>
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Trish <br/> Smith
                                   </div>
                                   <div className="person-title text-center">
                                     Deacon
                                   </div>
                               </div>
 
-                              <div className="person-container col-md-4">
+                              <div className="person-container col-md-3">
                                   <div className="person-image">
                                     <img className="image-center" src={David} alt=""/>
                                   </div>
@@ -153,7 +170,7 @@ class OurPeople extends Component {
                                   </div>
                               </div>
 
-                              <div className="person-container col-md-4">
+                              <div className="person-container col-md-3">
                                   <div className="person-image">
                                     <img className="image-center" src={Jane} alt=""/>
                                   </div>
@@ -166,49 +183,106 @@ class OurPeople extends Component {
                               </div>
                               </div>
 
-                              <div className="row">
-                                <div className="person-container col-md-4 col-md-offset-2">
+
+                            </div>
+
+                            <div className="row">
+                              <div className="col-md-12">
+                                <h2 className="header-lightBlue text-center">Board of Management</h2>
+                                <p className="text-center"><strong>Contact:  <a href="mailto:bom@cornerstonehobart.com" >bom@cornerstonehobart.com</a></strong></p>
+
+                                <div className="person-container col-md-3">
                                     <div className="person-image">
-                                      <img className="image-center" src={Patrisha} alt=""/>
+                                      <img className="image-center" src={David} alt=""/>
                                     </div>
                                     <div className="person-name text-center">
-                                      Patrisha <br/> Smith
+                                      David Van Emmerik
                                     </div>
                                     <div className="person-title text-center">
                                       Secretary
                                     </div>
-                                </div>
-                                <div className="person-container col-md-4">
-                                    <div className="person-image">
-                                      <img className="image-center" src={Libby} alt=""/>
+                                  </div>
+
+                                    <div className="person-container col-md-3">
+                                        <div className="person-image">
+                                          <img className="image-center" src={Libby} alt=""/>
+                                        </div>
+                                        <div className="person-name text-center">
+                                          Libby Dilger
+                                        </div>
+                                        <div className="person-title text-center">
+                                          Treasurer
+                                        </div>
                                     </div>
-                                    <div className="person-name text-center">
-                                      Libby <br/> Dilger
+
+                                    <div className="person-container col-md-3">
+                                        <div className="person-image">
+                                          <img className="image-center" src="" alt=""/>
+                                        </div>
+                                        <div className="person-name text-center">
+                                          Heinz Maarseveen
+                                        </div>
+                                        <div className="person-title text-center">
+
+                                        </div>
                                     </div>
-                                    <div className="person-title text-center">
-                                      Treasurer - Administration
+
+                                    <div className="person-container col-md-3">
+                                        <div className="person-image">
+                                          <img className="image-center" src={Jane} alt=""/>
+                                        </div>
+                                        <div className="person-name text-center">
+                                          Jane Maarseveen
+                                        </div>
+                                        <div className="person-title text-center">
+
+                                        </div>
+                                    </div>
+
+                                    <div className="person-container col-md-3">
+                                        <div className="person-image">
+                                          <img className="image-center" src={Trish} alt=""/>
+                                        </div>
+                                        <div className="person-name text-center">
+                                          Trish Smith
+                                        </div>
+                                        <div className="person-title text-center">
+
+                                        </div>
+                                    </div>
+
+                                    <div className="person-container col-md-3">
+                                        <div className="person-image">
+                                          <img className="image-center" src="" alt=""/>
+                                        </div>
+                                        <div className="person-name text-center">
+                                          Amy Glynn
+                                        </div>
+                                        <div className="person-title text-center">
+
+                                        </div>
                                     </div>
                                 </div>
                               </div>
-
-
-                            </div>
 
 
                             <div className="row">
                               <div className="col-md-6">
-                                <h3 className="header-lightBlue">Ministry Team</h3>
+                                <h3 className="header-lightBlue text-center">Ministry Team</h3>
+                                <h4><strong>Campbell Markham</strong>, Pastor</h4>
+                                <h4><strong>Joe Cox</strong>, Trainee to the Pastor</h4>
                                 <h4><strong>David Gee</strong>, Evangelist</h4>
-                                <h4><strong>Dan Probert</strong>, Ministry Intern</h4>
-                                <h4><strong>Martin Webb</strong>, Social justice research</h4>
-                                <h4><strong>Anna Gee</strong>, Cornerpebble leader</h4>
-                                <h4><strong>Naomi Warwick</strong>, Missionary</h4>
+                                <h4><strong>Cristiane Baker</strong>, Women’s Worker</h4>
+                                <h4><strong>Elya Richardson</strong>, Youth Worker</h4>
+                                <h4><strong>Anna Gee</strong>, Corner Pebble (Sunday School) Leader</h4>
+                                <h4><strong>Thomas Elkhair</strong>, Music Team Coordinator</h4>
+                                <h4><strong>Bethany Armstrong</strong>, Breaking the Silence Coordinator</h4>
                               </div>
 
                               <div className="col-md-6">
-                                <h3 className="header-lightBlue">Where are our ministry students now?</h3>
-                                <h4><strong>Paul Hutchens</strong>, Pastor, Soul Church.</h4>
-                                <h4><strong>R&apos;jaye Rojas</strong>, Pastor, Mount Stuart Presbyterian.</h4>
+                                <h3 className="header-lightBlue text-center">Where are our ministry students now?</h3>
+                                <h4><strong>Paul Hutchens</strong>, Pastor, <a href="https://soulchurch.org.au/">Soul Church</a>.</h4>
+                                <h4><strong>R&apos;jaye Rojas</strong>, Pastor, <a href="https://www.mspc.org.au/">Mount Stuart Presbyterian</a>.</h4>
                                 <h4><strong>Andrew Hutchens</strong>, Graduate, Christ College.</h4>
                                 <h4><strong>Michael Riske</strong>, current student, Christ College.</h4>
                               </div>

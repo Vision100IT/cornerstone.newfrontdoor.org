@@ -41,12 +41,18 @@ class QuarryYouth extends Component {
                               <strong>Time:</strong><br/>
                               Friday Night @ 7-9pm<br/>
                               <strong>Location</strong><br/>
-                              45 Melville Street, Hobart<br/><br/>
+                              Hope Christian Centre 45 Tasma St. Hobart.<br/><br/>
 
-                              Proverbs 22:6: ‘Train a child in the way he should go, and when he is old he will not turn from it’<br/><br/>
+                              At Quarry, we're passionate about equipping our youth to be able to know God's word, so they can apply it to their lives.
+                              We want to equip them to engage well with those around them from a biblical worldview. Our motto is Win, Build, Send.
+                              We want to Win the youth to Christ, Build them up in their faith and equip them to live as Christians to be Sent out to reach those in their community.<br/><br/>
 
-                              <strong>Contact leaders:</strong><br/>
-                              Elya Richardson 0428 496 745;</p>
+                              <strong>Contact leader</strong><br/>
+                              Elya Richardson: 0428 496 745<br/>
+                              Email: <a href="mailto:youth@cornerstonehobart.com">youth@cornerstonehobart.com</a><br/>
+                              Facebook: <a href="https://www.facebook.com/QuarryYouth"> /QuarryYouth</a>
+
+                              </p>
                             </div>
                           </div>
 

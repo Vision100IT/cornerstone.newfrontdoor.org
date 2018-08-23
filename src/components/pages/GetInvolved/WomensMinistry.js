@@ -35,38 +35,14 @@ class WomensMinistry extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
                           <div className="row">
-                            <div className=" col-md-6 col-xs-12">
+                            <div className=" col-md-12 col-xs-12">
                               <h2 className="header-lightBlue">Why T2 Women?</h2>
                               <p className="ministry-text"><strong>Biblically, a Titus 2 Woman is defined by , Titus 2:3-5,</strong><br/>
                               “Likewise, teach the older women to be reverent in the way they live, not to be slanderers, or addicted to much wine, but to teach what is good. Then they can train the younger women to love their husbands and children, to be self-controlled and pure, to be busy at home, to be kind, and to be subject to their husbands, so that no one will malign the word of God.”
                               <br/><br/>
-                              The Titus 2 woman resides in relationships: with her God, her husband, her children and her friends. Her sphere of influence radiates from her relationship with God, her Father, her Lord and Saviour, and the Ruler of her heart.
-                              <br/><br/>
-                              <strong>Contact</strong> Cristiane Baker<br/>
-                              0404392812<br/>
-                              c9baker@gmail.com</p>
+                              <a href="https://www.facebook.com/T2Women/">T2 Women on Facebook,</a></p>
                             </div>
-                            <div className="col-md-6 col-xs-12">
-                            <h2 className="header-lightBlue">Annual Event</h2>
-                            <p className="ministry-text">June - July - August<br/><br/>
 
-                            We look forward each year to the <strong>"Women's Winter Festival"</strong> where the Women of Tasmania gather to Learn and grow in wisdom and grace.
-                            Combined Church Event Co-ordinated by: Cornerstone Hobart, Soul Church, Crossroads Church and Mount Stuart Church.<br/><br/>
-
-                            <strong>Contact :</strong> Gail Forder 0422 022 733</p>
-
-                            <br/><br/>
-                            <h2 className="header-lightBlue">Women&apos;s Winter Festival 2018</h2>
-                            <p><strong>Diary dates:&nbsp;</strong><br/>
-                            <strong>Saturday</strong> 2 June 2018 5pm - 8pm<br/>
-                            <strong>Speaker : Christine Jolly</strong><br/>
-                            <strong>Saturday</strong> 7 July 2018&nbsp;5pm - 8pm<br/>
-                            <strong>Speaker : Amanda-Sue Markham</strong><br/>
-                            <strong>Saturday</strong> 4 August 2018&nbsp;5pm - 8pm<br/>
-                            <strong>Speaker :&nbsp;</strong></p>
-
-
-                            </div>
                           </div>
 
                       </div>

@@ -35,9 +35,8 @@ class OurVision extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-                        <h2 className="header-lightBlue">Our Vision</h2>
-                        <h2 className="header-red"><em>Win. Build. Send.</em></h2>
-                        <p className="ministry-text">Cornerstone&apos;s vision is simply to <span className="red-text-bold">win</span> people to Christ, to <span className="red-text-bold">build</span> them up with the gospel, and then to <span className="red-text-bold">send</span> them out to proclaim the good news!
+                        <h2 className="header-lightBlue"><em>Win. Build. Send.</em></h2>
+                        <p className="ministry-text">Cornerstone&apos;s vision is simply to <span className="lightBlue-text-bold">win</span> people to Christ, to <span className="lightBlue-text-bold">build</span> them up with the gospel, and then to <span className="lightBlue-text-bold">send</span> them out to proclaim the good news!
                         <br /><br />
                         Our mission is to make the life-changing wisdom of the Bible understandable and accessible to all.</p>
                         </div>

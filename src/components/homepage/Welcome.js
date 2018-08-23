@@ -20,14 +20,7 @@ class Welcome extends Component {
           <div className="node node-page clearfix">
 
         <div className="content">
-          <div className="field field-name-body field-type-text-with-summary field-label-hidden"><div className="field-items">
-          <div className="field-item even">
-            <p>Welcome to Cornerstone Presbyterian Church.
-            At Cornerstone Presbyterian we love Jesus and His Word the Bible, and we love to take His Word out to the city of Hobart. If you would like to know more about us, check out <a href="/WhatWeBelieve">What We Believe</a>.</p>
-
-
-          </div>
-          </div></div>  </div>
+        </div>
 
         </div>
         </div>

@@ -45,7 +45,7 @@ class WorshipServices extends Component {
 
                           <strong>We absolutely love visitors and welcome you to our service on Sunday, 10am at 45 Melville Street. <a href="http://cornerstonehobart.com/contact/">(map)</a></strong><br /><br />
 
-                          <strong>We meet in Alfacrucis College and the entrance is set about 20m off the street. Look for the Flags.</strong><br /><br />
+                          <strong>We meet in Alphacrucis College and the entrance is set about 20m off the street. Look for the Flags.</strong><br /><br />
 
                           There is limited free parking on site, and in the Red Cross car park over the road. There is also three hours of free parking in the Hobart Central car park off Melville Street.  (With $1/hour after that.)<br /><br />
 

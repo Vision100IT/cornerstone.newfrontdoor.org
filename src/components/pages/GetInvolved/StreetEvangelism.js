@@ -36,16 +36,18 @@ class StreetEvangelism extends Component {
                         <div className="content">
                           <div className="row">
                             <div className="col-xs-12">
-                            <h2 className="header-lightBlue">Outreach - by David Gee</h2>
-                            <p>We are discovering that one of the keys to victory over sin has to do with what we think about the most. Paul tells us in Romans 6 to“reckon yourselves dead to sin but alive to God.” This means that we take what is already true and bring it into our experience through active thought..
+                            <p className="ministry-text">Our Evangelist, David Gee, and his team of volunteers regularly proclaim the Gospel in public places in and around Hobart.<br/><br/>
+
                             Our mission is to make the life-changing wisdom of the Bible understandable and accessible to all.<br/><br/>
 
                             <strong><em>Matthew 28:19 "Go therefore and make disciples of all nations baptising them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you."</em></strong>  <br/><br/>
 
-                            Outreach to the people of Hobart and the wider State of Tasmania.</p>
+                            Please pray for the safety of this team as they proclaim what is often unpopular truth, pray that they always respond in grace and love,
+                            and pray that the Holy Spirit will work in the hearts of those that hear the Gospel.<br/><br/>
 
-                            <p className="ministry-text">Join the outreach team<br/>
-                            - Contact David Gee (Evangelist)</p>
+
+                            If you would like additional information on street evangelism, or you are interested in joining our team,
+                            please email <a href="mailto:admin@cornerstonehobart.com">admin@cornerstonehobart.com</a> and one of our team will contact you.</p>
                             </div>
                           </div>
                         </div>

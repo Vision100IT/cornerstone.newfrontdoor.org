@@ -43,20 +43,15 @@ class MensMinistry extends Component {
                             <img src="http://cornerstonehobart.com/wp-content/uploads/2016/01/ministry-men2.jpg" width="258" height="196" />
 
                           </div>
-                          <div className=" col-md-4 col-xs-12">
+                          <div className=" col-md-8 col-xs-12">
                             <p className="ministry-text">
-                            The <strong>Men&apos;s Ministry</strong> encourages our men to meet together for fellowship and engage.
+                              Our men meet together for fellowship and for mutual support in their roles as leaders in their families and within the Church.
+                              A number of men’s breakfasts and other events are held throughout the year.
                             </p>
                             <br/>
-                            <p>
-                            We have meet together for breakfast and other events throughout the year.
-                            </p>
-                          </div>
-                          <div className=" col-md-4 col-xs-12">
-                            <h2 className="header-lightBlue">Contact</h2>
-                            <p>
-                              <strong>James Baker</strong><br/>
-                              Mobile: 0400791190
+                            <p className="ministry-text">
+                            If you would like to be placed on the list to receive email notifications of Men’s Ministry functions,
+                            please email <a href="mailto:admin@cornerstonehobart.com">admin@cornerstonehobart.com</a>.
                             </p>
                           </div>
                         </div>

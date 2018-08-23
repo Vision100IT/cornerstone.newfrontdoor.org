@@ -145,12 +145,12 @@ class Navigation extends Component {
         <div className="tb-megamenu-column-inner mega-inner clearfix">
               <ul  className="tb-megamenu-subnav mega-nav level-1 items-4">
 
-              <li className="tb-megamenu-item level-2 mega">
+              {/*}<li className="tb-megamenu-item level-2 mega">
               <a href="/YoungAdults" >Young Adults</a>
-              </li>
+              </li>*/}
 
               <li className="tb-megamenu-item level-2 mega">
-              <a href="/QuarryYouth" >Quarry Youth</a>
+              <a href="/QuarryYouth" >Youth Group</a>
               </li>
 
               <li className="tb-megamenu-item level-2 mega">

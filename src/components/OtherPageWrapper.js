@@ -10,7 +10,7 @@ import MensMinistry from './pages/GetInvolved/MensMinistry';
 import QuarryYouth from './pages/GetInvolved/QuarryYouth';
 import StreetEvangelism from './pages/GetInvolved/StreetEvangelism';
 import WomensMinistry from './pages/GetInvolved/WomensMinistry';
-import YoungAdults from './pages/GetInvolved/YoungAdults';
+//import YoungAdults from './pages/GetInvolved/YoungAdults';
 
 import Cornerpost from './pages/Resources/Cornerpost';
 import EngagedCouples from './pages/Resources/EngagedCouples';
@@ -40,7 +40,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/QuarryYouth" component={QuarryYouth} />
           <Route exact path="/StreetEvangelism" component={StreetEvangelism} />
           <Route exact path="/WomensMinistry" component={WomensMinistry} />
-          <Route exact path="/YoungAdults" component={YoungAdults} />
+          {/*<Route exact path="/YoungAdults" component={YoungAdults} />*/}
 
           <Route exact path="/Cornerpost" component={Cornerpost} />
           <Route exact path="/EngagedCouples" component={EngagedCouples} />
