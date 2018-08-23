@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 
-//They want to use silouettes until new images have been created
-//Will update when I find some decent sillouettesj
-import Campbell from '../../../assets/people/Campbell.jpg';
-import Rafael from '../../../assets/people/Rafael.jpg';
-import Simon from '../../../assets/people/Simon.jpg';
-import Des from '../../../assets/people/Des.jpg';
-import Derrick from '../../../assets/people/Derrick.jpg';
-import Nathaniel from '../../../assets/people/Nathaniel.jpg';
+//Using silhouettes until new images have been taken
+//import Campbell from '../../../assets/people/Campbell.jpg';
+//import Rafael from '../../../assets/people/Rafael.jpg';
+//import Simon from '../../../assets/people/Simon.jpg';
+//import Des from '../../../assets/people/Des.jpg';
+//import Derrick from '../../../assets/people/Derrick.jpg';
+//import Nathaniel from '../../../assets/people/Nathaniel.jpg';
+//import Trish from '../../../assets/people/Trish.jpg';
+//import David from '../../../assets/people/David.jpg';
+//import Jane from '../../../assets/people/Jane.jpg';
+//import Libby from '../../../assets/people/Libby.jpg';
 
-import Trish from '../../../assets/people/Trish.jpg';
-import David from '../../../assets/people/David.jpg';
-import Jane from '../../../assets/people/Jane.jpg';
-import Libby from '../../../assets/people/Libby.jpg';
-
+import Male from '../../../assets/people/Male.png';
+import Female from '../../../assets/people/Female.png';
 
 class OurPeople extends Component {
 
@@ -56,7 +56,7 @@ class OurPeople extends Component {
 
                               <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Campbell} alt=""/>
+                                    <img className="image-center" src={Male} alt=""/>
                                   </div>
                                   <div className="person-name text-center">
                                     Campbell Markham
@@ -68,7 +68,7 @@ class OurPeople extends Component {
 
                               <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Des} alt=""/>
+                                    <img className="image-center" src={Male} alt=""/>
                                   </div>
                                   <div className="person-name text-center">
                                     Des Richardson
@@ -80,7 +80,7 @@ class OurPeople extends Component {
 
                               <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Rafael} alt=""/>
+                                    <img className="image-center" src={Male} alt=""/>
                                   </div>
                                   <div className="person-name text-center">
                                     Rafael Muggeridge
@@ -92,7 +92,7 @@ class OurPeople extends Component {
 
                               <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Simon} alt=""/>
+                                    <img className="image-center" src={Male} alt=""/>
                                   </div>
                                   <div className="person-name text-center">
                                     Simon Boonstra
@@ -106,10 +106,10 @@ class OurPeople extends Component {
 
                               <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Derrick} alt=""/>
+                                    <img className="image-center" src={Male} alt=""/>
                                   </div>
                                   <div className="person-name text-center">
-                                    Derrick<br/> Clack
+                                    Derrick Clack
                                   </div>
                                   <div className="person-title text-center">
                                     Elder
@@ -118,7 +118,7 @@ class OurPeople extends Component {
 
                               <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Nathaniel} alt=""/>
+                                    <img className="image-center" src={Male} alt=""/>
                                   </div>
                                   <div className="person-name text-center">
                                     Nathaniel Richardson
@@ -130,7 +130,7 @@ class OurPeople extends Component {
 
                               <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src="" alt=""/>
+                                    <img className="image-center" src={Male} alt=""/>
                                   </div>
                                   <div className="person-name text-center">
                                     James Baker
@@ -148,10 +148,10 @@ class OurPeople extends Component {
 
                               <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Trish} alt=""/>
+                                    <img className="image-center" src={Female} alt=""/>
                                   </div>
                                   <div className="person-name text-center">
-                                    Trish <br/> Smith
+                                    Trish Smith
                                   </div>
                                   <div className="person-title text-center">
                                     Deacon
@@ -160,10 +160,10 @@ class OurPeople extends Component {
 
                               <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={David} alt=""/>
+                                    <img className="image-center" src={Male} alt=""/>
                                   </div>
                                   <div className="person-name text-center">
-                                    David Van <br/> Emerick
+                                    David Van Emerick
                                   </div>
                                   <div className="person-title text-center">
                                     Deacon
@@ -172,10 +172,10 @@ class OurPeople extends Component {
 
                               <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Jane} alt=""/>
+                                    <img className="image-center" src={Female} alt=""/>
                                   </div>
                                   <div className="person-name text-center">
-                                    Jane <br/> Maarseven
+                                    Jane Maarseven
                                   </div>
                                   <div className="person-title text-center">
                                     Deacon
@@ -193,7 +193,7 @@ class OurPeople extends Component {
 
                                 <div className="person-container col-md-3">
                                     <div className="person-image">
-                                      <img className="image-center" src={David} alt=""/>
+                                      <img className="image-center" src={Male} alt=""/>
                                     </div>
                                     <div className="person-name text-center">
                                       David Van Emmerik
@@ -205,7 +205,7 @@ class OurPeople extends Component {
 
                                     <div className="person-container col-md-3">
                                         <div className="person-image">
-                                          <img className="image-center" src={Libby} alt=""/>
+                                          <img className="image-center" src={Female} alt=""/>
                                         </div>
                                         <div className="person-name text-center">
                                           Libby Dilger
@@ -217,7 +217,7 @@ class OurPeople extends Component {
 
                                     <div className="person-container col-md-3">
                                         <div className="person-image">
-                                          <img className="image-center" src="" alt=""/>
+                                          <img className="image-center" src={Male} alt=""/>
                                         </div>
                                         <div className="person-name text-center">
                                           Heinz Maarseveen
@@ -229,7 +229,7 @@ class OurPeople extends Component {
 
                                     <div className="person-container col-md-3">
                                         <div className="person-image">
-                                          <img className="image-center" src={Jane} alt=""/>
+                                          <img className="image-center" src={Female} alt=""/>
                                         </div>
                                         <div className="person-name text-center">
                                           Jane Maarseveen
@@ -238,10 +238,10 @@ class OurPeople extends Component {
 
                                         </div>
                                     </div>
-
+                                    <div className="clearfix"></div>
                                     <div className="person-container col-md-3">
                                         <div className="person-image">
-                                          <img className="image-center" src={Trish} alt=""/>
+                                          <img className="image-center" src={Female} alt=""/>
                                         </div>
                                         <div className="person-name text-center">
                                           Trish Smith
@@ -253,7 +253,7 @@ class OurPeople extends Component {
 
                                     <div className="person-container col-md-3">
                                         <div className="person-image">
-                                          <img className="image-center" src="" alt=""/>
+                                          <img className="image-center" src={Female} alt=""/>
                                         </div>
                                         <div className="person-name text-center">
                                           Amy Glynn
