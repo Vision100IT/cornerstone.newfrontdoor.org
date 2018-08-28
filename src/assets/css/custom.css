@@ -94,3 +94,20 @@ line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+
+.no-bottom-margin{
+  margin-bottom: 0;
+}
+
+.no-top-margin{
+  margin-top: 0;
+}
+
+.directions-div{
+  margin-top: 5px;
+  background-color: #10749e;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 50px;
+  color: #d3d3d3;
+}

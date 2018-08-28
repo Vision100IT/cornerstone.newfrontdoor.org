@@ -1,6 +1,8 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 
+import BibleStudy from "../../../assets/GrowthGroups.jpg";
+
 class GrowthGroup extends Component {
   render() {
     return (
@@ -37,48 +39,55 @@ class GrowthGroup extends Component {
                         <div className="content">
                           <div className="row">
                             <div className=" col-md-6 col-xs-12">
-                              <img style={{marginTop: "33px", paddingRight: "50px"}} src="http://cornerstonehobart.com/wp-content/uploads/2016/09/Bible-Study.jpg" width="585" height="309" />
-                              <h2 className="header-lightBlue">Bible Study and <br/>Growth Groups</h2>
+                              <img className="img-responsive img-full-width" style={{ paddingRight: "50px" }} src={BibleStudy} width="585" height="309" /><br /><br />
                               <p>
-                                <strong>Matthew 18:20:<br/>
-                                <em>"For where two or three come together in my name, there I am with them.."</em></ strong>
+                                <strong>Matthew 18:20:<br />
+                                  <em>"For where two or three come together in my name, there I am with them.."</em></ strong>
                               </p>
+                              <p>
+                                If you would like additional information on one of our Growth Groups, please email your details to <a href="mailto:admin@cornerstonehobart.com">admin@cornerstonehobart.com</a> and a Growth Group Leader will contact you.
+                              </p>
+                              <br />
+                              <br />
                             </div>
                             <div className=" col-md-6 col-xs-12">
-                            <strong>Monday Night</strong> in New Town 7.30pm at the Van Emmeriks’, 10 Archer Street. Contact David on 6278 1668<br/><br/>
-                            <strong>Tuesday Night</strong> in Kingston 7.30pm at the Vonk’s, 48 Corlacus Drive, Kingston. 6267 1113<br/><br/>
-                            <strong>Wednesdays Ladies’ Group</strong> 9:30am for coffee & chat, study starts @10am, at Libby Dilger’s, 40 Phoenix St, Howrah. Phone 0448 554 845<br/><br/>
-                            <strong>Wednesday Night</strong> in Blackmans Bay  7.30pm - Contact Ian and Kym Headley 0419 525 292 <br/><br/>
-                            <strong>Women’s Bible Study</strong><br/>
-                            Thusday 1:30 - 3pm at Annie Bartlett, West Hobart. Led by Melanie MUGGERIDGE. Contact Annie Bartlett: 62319493, 0466 980 887<br/><br/>
+                              <strong>Wednesday Night</strong> in Kingston at 7:30pm<br /><br /><br />
+                              <strong>Wednesday Ladies Group</strong> in Howrah at 10:00am to Midday<br /><br /><br />
+                              <strong>Thursday Groups</strong><br /><br />
+                              <ul>
+                                <li><strong>Mums with Young Children</strong> in Howrah at 10:00am</li><br />
+                                <li><strong>Ladies Group</strong> in West Hobart at 1:30pm to 3pm</li><br />
+                                <li><strong>Kingston</strong> at 7:30pm</li><br />
+                                <li><strong>Lindisfarne</strong> at 7:30pm</li><br />
+                                <li><strong>Teenagers and older</strong> in West Hobart at 7:30pm to 8:30pm</li><br />
+                              </ul><br />
 
-                            <strong>Thursday Night</strong> in Lindisfarne 7.30pm at James and Cristiane Bakers. Contact leader Matt Delphin 0478 769 009<br/><br/>
 
-                            <strong>Thursday Night</strong> 7:30pm-8:30pm in West Hobart with the Bartlett Family. Starting 8/2/2018, following school terms. Studying Luke. For teenagers and older. Contact Paul Bartlett 0406 605 419<br/><br/>
+                              <strong>Youth Group</strong><br /><br />
+                              <a href="/QuarryYouth">Quarry Youth</a> is our youth group that is for students in Years 6-12 that meets at Hope Christian Centre 45 Tasma St. Hobart on Fridays at 7pm to 9pm. <br />
+                              You can find more information about this group <a href="/QuarryYouth">here.</a><br /><br />
 
-                            <strong>Bible study for Mums</strong> with young children. <br/>
-                            Thursday 9.30 am at 101 Norma Street, Howrah. Hosted by Elodie McCausland, Led by Anna Gee, 6247 8976<br/><br/>
                             </div>
                           </div>
-
-                      </div>
-
-
-
-                </div>
-                  </div>
-                </div>  </div>
-
-
 
                         </div>
 
 
 
-
                       </div>
                     </div>
-                  </div>
+                  </div>  </div>
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
       </section>
     );
   }
