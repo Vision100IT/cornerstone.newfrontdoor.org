@@ -214,8 +214,8 @@ a {
 /*************************************************************/
 
 .btn-primary {
-  border-color: #2ac5ee;
-  color: #2ac5ee;
+  border-color: #65AAD5;
+  color: #65AAD5;
 }
 
 .btn-primary:hover,
@@ -258,7 +258,7 @@ a {
 /*************************************************************/
 
 .form-control:focus {
-  border-color: #2ac5ee;
+  border-color: #65AAD5;
 }
 
 

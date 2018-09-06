@@ -55,100 +55,100 @@ class OurPeople extends Component {
                               <h2 className="header-lightBlue text-center">Elders</h2>
 
                               <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt=""/>
+                                <div className="person-image">
+                                  <img className="image-center" src={Male} alt="" />
+                                </div>
+                                <div className="person-name text-center">
+                                  Campbell Markham
                                   </div>
-                                  <div className="person-name text-center">
-                                    Campbell Markham
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Pastor
-                                  </div>
-                              </div>
-
-                              <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt=""/>
-                                  </div>
-                                  <div className="person-name text-center">
-                                    Des Richardson
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Session Clerk
+                                <div className="person-title text-center">
+                                  Pastor
                                   </div>
                               </div>
 
                               <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt=""/>
+                                <div className="person-image">
+                                  <img className="image-center" src={Male} alt="" />
+                                </div>
+                                <div className="person-name text-center">
+                                  Des Richardson
                                   </div>
-                                  <div className="person-name text-center">
-                                    Rafael Muggeridge
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Elder
-                                  </div>
-                              </div>
-
-                              <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt=""/>
-                                  </div>
-                                  <div className="person-name text-center">
-                                    Simon Boonstra
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Elder
-                                  </div>
-                              </div>
-
-
-
-                              <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt=""/>
-                                  </div>
-                                  <div className="person-name text-center">
-                                    Derrick Clack
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Elder
+                                <div className="person-title text-center">
+                                  Session Clerk
                                   </div>
                               </div>
 
                               <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt=""/>
+                                <div className="person-image">
+                                  <img className="image-center" src={Male} alt="" />
+                                </div>
+                                <div className="person-name text-center">
+                                  Rafael Muggeridge
                                   </div>
-                                  <div className="person-name text-center">
-                                    Nathaniel Richardson
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Elder
+                                <div className="person-title text-center">
+                                  Elder
                                   </div>
                               </div>
 
                               <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt=""/>
+                                <div className="person-image">
+                                  <img className="image-center" src={Male} alt="" />
+                                </div>
+                                <div className="person-name text-center">
+                                  Simon Boonstra
                                   </div>
-                                  <div className="person-name text-center">
-                                    James Baker
+                                <div className="person-title text-center">
+                                  Elder
                                   </div>
-                                  <div className="person-title text-center">
-                                    Elder
+                              </div>
+
+
+
+                              <div className="person-container col-md-3">
+                                <div className="person-image">
+                                  <img className="image-center" src={Male} alt="" />
+                                </div>
+                                <div className="person-name text-center">
+                                  Derrick Clack
+                                  </div>
+                                <div className="person-title text-center">
+                                  Elder
+                                  </div>
+                              </div>
+
+                              <div className="person-container col-md-3">
+                                <div className="person-image">
+                                  <img className="image-center" src={Male} alt="" />
+                                </div>
+                                <div className="person-name text-center">
+                                  Nathaniel Richardson
+                                  </div>
+                                <div className="person-title text-center">
+                                  Elder
+                                  </div>
+                              </div>
+
+                              <div className="person-container col-md-3">
+                                <div className="person-image">
+                                  <img className="image-center" src={Male} alt="" />
+                                </div>
+                                <div className="person-name text-center">
+                                  James Baker
+                                  </div>
+                                <div className="person-title text-center">
+                                  Elder
                                   </div>
                               </div>
 
                             </div>
                             <div className="row">
-                            <div className="col-md-12">
+                              <div className="col-md-12">
 
-                              <h2 className="header-lightBlue text-center">Deacons</h2>
+                                <h2 className="header-lightBlue text-center">Deacons</h2>
 
-                              <div className="person-container col-md-3">
+                                <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Female} alt=""/>
+                                    <img className="image-center" src={Female} alt="" />
                                   </div>
                                   <div className="person-name text-center">
                                     Trish Smith
@@ -156,11 +156,11 @@ class OurPeople extends Component {
                                   <div className="person-title text-center">
                                     Deacon
                                   </div>
-                              </div>
+                                </div>
 
-                              <div className="person-container col-md-3">
+                                <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Male} alt=""/>
+                                    <img className="image-center" src={Male} alt="" />
                                   </div>
                                   <div className="person-name text-center">
                                     David Van Emerick
@@ -168,11 +168,11 @@ class OurPeople extends Component {
                                   <div className="person-title text-center">
                                     Deacon
                                   </div>
-                              </div>
+                                </div>
 
-                              <div className="person-container col-md-3">
+                                <div className="person-container col-md-3">
                                   <div className="person-image">
-                                    <img className="image-center" src={Female} alt=""/>
+                                    <img className="image-center" src={Female} alt="" />
                                   </div>
                                   <div className="person-name text-center">
                                     Jane Maarseven
@@ -180,7 +180,7 @@ class OurPeople extends Component {
                                   <div className="person-title text-center">
                                     Deacon
                                   </div>
-                              </div>
+                                </div>
                               </div>
 
 
@@ -190,80 +190,164 @@ class OurPeople extends Component {
                               <div className="col-md-12">
                                 <h2 className="header-lightBlue text-center">Board of Management</h2>
                                 <p className="text-center"><strong>Contact:  <a href="mailto:bom@cornerstonehobart.com" >bom@cornerstonehobart.com</a></strong></p>
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Male} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Campbell Markham
+                                  </div>
+                                  <div className="person-title text-center">
+                                    Pastor
+                                  </div>
+                                </div>
 
                                 <div className="person-container col-md-3">
-                                    <div className="person-image">
-                                      <img className="image-center" src={Male} alt=""/>
-                                    </div>
-                                    <div className="person-name text-center">
-                                      David Van Emmerik
-                                    </div>
-                                    <div className="person-title text-center">
-                                      Secretary
-                                    </div>
+                                  <div className="person-image">
+                                    <img className="image-center" src={Male} alt="" />
                                   </div>
+                                  <div className="person-name text-center">
+                                    Des Richardson
+                                  </div>
+                                  <div className="person-title text-center">
+                                    Session Clerk
+                                  </div>
+                                </div>
 
-                                    <div className="person-container col-md-3">
-                                        <div className="person-image">
-                                          <img className="image-center" src={Female} alt=""/>
-                                        </div>
-                                        <div className="person-name text-center">
-                                          Libby Dilger
-                                        </div>
-                                        <div className="person-title text-center">
-                                          Treasurer
-                                        </div>
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Male} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Rafael Muggeridge
+                                  </div>
+                                  <div className="person-title text-center">
+                                    Elder
+                                  </div>
+                                </div>
+
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Male} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Simon Boonstra
+                                  </div>
+                                  <div className="person-title text-center">
+                                    Elder
+                                  </div>
+                                </div>
+
+
+
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Male} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Derrick Clack
+                                  </div>
+                                  <div className="person-title text-center">
+                                    Elder
+                                  </div>
+                                </div>
+
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Male} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Nathaniel Richardson
+                                  </div>
+                                  <div className="person-title text-center">
+                                    Elder
+                                  </div>
+                                </div>
+
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Male} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    James Baker
+                                  </div>
+                                  <div className="person-title text-center">
+                                    Elder
+                                  </div>
+                                </div>
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Male} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    David Van Emmerik
                                     </div>
-
-                                    <div className="person-container col-md-3">
-                                        <div className="person-image">
-                                          <img className="image-center" src={Male} alt=""/>
-                                        </div>
-                                        <div className="person-name text-center">
-                                          Heinz Maarseveen
-                                        </div>
-                                        <div className="person-title text-center">
-
-                                        </div>
-                                    </div>
-
-                                    <div className="person-container col-md-3">
-                                        <div className="person-image">
-                                          <img className="image-center" src={Female} alt=""/>
-                                        </div>
-                                        <div className="person-name text-center">
-                                          Jane Maarseveen
-                                        </div>
-                                        <div className="person-title text-center">
-
-                                        </div>
-                                    </div>
-                                    <div className="clearfix"></div>
-                                    <div className="person-container col-md-3">
-                                        <div className="person-image">
-                                          <img className="image-center" src={Female} alt=""/>
-                                        </div>
-                                        <div className="person-name text-center">
-                                          Trish Smith
-                                        </div>
-                                        <div className="person-title text-center">
-
-                                        </div>
-                                    </div>
-
-                                    <div className="person-container col-md-3">
-                                        <div className="person-image">
-                                          <img className="image-center" src={Female} alt=""/>
-                                        </div>
-                                        <div className="person-name text-center">
-                                          Amy Glynn
-                                        </div>
-                                        <div className="person-title text-center">
-
-                                        </div>
+                                  <div className="person-title text-center">
+                                    Secretary
                                     </div>
                                 </div>
+
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Female} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Libby Dilger
+                                        </div>
+                                  <div className="person-title text-center">
+                                    Treasurer
+                                        </div>
+                                </div>
+
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Male} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Heinz Maarseveen
+                                        </div>
+                                  <div className="person-title text-center">
+
+                                  </div>
+                                </div>
+
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Female} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Jane Maarseveen
+                                        </div>
+                                  <div className="person-title text-center">
+
+                                  </div>
+                                </div>
+
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Female} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Trish Smith
+                                        </div>
+                                  <div className="person-title text-center">
+
+                                  </div>
+                                </div>
+                                <div className="clearfix"></div>
+                                <div className="person-container col-md-3">
+                                  <div className="person-image">
+                                    <img className="image-center" src={Female} alt="" />
+                                  </div>
+                                  <div className="person-name text-center">
+                                    Amy Glynn
+                                        </div>
+                                  <div className="person-title text-center">
+
+                                  </div>
+                                </div>
                               </div>
+                            </div>
 
 
                             <div className="row">
@@ -294,21 +378,21 @@ class OurPeople extends Component {
 
 
 
-                </div>
-                  </div>
-                </div>  </div>
-
-
-
-                        </div>
-
-
-
-
                       </div>
                     </div>
-                  </div>
-      </section>
+                  </div>  </div>
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </section >
     );
   }
 }

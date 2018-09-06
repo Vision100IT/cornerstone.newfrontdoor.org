@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 
 import validator from 'validator';
 
-import {postToWebform} from '../../utils/postToAPI';
-import PastorImg from '../../assets/Cam-and-Amanda-square.jpg';
+import { postToWebform } from '../../utils/postToAPI';
 
 class ContactUs extends Component {
-  constructor(){
+  constructor() {
     super();
-    this.state = {name: "",
-                  email: "",
-                  subject: "",
-                  message: "",
-                  formErrorMessage: ""
-                  }
+    this.state = {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+      formErrorMessage: ""
+    }
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -31,24 +31,20 @@ class ContactUs extends Component {
     e.preventDefault();
     var errorMessage = "";
 
-    if(validator.isEmpty(this.state.name))
-    {
+    if (validator.isEmpty(this.state.name)) {
       errorMessage += "Please enter your name.<br/>";
     }
-    if(validator.isEmpty(this.state.email) || !validator.isEmail(this.state.email))
-    {
+    if (validator.isEmpty(this.state.email) || !validator.isEmail(this.state.email)) {
       errorMessage += "Please enter a valid email address.<br/>";
     }
 
 
-    if(errorMessage !== "")
-    {
-      this.setState({formErrorMessage:errorMessage});
+    if (errorMessage !== "") {
+      this.setState({ formErrorMessage: errorMessage });
       return false;
     }
-    else
-    {
-      this.setState({formValid:true});
+    else {
+      this.setState({ formValid: true });
       console.log(this.state);
       /*handle posting to drupal and show success message*/
       //strip 4byte utf8 characters / emojis with .replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, '')
@@ -60,9 +56,9 @@ class ContactUs extends Component {
       form.append("submission[data][4][values][0]", this.state.subject.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
 
       var that = this;
-      postToWebform(form, function(data){
-        that.setState({submissionID:data.sid})
-        that.setState({formSubmitted:true})
+      postToWebform(form, function (data) {
+        that.setState({ submissionID: data.sid })
+        that.setState({ formSubmitted: true })
       })
     }
 
@@ -73,41 +69,38 @@ class ContactUs extends Component {
     var contactForm = (
       <section>
 
-      <div id="block-block-54" className="block block-block contact-column">
-            <h3 className="header-lightBlue">Contact Cornerstone</h3>
+        <div id="block-block-54" className="block block-block">
+          <form onSubmit={this.handleSubmit}><div><div className="form-item form-group form-type-textfield form-item-name">
+            <label htmlFor="edit-name">Your name <span className="form-required" title="This field is required.">*</span></label>
+            <input className="form-control form-text required" type="text" id="edit-name" name="name" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.name} />
+          </div>
+            <div className="form-item form-group form-type-textfield form-item-mail">
+              <label htmlFor="edit-mail">Your e-mail address <span className="form-required" title="This field is required.">*</span></label>
+              <input className="form-control form-text required" type="text" id="edit-mail" name="email" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.email} />
+            </div>
+            <div className="form-item form-group form-type-textfield form-item-mail">
+              <label htmlFor="edit-subject">Subject</label>
+              <input className="form-control form-text required" type="text" id="edit-subject" name="subject" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.subject} />
+            </div>
+            <div className="form-item form-group form-type-textarea form-item-message">
+              <label htmlFor="edit-message">Message</label>
+              <div className="form-textarea-wrapper"><textarea className="form-control form-textarea required" id="edit-message" name="message" cols="60" rows="5" onChange={this.handleChange.bind(this)} value={this.state.address}></textarea></div>
+            </div>
 
-      <br/>
-      <form onSubmit={this.handleSubmit}><div><div className="form-item form-group form-type-textfield form-item-name">
-        <label htmlFor="edit-name">Your name <span className="form-required" title="This field is required.">*</span></label>
-       <input className="form-control form-text required" type="text" id="edit-name" name="name" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.name} />
+            <div className="form-actions form-wrapper" id="edit-actions"><input className="btn btn-primary btn-sm form-submit" type="submit" id="edit-submit" name="submit" value="Send message" /></div></div>
+          </form>
         </div>
-        <div className="form-item form-group form-type-textfield form-item-mail">
-          <label htmlFor="edit-mail">Your e-mail address <span className="form-required" title="This field is required.">*</span></label>
-         <input className="form-control form-text required" type="text" id="edit-mail" name="email" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.email} />
-        </div>
-        <div className="form-item form-group form-type-textfield form-item-mail">
-          <label htmlFor="edit-subject">Subject</label>
-         <input className="form-control form-text required" type="text" id="edit-subject" name="subject" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.subject} />
-        </div>
-        <div className="form-item form-group form-type-textarea form-item-message">
-          <label htmlFor="edit-message">Message</label>
-         <div className="form-textarea-wrapper"><textarea className="form-control form-textarea required" id="edit-message" name="message" cols="60" rows="5" onChange={this.handleChange.bind(this)} value={this.state.address}></textarea></div>
-        </div>
-
-        <div className="form-actions form-wrapper" id="edit-actions"><input className="btn btn-primary btn-sm form-submit" type="submit" id="edit-submit" name="submit"  value="Send message" /></div></div>
-        </form>
-        </div>
-        <p><strong><span dangerouslySetInnerHTML={{__html: this.state.formErrorMessage}} /> </strong></p>
+        <p><strong><span dangerouslySetInnerHTML={{ __html: this.state.formErrorMessage }} /> </strong></p>
       </section>
     );
 
-  var messageSent = (
-    <div className="content block block-block">
-      <p>Thank you for contacting us! <br/><br/> We will get back to you as soon as possible.</p>
-      <br/>
-      {/*<a href="/"><input type="button" value="Return to the Home Page?" className="btn btn-primary"/></a>*/}
-    </div>
-  );
+    var messageSent = (
+      <div className="content block block-block">
+        <p>Thank you for contacting us! <br /><br /> We will get back to you as soon as possible.</p>
+        <br />
+        {/*<a href="/"><input type="button" value="Return to the Home Page?" className="btn btn-primary"/></a>*/}
+      </div>
+    );
 
     return (
       <section>
@@ -124,8 +117,6 @@ class ContactUs extends Component {
                 <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
                   <div className="breadcrumbs">
                     <a href="/">Home</a>
-                    <span className="delimiter">›</span>
-                    <span title="" className="nolink">Contact Us</span>
                   </div>
                 </div>
               </div>
@@ -134,60 +125,56 @@ class ContactUs extends Component {
         </div>
 
         <div id="content-region">
-    <div className="container">
-      <div className="row">
+          <div className="container">
+            <div className="row">
+              <div id="main-content-region" className="main-content col-xs-12 col-md-8 col-md-offset-2">
 
-        {/* If the Sidebar First has content then it will be rendered */}
-
-
-        {/* /Sidebar First region */}
-
-        {/* Rendering of the main content */}
-
-        <div id="main-content-region" className="main-content">
-
-          {/* Output the messages */}
+                <div id="block-block-54" class="block block-block">
 
 
+                  <div class="content">
+                    If you have any questions about Cornerstone Presbyterian Church, want to visit us or would like more information on how to get involved, please contact us - we would love to hear from you.  </div>
+                </div>
 
 
-  <div className="content">
-
-    <div className="col-md-4 col-xs-12">
-        <h3 className="header-lightBlue"><img src={PastorImg} alt="Cam and Amanda" width="273" height="273" /><br/>
-    Pastor</h3>
-    <strong>Campbell Markham</strong><br/>
-    pictured here with his wife&nbsp;<br/>
-    Amanda-Sue Markham<br/>
-    <b>E</b>: <a href="mailto:campbell.markham@gmail.com" target="_blank" rel="noopener noreferrer">campbell.markham@gmail.com</a>
-    </div>
-
-    <div className="col-md-4 col-xs-12">
-      <h2 className="header-lightBlue contact-header">Sunday Service</h2>
-      <p>We love Jesus, and we love to welcome visitors!</p>
-      <p>10:00am - 11:30am, followed by tea/coffee and fellowship.<br/> Alphacrucis College<br/> 45 Melville Street<br/> Hobart, Tasmania</p>
-      <p>Proceed through the main gate, the door is at the back of the carpark.</p>
-      <p>Our auditorium is upstairs. Please let one of our welcome team know if you would like assistance with the stairs. We have also installed a chairlift and we encourage its use.</p>
-      <h3 style={{color: "#126880"}}><strong>Sunday Parking</strong></h3>
-      <p>We have a small amount of onsite parking available, and&nbsp;the Red Cross have given permission for us to use their small carpark directly across the&nbsp;road from church. If these are full,&nbsp;the Hobart Central Carpark is 200m&nbsp;further along Melville St, across the Elizabeth Street <br/>intersection,&nbsp;with three hours of free parking on Sunday.</p>
-      <p><strong><em>Please be careful parking on the street, meters operate on Sunday.</em></strong></p>
-      <h3 style={{color: "#126880"}}><strong>Cornerstone Office</strong></h3>
-      <p>45 Melville Street<br/> Hobart, Tasmania</p>
-      <p>Our office is in the front section of the property. <br/>From the footpath, enter through the black door and then head up the stairs.</p>
-      <p><strong><em>Please contact the pastor to make an appointment.</em></strong></p>
-
-    </div>
-
-    <div className="col-md-4 col-xs-12">
-      {!this.state.formSubmitted ? contactForm : messageSent}
-</div>
-      </div>
-</div>
-        </div> {/* /main-content-region */}
+                <div id="block-block-45" class="block block-block">
 
 
-      </div> {/* /row */}
-    </div> {/* /container */}
+                  <div class="content">
+                    <div class="contacts">
+                      <div class="row">
+
+                        <div class="col-xs-12 col-sm-6">
+                          <h5>Address</h5>
+                          <p>Come visit us on Sundays @ 10am:</p>
+                          <p>Cornerstone Presbyterian Church<br />
+                            45 Melville St<br />
+                            Hobart, Tasmania</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 margin-top-xs-40">
+                          <h5>Contact Us</h5>
+                          <p><b>Facebook:</b> &nbsp;<a href="https://facebook.com/cornerstonehobart">/cornerstonehobart</a><br />
+                            <b>Email:</b>&nbsp;<a href="mailto:admin@cornerstonehobart.com">admin@cornerstonehobart.com</a></p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div className="content">
+                  {!this.state.formSubmitted ? contactForm : messageSent}
+
+                </div>
+              </div>
+            </div> {/* /main-content-region */}
+
+
+          </div> {/* /row */}
+        </div> {/* /container */}
 
       </section>
     );

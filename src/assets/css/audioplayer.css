@@ -103,7 +103,7 @@
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
-  height: 50px;
+  height: 40px;
   background-color: #333;
   width: 100%;  
   /* http://codepen.io/aralon/pen/NqGWXZ */ }
@@ -178,7 +178,7 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
-    height: 50px; }
+    height: 40px; }
   .audio_player .play_pause_button .play_pause_inner {
     height: 30px;
     width: 30px;

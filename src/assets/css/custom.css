@@ -53,13 +53,18 @@ h3{
   background-color: #65AAD5 !important;
 }
 
+.btn-primary{
+  border-color: #65AAD5;
+}
+
 .bg-color-theme {
   background-color: #65AAD5;
 }
 
-  .latestSermon-img {
+.latestSermon-img {
     width: 100% !important;
     height: 100% !important;
+    /*stretches image to fill space*/
   }
 
   .contact-column {
@@ -111,3 +116,8 @@ line-height: 24px;
   line-height: 50px;
   color: #d3d3d3;
 }
+
+/*Fix for overflowing text on gmaps*/
+.gm-style-iw {
+  width: auto !important;
+ }
