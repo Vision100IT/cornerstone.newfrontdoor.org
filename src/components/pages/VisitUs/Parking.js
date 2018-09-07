@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
-import ParkingImg from '../../../assets/ParkingMap.jpg';
+//import ParkingMap from '../../../assets/ParkingMap.jpg';
+import onSiteParking from '../../../assets/onSiteParking.jpg';
+import utasParking from '../../../assets/utasParking.jpg';
+import redCrossParking from '../../../assets/redCrossParking.jpg';
 
 class Parking extends Component {
 
@@ -37,36 +40,56 @@ class Parking extends Component {
                     <div className="node node-page clearfix">
                       <div className="content">
                         <div className="row">
-                          <div className="col-md-8 col-xs-12">
-                            <h3 className="header-lightBlue no-bottom-margin no-top-margin">On-Site Parking:</h3>
-                            <p>As we only have a small amount of on-site parking available, we ask that this be reserved for:</p>
-                            <ul>
-                              <li>Families with babies and toddlers.</li>
-                              <li>The elderly.</li>
-                              <li>Those with reduced mobility.</li>
-                            </ul>
+                          <div className="col-md-12 col-xs-12">
+                            <div className="row">
+                              <div className="col-xs-3">
+                                <img src={onSiteParking} style={{ paddingTop: "20px" }} alt=""></img>
+                              </div>
+                              <div className="col-xs-8">
+                                <h3 className="header-lightBlue no-bottom-margin">On-Site Parking:</h3>
+                                <p>As we only have a small amount of on-site parking available, we ask that this be reserved for:</p>
+                                <ul>
+                                  <li>Families with babies and toddlers.</li>
+                                  <li>The elderly.</li>
+                                  <li>Those with reduced mobility.</li>
+                                </ul>
+                              </div>
+                            </div>
 
-
-                            <h3 className="header-lightBlue no-bottom-margin no-top-margin">Red Cross Car Park:</h3>
-                            <p>
-                              The Red Cross have given permission for us to use their small carpark directly across the road from church.
+                            <div className="row">
+                              <div className="col-xs-3">
+                                <img src={redCrossParking} style={{ paddingTop: "20px" }} alt=""></img>
+                              </div>
+                              <div className="col-xs-8">
+                                <h3 className="header-lightBlue no-bottom-margin">Red Cross Car Park:</h3>
+                                <p>
+                                  The Red Cross have given permission for us to use their small carpark directly across the road from church.
                             </p>
+                              </div>
+                            </div>
 
-                            <h3 className="header-lightBlue no-bottom-margin no-top-margin">Hobart Central Car Park:</h3>
-                            <p>
-                              The Hobart Central Carpark is 200m further along Melville St, across the Elizabeth Street intersection, with three hours of free parking on Sunday.
-                            </p>
+                            <div className="row">
+                              <div className="col-xs-3">
+                                <img src={utasParking} style={{ paddingTop: "20px" }} alt=""></img>
+                              </div>
+                              <div className="col-xs-8">
+                                <h3 className="header-lightBlue no-bottom-margin">UTAS Building:</h3>
+                                <p>
+                                  Car parking is also available in the UTAS building. Proceed through the entry and up the ramp to the voucher parking area. Parking is free on Sundays.
+                                </p>
+                              </div>
+                            </div>
 
-                            <h3 className="header-lightBlue no-bottom-margin no-top-margin">Parking Meters:</h3>
+
+                            <h3 className="header-lightBlue no-bottom-margin">Parking Meters:</h3>
                             <p>
-                              1hr and 2hr Parking Meters are available in Melville St.<br />
-                              Meters accept coins only (no card facilities) and cost around $2 per hour.
+                              1hr and 2hr Parking Meters are available in Melville St. Parking Attendants patrol the area regularly and the Hobart City Council strictly enforces the time limits. The fine for exceeding the time limit is approximately $40, even if you have revisited the meter and paid for additional time.
                             </p>
                             <br />
                           </div>
-                          <div className="col-md-4 col-xs-12">
-                            <a href={ParkingImg} target="_blank" rel="noopener noreferrer"><img className="img-responsive img-full-width" src={ParkingImg} alt="Parking locations map" /> </a>
-                          </div>
+                          {/*<div className="col-md-4 col-xs-12">
+                            <a href={ParkingMap} target="_blank" rel="noopener noreferrer"><img className="img-responsive img-full-width" src={ParkingMap} alt="Parking locations map" /> </a>
+                           </div>*/}
                         </div>
                       </div>
 

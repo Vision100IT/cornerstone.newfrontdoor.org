@@ -197,7 +197,7 @@ class Navigation extends Component {
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/SystematicTheologyNotes" >Systematic Theology Notes</a>
+                                          <a href="/SystematicTheologyCourse" >Systematic Theology Course</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -214,9 +214,6 @@ class Navigation extends Component {
                                           <a href="/EngagedCouples" >For Engaged Couples</a>
                                         </li>
 
-                                        <li className="tb-megamenu-item level-2 mega">
-                                          <a href="http://campbellmarkham1970.blogspot.com" target="_blank" rel="noreferrer noopener">Pastor's Blog</a>
-                                        </li>
                                       </ul>
                                     </div>
                                   </div>

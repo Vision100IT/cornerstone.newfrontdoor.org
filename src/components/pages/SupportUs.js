@@ -35,26 +35,58 @@ class SupportUs extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-                          <p>This page is still under construction.</p>
+
+                          <h4 className="header-lightBlue no-margin-bottom">Prayer Support</h4>
+                          <p>Please see here for details of our regular weekly prayer meetings.</p>
+
+                          <h4 className="header-lightBlue no-margin-bottom">Financial Support</h4>
+                          <p>Tithes and Offerings may be placed in the Blue Box (located on the table near the top of the stairs at the rear of the auditorium) on Sunday morning.<br /><br />
+
+                            Tithes and Offerings may also be deposited directly into the following account:</p>
+                          <ul style={{ listStyle: "none" }}>
+                            <li>BSB: 037-001</li>
+                            <li>Account Number: 586161</li>
+                            <li>Account Name: Cornerstone Church</li>
+                          </ul>
+                          <h4 className="header-lightBlue no-margin-bottom">Anti-Discrimination Defence Fund</h4>
+                          <p>
+                            An Anti-Discrimination Defence Fund was established in 2017 in response to changes to the Anti-Discrimination Act.
+                        </p>
+
+                          <p>
+                            An anti-discrimination action was brought against Campbell Markham and David Gee in July 2017.
+                            Although this action has since been dropped, the elders of the church consider that this case has ramifications far beyond our own church.
+                            The freedom for all Australian Christians to communicate the gospel and Bible teaching to our community is under threat. We are committed to protecting this freedom, not just for Cornerstone but for the wider church.
+                            Indeed we believe that the freedom of speech and conscience of every Australian, whether Christian or not, is threatened by such anti-discrimination actions.
+                            We are therefore committed to fighting this action also for our wider community’s basic freedoms.
+                        </p>
+
+
+                          <p>Donations to the Anti-Discrimination Defence Fund may be deposited directly into the following account:</p>
+                          <ul style={{ listStyle: "none" }}>
+                            <li>BSB: 037-001</li>
+                            <li>Account Number: 719374</li>
+                            <li>Account Name: Cornerstone Church</li>
+                          </ul>
                         </div>
-
-
-
-                </div>
-                  </div>
-                </div>  </div>
-
-
-
-                        </div>
-
 
 
 
                       </div>
                     </div>
-                  </div>
-      </section>
+                  </div>  </div>
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </section >
     );
   }
 }

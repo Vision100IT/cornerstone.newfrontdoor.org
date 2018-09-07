@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import quarryYouthLogo from '../../../assets/quarryYouthLogo.png';
+
 class QuarryYouth extends Component {
   render() {
     return (
@@ -34,9 +36,11 @@ class QuarryYouth extends Component {
                     <div className="node node-page clearfix">
                       <div className="content">
                         <div className="row">
-                          <div className="col-xs-12">
+
+                          <div className="col-xs-12 col-md-7">
                             <h3 className="header-lightBlue">Quarry Youth</h3>
-                            <p><strong>A Youth Group for students in Years 6-12</strong><br /><br />
+
+                            <p><strong>A Youth Group for students in Grade 6-12</strong><br /><br />
 
                               <strong>Time:</strong><br />
                               Friday Night @ 7-9pm<br />
@@ -54,7 +58,11 @@ class QuarryYouth extends Component {
 
                             </p>
                           </div>
+                          <div className="col-xs-12 col-md-4 text-center">
+                            <img src={quarryYouthLogo} alt="" />
+                          </div>
                         </div>
+
 
 
 
@@ -72,7 +80,7 @@ class QuarryYouth extends Component {
             </div>
           </div>
         </div>
-      </section>
+      </section >
     );
   }
 }

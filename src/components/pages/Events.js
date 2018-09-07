@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import WWAImg from '../../assets/WWAImg.jpg'
+
 class Events extends Component {
 
   render() {
@@ -35,25 +37,29 @@ class Events extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-                          <p>This page is still under construction.</p>
+                          <h4 className="header-lightBlue">Current Events</h4>
+                          <div className="col-md-4" style={{ marginBottom: "50px" }}>
+                            <a href="https://www.facebook.com/WWATasmania/" target="_blank" rel="noreferrer noopener"><img src={WWAImg} alt=""></img></a><br />
+                            <strong>Women’s Weekend Away</strong>
+                          </div>
                         </div>
-
-
-
-                </div>
-                  </div>
-                </div>  </div>
-
-
-
-                        </div>
-
 
 
 
                       </div>
                     </div>
-                  </div>
+                  </div>  </div>
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
       </section>
     );
   }

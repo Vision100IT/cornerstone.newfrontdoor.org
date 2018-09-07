@@ -190,91 +190,9 @@ class OurPeople extends Component {
                               <div className="col-md-12">
                                 <h2 className="header-lightBlue text-center">Board of Management</h2>
                                 <p className="text-center"><strong>Contact:  <a href="mailto:bom@cornerstonehobart.com" >bom@cornerstonehobart.com</a></strong></p>
-                                <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt="" />
-                                  </div>
-                                  <div className="person-name text-center">
-                                    Campbell Markham
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Pastor
-                                  </div>
-                                </div>
 
-                                <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt="" />
-                                  </div>
-                                  <div className="person-name text-center">
-                                    Des Richardson
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Session Clerk
-                                  </div>
-                                </div>
+                                <p className="text-center"><strong>Cornerstone Elders are ex officio members of the Board of Management</strong></p>
 
-                                <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt="" />
-                                  </div>
-                                  <div className="person-name text-center">
-                                    Rafael Muggeridge
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Elder
-                                  </div>
-                                </div>
-
-                                <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt="" />
-                                  </div>
-                                  <div className="person-name text-center">
-                                    Simon Boonstra
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Elder
-                                  </div>
-                                </div>
-
-
-
-                                <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt="" />
-                                  </div>
-                                  <div className="person-name text-center">
-                                    Derrick Clack
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Elder
-                                  </div>
-                                </div>
-
-                                <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt="" />
-                                  </div>
-                                  <div className="person-name text-center">
-                                    Nathaniel Richardson
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Elder
-                                  </div>
-                                </div>
-
-                                <div className="person-container col-md-3">
-                                  <div className="person-image">
-                                    <img className="image-center" src={Male} alt="" />
-                                  </div>
-                                  <div className="person-name text-center">
-                                    James Baker
-                                  </div>
-                                  <div className="person-title text-center">
-                                    Elder
-                                  </div>
-                                </div>
                                 <div className="person-container col-md-3">
                                   <div className="person-image">
                                     <img className="image-center" src={Male} alt="" />
@@ -322,7 +240,7 @@ class OurPeople extends Component {
 
                                   </div>
                                 </div>
-
+                                <div className="clearfix"></div>
                                 <div className="person-container col-md-3">
                                   <div className="person-image">
                                     <img className="image-center" src={Female} alt="" />
@@ -334,7 +252,6 @@ class OurPeople extends Component {
 
                                   </div>
                                 </div>
-                                <div className="clearfix"></div>
                                 <div className="person-container col-md-3">
                                   <div className="person-image">
                                     <img className="image-center" src={Female} alt="" />

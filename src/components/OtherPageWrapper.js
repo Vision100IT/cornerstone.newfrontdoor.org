@@ -17,6 +17,8 @@ import EngagedCouples from './pages/Resources/EngagedCouples';
 import AllSermons from './pages/Resources/AllSermons';
 import Sermons from './pages/Resources/Sermons';
 import SermonPage from './pages/Resources/SermonPage';
+import SystematicTheologyCourse from './pages/Resources/SystematicTheologyCourse';
+import SystematicTheologyOverview from './pages/Resources/SystematicTheologyOverview';
 import SystematicTheologyNotes from './pages/Resources/SystematicTheologyNotes';
 import WestminsterConfession from './pages/Resources/WestminsterConfession';
 
@@ -35,7 +37,7 @@ class OtherPageWrapper extends Component {
     return (
       <section>
         <Switch>
-          <Route exact path="/GrowthGroups" component={GrowthGroups}/>
+          <Route exact path="/GrowthGroups" component={GrowthGroups} />
           <Route exact path="/MensMinistry" component={MensMinistry} />
           <Route exact path="/QuarryYouth" component={QuarryYouth} />
           <Route exact path="/StreetEvangelism" component={StreetEvangelism} />
@@ -48,6 +50,8 @@ class OtherPageWrapper extends Component {
           <Route exact path="/Sermons" component={Sermons} />
           <Route exact path="/node/:nid" component={SermonPage} />
           <Route exact path="/node/:nid/:title" component={SermonPage} />
+          <Route exact path="/SystematicTheologyCourse" component={SystematicTheologyCourse} />
+          <Route exact path="/SystematicTheologyOverview" component={SystematicTheologyOverview} />
           <Route exact path="/SystematicTheologyNotes" component={SystematicTheologyNotes} />
           <Route exact path="/WestminsterConfession" component={WestminsterConfession} />
 

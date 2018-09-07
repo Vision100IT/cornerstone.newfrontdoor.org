@@ -1,7 +1,11 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 
-class OtherPageContent extends Component {
+import overviewImg from '../../../assets/systematicTheologyOverview.jpg'
+import notes from '../../../assets/notes.png'
+import youtube from '../../../assets/youtube.jpg'
+
+class SystematicTheologyCourse extends Component {
+
   render() {
     return (
       <section>
@@ -10,7 +14,7 @@ class OtherPageContent extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Page Title</h1>
+                  <h1>Systematic Theology Course</h1>
                 </div>
               </div>
 
@@ -19,7 +23,7 @@ class OtherPageContent extends Component {
                   <div className="breadcrumbs">
                     <a href="/">Home</a>
                     <span className="delimiter">›</span>
-                    <span title="" className="nolink">Page Category</span>
+                    <span title="" className="nolink">Resources</span>
                   </div>
                 </div>
               </div>
@@ -34,9 +38,19 @@ class OtherPageContent extends Component {
                   <div id="block-system-main" className="block block-system">
                     <div className="content">
                       <div className="node node-page clearfix">
-                        <div className="content">
+                        <div className="content text-center">
+                          <div className="col-md-4" style={{ marginBottom: "50px" }}>
+                            <a href="/SystematicTheologyOverview"><img src={overviewImg} alt=""></img></a>
+                          </div>
+                          <div className="col-md-4" style={{ marginBottom: "50px" }}>
+                            <a href="https://www.youtube.com/channel/UCF-sudt_zfl2Ni8eR9ayVHQ" target="_blank" rel="noreferrer noopener"><img src={youtube} alt=""></img></a><br />
+                            Find recordings of our past lessons on Youtube.
+                          </div>
+                          <div className="col-md-4" style={{ marginBottom: "50px" }}>
+                            <a href="/SystematicTheologyNotes"><img src={notes} alt=""></img></a>
+                          </div>
 
-                          Sorry this page is still under construction, or does not exist.
+
                         </div>
 
 
@@ -55,9 +69,9 @@ class OtherPageContent extends Component {
             </div>
           </div>
         </div>
-      </section >
+      </section>
     );
   }
 }
 
-export default OtherPageContent;
+export default SystematicTheologyCourse;
