@@ -270,7 +270,6 @@ class OurPeople extends Component {
                             <div className="row">
                               <div className="col-md-6">
                                 <h3 className="header-lightBlue text-center">Ministry Team</h3>
-                                <h4><strong>Campbell Markham</strong>, Pastor</h4>
                                 <h4><strong>Joe Cox</strong>, Trainee to the Pastor</h4>
                                 <h4><strong>David Gee</strong>, Evangelist</h4>
                                 <h4><strong>Cristiane Baker</strong>, Women’s Worker</h4>
@@ -284,8 +283,8 @@ class OurPeople extends Component {
                                 <h3 className="header-lightBlue text-center">Where are our ministry students now?</h3>
                                 <h4><strong>Paul Hutchens</strong>, Pastor, <a href="https://soulchurch.org.au/">Soul Church</a>.</h4>
                                 <h4><strong>R&apos;jaye Rojas</strong>, Pastor, <a href="https://www.mspc.org.au/">Mount Stuart Presbyterian</a>.</h4>
-                                <h4><strong>Andrew Hutchens</strong>, Graduate, Christ College.</h4>
-                                <h4><strong>Michael Riske</strong>, current student, Christ College.</h4>
+                                <h4><strong>Andrew Hutchens</strong>, Graduate, <a href="https://www.christcollegehobart.com/">Christ College</a>.</h4>
+                                <h4><strong>Michael Riske</strong>, current student, <a href="https://www.christcollegehobart.com/">Christ College</a>.</h4>
                               </div>
                             </div>
 

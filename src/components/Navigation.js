@@ -131,17 +131,17 @@ class Navigation extends Component {
                                           <a href="/GrowthGroups" >Growth Groups</a>
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/MensMinistry" >Men&apos;s Ministry</a>
+                                          <a href="/MensMinistry" >Men's Ministry</a>
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/WomensMinistry" >Women&apos;s Ministry</a>
+                                          <a href="/WomensMinistry" >Women's Ministry</a>
                                         </li>
                                       </ul>
                                     </div>
                                   </div>
 
-                                  <div className="tb-megamenu-column span3  mega-col-nav">
+                                  <div className="tb-megamenu-column span4  mega-col-nav">
                                     <div className="tb-megamenu-column-inner mega-inner clearfix">
                                       <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
 
@@ -155,6 +155,10 @@ class Navigation extends Component {
 
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/StreetEvangelism" >Street Evangelism</a>
+                                        </li>
+
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/PWWA" >Presbyterian Women's Weekend Away</a>
                                         </li>
                                       </ul>
                                     </div>

@@ -122,3 +122,19 @@ line-height: 24px;
 .gm-style-iw {
   width: auto !important;
  }
+
+ /* Size of images on our people*/
+ .person-image>img {
+   width: auto;
+   height: 160px;
+ }
+
+ .t2Women-img{
+width: auto;
+height: 200px;
+ }
+
+ .quarry-logo{
+  width: auto;
+  height: 300px;
+   }

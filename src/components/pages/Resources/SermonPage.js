@@ -4,7 +4,7 @@ import _ from 'lodash';
 import AudioPlayer from 'react-responsive-audio-player';
 import { decode } from 'he'
 
-import { getFromDrupalAPI, searchDrupalSermons } from '../../../utils/fetchJSON';
+import { getFromDrupalAPI } from '../../../utils/fetchJSON';
 
 import '../../../assets/css/audioplayer.css'
 
@@ -44,7 +44,7 @@ class SermonPage extends Component {
                 <div className="field field-name-field-preacher field-type-text field-label-above">
                   <div className="field-label">Preacher:&nbsp;</div>
                   <div className="field-items">
-                    <div className="field-item even">{decode(sermon.preacher)}</div>
+                    <div className="field-item even">{sermon.preacher ? decode(sermon.preacher) : ""}</div>
                   </div>
                 </div><br />
                 <div className="field field-name-field-sermon field-type-file field-label-above">
@@ -70,7 +70,7 @@ class SermonPage extends Component {
               <br /><div className="field field-name-field-bible-book-s- field-type-taxonomy-term-reference field-label-above">
                 <div className="field-label">Bible Passage(s):&nbsp;</div>
                 <div className="field-items">
-                  <div className="field-item even">{decode(sermon.text)}</div>
+                  <div className="field-item even">{sermon.text ? decode(sermon.text) : ""}</div>
                 </div></div>
             </section>
 
@@ -113,56 +113,21 @@ class SermonPage extends Component {
         <div id="content-region">
           <div className="container">
             <div className="row">
-
-              {/* If the Sidebar First has content then it will be rendered */}
-
-
-              {/* /Sidebar First region */}
-
-              {/* Rendering of the main content */}
-
               <div id="main-content-region" className="main-content col-xs-12">
-
-                {/* Output the messages */}
-
-                {/* Rendering the content */}
                 <div className="region region-content">
-
                   <div id="block-system-main" className="block block-system">
-
-
                     <div className="content">
                       <div className="node node-audio node-promoted clearfix">
 
-
-
-
                         {sermonDetails}
 
-
-
-
-
                       </div>
-
-
-
                     </div>
-                  </div>  </div>
-
-                {/* Printing the feed icons */}
-
-              </div> {/* /main-content-region */}
-
-              {/* /main content */}
-
-              {/* If the Sidebar Second has content then it will be rendered */}
-
-
-              {/* /Sidebar Second region */}
-
-            </div> {/* /row */}
-          </div> {/* /container */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     );

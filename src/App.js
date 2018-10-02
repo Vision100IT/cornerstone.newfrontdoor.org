@@ -29,6 +29,7 @@ import './assets/css/fontyourface/font.css';
 import './assets/nestor/css/color/blue.css';
 
 import './assets/css/custom.css';
+import './assets/css/events.css';
 
 class App extends Component {
   render() {

@@ -31,6 +31,7 @@ import WorshipServices from './pages/VisitUs/WorshipServices';
 import ContactUs from './pages/ContactUs';
 import Events from './pages/Events';
 import SupportUs from './pages/SupportUs';
+import WomensWeekendAway from './pages/GetInvolved/WomensWeekendAway';
 
 class OtherPageWrapper extends Component {
   render() {
@@ -42,6 +43,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/QuarryYouth" component={QuarryYouth} />
           <Route exact path="/StreetEvangelism" component={StreetEvangelism} />
           <Route exact path="/WomensMinistry" component={WomensMinistry} />
+          <Route exact path="/PWWA" component={WomensWeekendAway} />
           {/*<Route exact path="/YoungAdults" component={YoungAdults} />*/}
 
           <Route exact path="/Cornerpost" component={Cornerpost} />

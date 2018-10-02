@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import LatestSermon from './LatestSermon';
 import WhereToFindUs from './WhereToFindUs';
-//import UpcomingEvents from './UpcomingEvents';
+import UpcomingEvents from './UpcomingEvents';
 
 class HomePageContent extends Component {
   render() {
@@ -13,7 +13,7 @@ class HomePageContent extends Component {
             <div className="row">
               <LatestSermon />
               <WhereToFindUs />
-              {/*<UpcomingEvents />*/}
+              <UpcomingEvents />
             </div>
           </div>
         </div>
