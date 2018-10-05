@@ -30,10 +30,21 @@ class SermonPage extends Component {
     if (this.state.sermon) {
       if (this.state.sermon.length > 0) {
         var sermonDetails = _.map(this.state.sermon, (sermon) => {
+          var sermonImg;
+          if (sermon.sermon_img || sermon.sermon_full_img) {
+            sermonImg = sermon.sermon_full_img ? sermon.sermon_full_img : sermon.sermon_img;
+          }
+          else {
+            sermonImg = sermon.series_full_img ? sermon.series_full_img : sermon.series_img
+          }
           sermonTitle = sermon.node_title;
           return (
             <section key={_.uniqueId()}>
               <div className="content">
+                <div>
+                  <img className="img-responsive sermon-page-image" src={sermonImg} />
+                </div>
+                <br />
                 <div className="field field-name-field-date-preached field-type-datetime field-label-above">
                   <div className="field-label">Date Preached:&nbsp;</div><div className="field-items">
                     <div className="field-item even">
@@ -64,7 +75,7 @@ class SermonPage extends Component {
               <br /><div className="field field-name-field-sermon-series field-type-node-reference field-label-above">
                 <div className="field-label">Sermon Series:&nbsp;</div>
                 <div className="field-items">
-                  <div className="field-item even">{decode(sermon.sermonseries)}</div>
+                  <div className="field-item even">{sermon.sermonseries ? <a href={'/series/' + sermon.series_id}>{decode(sermon.sermonseries)}</a> : ""}</div>
                 </div>
               </div>
               <br /><div className="field field-name-field-bible-book-s- field-type-taxonomy-term-reference field-label-above">

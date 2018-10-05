@@ -138,3 +138,11 @@ height: 200px;
   width: auto;
   height: 300px;
    }
+
+   .btn-link{
+    color: #1493c9;
+   }
+
+   .sermon-page-image, .sermon-series-page-image{
+     max-height: 400px !important;
+   }

@@ -38,7 +38,7 @@ class SystematicTheologyNotes extends Component {
 
                           This page is still under construction. <br /><br />
 
-                          Until they are available here notes can be found linked to in the Description field of each of the Lecture videos on <a href="https://www.youtube.com/channel/UCF-sudt_zfl2Ni8eR9ayVHQ" rel="noopener noreferrer">YouTube</a>
+                          Until they are available here, notes can be found linked to the Description field of each of the Lecture videos on <a href="https://www.youtube.com/channel/UCF-sudt_zfl2Ni8eR9ayVHQ" rel="noopener noreferrer">YouTube</a>
 
 
                         </div>

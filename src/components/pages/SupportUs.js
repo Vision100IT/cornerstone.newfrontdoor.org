@@ -47,6 +47,7 @@ class SupportUs extends Component {
                             <li>BSB: 037-001</li>
                             <li>Account Number: 586161</li>
                             <li>Account Name: Cornerstone Church</li>
+                            <li>Reference: Your Name (this may need to be abbreviated if your name is too long) and what the payment is for. E.g. J.Bloggs-Offering</li>
                           </ul>
                           <h4 className="header-lightBlue no-margin-bottom">Anti-Discrimination Defence Fund</h4>
                           <p>
@@ -67,6 +68,7 @@ class SupportUs extends Component {
                             <li>BSB: 037-001</li>
                             <li>Account Number: 719374</li>
                             <li>Account Name: Cornerstone Church</li>
+                            <li>Reference: Your Name (this may need to be abbreviated if your name is too long) E.g. J.Bloggs</li>
                           </ul>
                         </div>
 

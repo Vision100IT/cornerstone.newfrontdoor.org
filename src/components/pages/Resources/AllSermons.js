@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 
 import _ from 'lodash'
-import {decode} from 'he'
-import {getFromDrupalAPI, searchDrupalSermons} from '../../../utils/fetchJSON';
+import { decode } from 'he'
+import { getFromDrupalAPI, searchDrupalSermons } from '../../../utils/fetchJSON';
 import $ from 'jquery';
 
 import '../../../assets/css/allsermonspage/css_ctvtxTMYPLy1gdv3lVTneGtWHVwWHoP476bpbqSql9o.css';
@@ -17,81 +17,80 @@ import '../../../assets/css/allsermonspage/css_YLWdW6wV7Ski57_eSxMdUCyO9zKEBlsYD
 const PER_PAGE = 25;
 
 class Sermons extends Component {
-  constructor(){
-      super();
-      this.state = {sermons: null,
-                    page: 0,
-                    sermonSeries: null,
-                    viewingRefinedList: false,
-                    sermonPages : null,
-                    totalSermons: null,
-                    searchQuery : "",
-                    searchType: "title"
-                  }
+  constructor() {
+    super();
+    this.state = {
+      sermons: null,
+      page: 0,
+      sermonSeries: null,
+      viewingRefinedList: false,
+      sermonPages: null,
+      totalSermons: null,
+      searchQuery: "",
+      searchType: "title"
     }
+  }
 
-    componentWillMount(){
-      var that = this;
+  componentWillMount() {
+    var that = this;
 
-      getFromDrupalAPI('all_sermon_series_api', function(data){
-        that.setState({sermonSeries: data});
-      });
+    getFromDrupalAPI('all_sermon_series_api', function (data) {
+      that.setState({ sermonSeries: data });
+    });
 
-      getFromDrupalAPI('all_sermons_api?limit='+PER_PAGE, function(data){
-        that.setState({sermons: data});
-      });
+    getFromDrupalAPI('all_sermons_api?limit=' + PER_PAGE, function (data) {
+      that.setState({ sermons: data });
+    });
 
-      //get count of total sermons for pages
-      getFromDrupalAPI('all_sermons_api', function(data){
-        var pages = Math.floor(data.length/PER_PAGE) +1;
-        that.setState({totalSermons: data.length, sermonPages: pages});
-      });
-    }
+    //get count of total sermons for pages
+    getFromDrupalAPI('all_sermons_api', function (data) {
+      var pages = Math.floor(data.length / PER_PAGE) + 1;
+      that.setState({ totalSermons: data.length, sermonPages: pages });
+    });
+  }
 
   loadNextSermons(page) {
     var that = this;
-    var offset = (page+1)*PER_PAGE
-    this.setState({sermons: null, page: page+1})
-    getFromDrupalAPI('all_sermons_api?offset='+offset+'&limit='+PER_PAGE, function(data){
-      that.setState({sermons: data, viewingRefinedList: false})
+    var offset = (page + 1) * PER_PAGE
+    this.setState({ sermons: null, page: page + 1 })
+    getFromDrupalAPI('all_sermons_api?offset=' + offset + '&limit=' + PER_PAGE, function (data) {
+      that.setState({ sermons: data, viewingRefinedList: false })
     });
 
   }
 
   loadPreviousSermons(page) {
     var that = this;
-    var offset = (page-1)*PER_PAGE
+    var offset = (page - 1) * PER_PAGE
 
-    if(this.state.viewingRefinedList === true)
-    {
+    if (this.state.viewingRefinedList === true) {
       $("#sermonSelect").val("");
-      this.setState({searchQuery: "", searchType: "title"});
+      this.setState({ searchQuery: "", searchType: "title" });
     }
 
-    this.setState({sermons: null, page: page-1})
-    getFromDrupalAPI('all_sermons_api?offset='+offset+'&limit='+PER_PAGE, function(data){
-      that.setState({sermons: data, viewingRefinedList: false})
+    this.setState({ sermons: null, page: page - 1 })
+    getFromDrupalAPI('all_sermons_api?offset=' + offset + '&limit=' + PER_PAGE, function (data) {
+      that.setState({ sermons: data, viewingRefinedList: false })
     });
 
 
   }
 
-  loadSermonSeries(sermonSeriesNid){
+  loadSermonSeries(sermonSeriesNid) {
     var that = this;
-    if($("#sermonSelect").val() === "" && this.state.viewingRefinedList === true){
+    if ($("#sermonSelect").val() === "" && this.state.viewingRefinedList === true) {
       that.loadPreviousSermons(1);
     }
-    getFromDrupalAPI('all_sermons_api?filters[sermonSeries]='+sermonSeriesNid, function(data){
-      that.setState({sermons: data, viewingRefinedList: true})
+    getFromDrupalAPI('all_sermons_api?filters[sermonSeries]=' + sermonSeriesNid, function (data) {
+      that.setState({ sermons: data, viewingRefinedList: true })
     });
   }
 
-  searchSermons(e){
+  searchSermons(e) {
     var that = this;
-    if(this.state.searchQuery && this.state.searchQuery !== "")
-    {
-      searchDrupalSermons(this.state.searchQuery, this.state.searchType, function(data){
-        that.setState({sermons: data, viewingRefinedList: true})
+    if (this.state.searchQuery && this.state.searchQuery !== "") {
+      searchDrupalSermons(this.state.searchQuery, this.state.searchType, function (data) {
+        that.setState({ sermons: data, viewingRefinedList: true })
       });
     }
 
@@ -99,28 +98,26 @@ class Sermons extends Component {
   }
 
   updateSearchQuery(event) {
-    this.setState({searchQuery: event.target.value});
+    this.setState({ searchQuery: event.target.value });
   }
 
   updateSearchType(event) {
-    this.setState({searchType: event.target.value});
+    this.setState({ searchType: event.target.value });
   }
 
 
   render() {
-    if(!this.state.sermons)
-    {
+    if (!this.state.sermons) {
       var sermons = <tr><td>Loading, please wait.</td></tr>;
     }
-    else
-    {
-      var tdPadding = {padding: "0px 5px 0px 5px"};
+    else {
+      var tdPadding = { padding: "0px 5px 0px 5px" };
       var sermons = _.map(this.state.sermons, (sermon) => {
         return (
           <tr key={_.uniqueId()} className="odd even">
-            { sermon.node_title ? <td style={tdPadding} dangerouslySetInnerHTML={{__html: sermon.node_url}} /> : <td style={tdPadding}></td> }
-            <td style={tdPadding}>{ sermon.sermonseries ?  decode(sermon.sermonseries) : '' }</td>
-            <td style={tdPadding}>{ sermon.text ?  decode(sermon.text): '' }</td>
+            {sermon.node_title ? <td style={tdPadding} dangerouslySetInnerHTML={{ __html: sermon.node_url }} /> : <td style={tdPadding}></td>}
+            {sermon.sermonseries ? <td style={tdPadding}><a href={'/series/' + sermon.series_id}>{decode(sermon.sermonseries)}</a></td> : <td style={tdPadding}></td>}
+            <td style={tdPadding}>{sermon.text ? decode(sermon.text) : ''}</td>
             <td style={tdPadding}>{decode(sermon.preacher)}</td>
             <td style={tdPadding}>{sermon.datepreached}</td>
             <td style={tdPadding}><a href={sermon.url} target="_blank"> [Download]</a></td>
@@ -130,25 +127,21 @@ class Sermons extends Component {
     }
 
     let prevSermonsLink = null;
-    if (this.state.page !== 0 && this.state.viewingRefinedList === false)
-    {
+    if (this.state.page !== 0 && this.state.viewingRefinedList === false) {
       prevSermonsLink = <a href="javascript:void(0);" onClick={() => this.loadPreviousSermons(this.state.page)}>Previous Page</a>
     }
 
-    if(this.state.viewingRefinedList === true)
-    {
+    if (this.state.viewingRefinedList === true) {
       prevSermonsLink = <a href="javascript:void(0);" onClick={() => this.loadPreviousSermons(1)}>Return to All Sermons</a>
     }
 
     let nextSermonsLink = null;
-    if (this.state.page !== this.state.sermonPages-1 && this.state.viewingRefinedList === false)
-    {
-       nextSermonsLink = <a href="javascript:void(0);" onClick={() => this.loadNextSermons(this.state.page)}>Next Page</a>
+    if (this.state.page !== this.state.sermonPages - 1 && this.state.viewingRefinedList === false) {
+      nextSermonsLink = <a href="javascript:void(0);" onClick={() => this.loadNextSermons(this.state.page)}>Next Page</a>
     }
 
     var sermonSeriesOptions;
-    if(this.state.sermonSeries)
-    {
+    if (this.state.sermonSeries) {
       sermonSeriesOptions = _.map(this.state.sermonSeries, (sermonSeries) => {
         return (
           <option key={sermonSeries.nid} value={sermonSeries.nid}>{decode(sermonSeries.node_title)}</option>
@@ -157,9 +150,8 @@ class Sermons extends Component {
     }
 
     var showPageNumber;
-    if(this.state.viewingRefinedList === false && this.state.sermonPages)
-    {
-      showPageNumber = <div className="text-center">Page {this.state.page+1} of {this.state.sermonPages}</div>
+    if (this.state.viewingRefinedList === false && this.state.sermonPages) {
+      showPageNumber = <div className="text-center">Page {this.state.page + 1} of {this.state.sermonPages}</div>
     }
 
 
@@ -188,75 +180,75 @@ class Sermons extends Component {
         </div>
 
         <div id="content-region">
-    <div className="container">
-      <div className="row">
+          <div className="container">
+            <div className="row">
 
-        <div id="main-content-region" className="main-content col-xs-12">
+              <div id="main-content-region" className="main-content col-xs-12">
 
-            <div className="region region-content">
+                <div className="region region-content">
 
 
-  <div className="content">
-    <div className="view view-All-Sermons view-id-All_Sermons view-display-id-page view-dom-id-8cf9a4aecfefa92964ac5f3e5a33e04e jquery-once-1-processed">
-            <div className="view-header">
-      Please enter as many search terms as you like in the box.  This will search across all of the fields shown in the table.  For  example, to find all sermons preached by John Smith, enter "John Smith" in the box.    </div>
-      <div className="col-md-3">View Sermon Series:<select className="form-control" id="sermonSelect" onChange={event => this.loadSermonSeries(event.target.value)}>
-            <option value="">---</option>
-            {sermonSeriesOptions}
-            </select></div>
+                  <div className="content">
+                    <div className="view view-All-Sermons view-id-All_Sermons view-display-id-page view-dom-id-8cf9a4aecfefa92964ac5f3e5a33e04e jquery-once-1-processed">
+                      <div className="view-header">
+                        Please enter as many search terms as you like in the box.  This will search across all of the fields shown in the table.  For  example, to find all sermons preached by John Smith, enter "John Smith" in the box.    </div>
+                      <div className="col-md-3">View Sermon Series:<select className="form-control" id="sermonSelect" onChange={event => this.loadSermonSeries(event.target.value)}>
+                        <option value="">---</option>
+                        {sermonSeriesOptions}
+                      </select></div>
 
-              <div className="form-group">
-              <form onSubmit={(e) => this.searchSermons(e)}>
-              <div className="col-md-4">
-                Search: <input type="text" className="form-control" id="searchQuery" value={this.state.searchQuery} onChange={(e) => this.updateSearchQuery(e)}/>
-              </div>
-              <div className="col-md-3">
-                In:
+                      <div className="form-group">
+                        <form onSubmit={(e) => this.searchSermons(e)}>
+                          <div className="col-md-4">
+                            Search: <input type="text" className="form-control" id="searchQuery" value={this.state.searchQuery} onChange={(e) => this.updateSearchQuery(e)} />
+                          </div>
+                          <div className="col-md-3">
+                            In:
                 <select className="form-control" id="searchType" value={this.state.searchType} onChange={(e) => this.updateSearchType(e)}>
-                  <option value="title">Title</option>
-                  <option value="preacher">Preacher</option>
-                  <option value="passage">Bible Passage</option>
-                </select>
-                </div>
-                <br/>
-                <input type="submit" value="Search" className="btn btn-primary sermon-search-button"/>
-              </form>
-            </div>
+                              <option value="title">Title</option>
+                              <option value="preacher">Preacher</option>
+                              <option value="passage">Bible Passage</option>
+                            </select>
+                          </div>
+                          <br />
+                          <input type="submit" value="Search" className="btn btn-primary sermon-search-button" />
+                        </form>
+                      </div>
 
 
 
-      <div className="view-content">
-      <table className="views-table cols-6">
-         <thead>
-          <tr>
-            <th></th>
-            <th>Sermon Series</th>
-            <th>Bible Passage(s)</th>
-            <th>Preacher</th>
-            <th>Date Preached</th>
-            <th></th>
-          </tr>
-    </thead>
-    <tbody>
-      {sermons}
-      </tbody>
-</table>
-          <br />
-          <span style={{float: "left"}}>{prevSermonsLink}</span>
-          <span style={{float: "right"}}>{nextSermonsLink}</span>
-          {showPageNumber}
-    </div>
+                      <div className="view-content">
+                        <table className="views-table cols-6">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>Sermon Series</th>
+                              <th>Bible Passage(s)</th>
+                              <th>Preacher</th>
+                              <th>Date Preached</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {sermons}
+                          </tbody>
+                        </table>
+                        <br />
+                        <span style={{ float: "left" }}>{prevSermonsLink}</span>
+                        <span style={{ float: "right" }}>{nextSermonsLink}</span>
+                        {showPageNumber}
+                      </div>
 
 
-</div>  </div> </div>
+                    </div>  </div> </div>
 
 
+              </div>
+
+
+            </div> {/* /row */}
+          </div> {/* /container */}
         </div>
-
-
-      </div> {/* /row */}
-    </div> {/* /container */}
-  </div>
       </section>
     );
   }

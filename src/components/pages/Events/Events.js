@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import WWAImg from '../../assets/WWAImg.jpg'
-import overviewImg from '../../assets/systematicTheologyOverview.jpg'
-import entranceImg from '../../assets/Entrance.jpg';
+import WWAImg from '../../../assets/WWAImg.jpg'
+import WWFImg from '../../../assets/WWFImg.jpg'
+import overviewImg from '../../../assets/systematicTheologyOverview.jpg'
+import entranceImg from '../../../assets/Entrance.jpg';
 
 class Events extends Component {
 
@@ -41,20 +42,25 @@ class Events extends Component {
                         <div className="content">
                           <h4 className="header-lightBlue">Current Events</h4>
                           <div className="row">
-                            <div className="col-md-2 text-center">
-                              <a href="/WorshipServices" target="_blank" rel="noreferrer noopener"><img src={entranceImg} width="150px" height="139px" alt=""></img></a><br />
+                            <div className="col-md-2 col-xs-6 text-center">
+                              <a href="/WorshipServices"><img src={entranceImg} width="150px" height="139px" alt=""></img></a><br />
                               <strong>Sunday Services</strong>
                             </div>
-                            <div className="col-md-2 text-center">
-                              <a href="/SystematicTheologyOverview" target="_blank" rel="noreferrer noopener"><img src={overviewImg} alt=""></img></a><br />
+                            <div className="col-md-2 col-xs-6 text-center">
+                              <a href="/SystematicTheologyOverview"><img src={overviewImg} alt=""></img></a><br />
                               <strong>Systematic Theology</strong>
                             </div>
                           </div>
                           <h4 className="header-lightBlue">Past Events</h4>
                           <div className="row">
-                            <div className="col-md-3">
+                            <div className="col-md-2 col-xs-6 text-center">
                               <a href="https://www.facebook.com/WWATasmania/" target="_blank" rel="noreferrer noopener"><img src={WWAImg} width="150px" height="139px" alt=""></img></a><br />
                               <strong>Women’s Weekend Away</strong>
+                            </div>
+
+                            <div className="col-md-2 col-xs-6 text-center">
+                              <a href="/event/WomensWinterFestival" ><img src={WWFImg} width="150px" height="139px" alt=""></img></a><br />
+                              <strong>Women’s Winter Festival</strong>
                             </div>
                           </div>
                         </div>

@@ -17,6 +17,7 @@ import EngagedCouples from './pages/Resources/EngagedCouples';
 import AllSermons from './pages/Resources/AllSermons';
 import Sermons from './pages/Resources/Sermons';
 import SermonPage from './pages/Resources/SermonPage';
+import SermonSeriesPage from './pages/Resources/SermonSeriesPage';
 import SystematicTheologyCourse from './pages/Resources/SystematicTheologyCourse';
 import SystematicTheologyOverview from './pages/Resources/SystematicTheologyOverview';
 import SystematicTheologyNotes from './pages/Resources/SystematicTheologyNotes';
@@ -29,7 +30,8 @@ import WhatWeBelieve from './pages/VisitUs/WhatWeBelieve';
 import WorshipServices from './pages/VisitUs/WorshipServices';
 
 import ContactUs from './pages/ContactUs';
-import Events from './pages/Events';
+import Events from './pages/Events/Events';
+import WWF from './pages/Events/WWF';
 import SupportUs from './pages/SupportUs';
 import WomensWeekendAway from './pages/GetInvolved/WomensWeekendAway';
 
@@ -51,6 +53,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/AllSermons" component={AllSermons} />
           <Route exact path="/Sermons" component={Sermons} />
           <Route exact path="/node/:nid" component={SermonPage} />
+          <Route exact path="/series/:nid" component={SermonSeriesPage} />
           <Route exact path="/node/:nid/:title" component={SermonPage} />
           <Route exact path="/SystematicTheologyCourse" component={SystematicTheologyCourse} />
           <Route exact path="/SystematicTheologyOverview" component={SystematicTheologyOverview} />
@@ -65,6 +68,8 @@ class OtherPageWrapper extends Component {
 
           <Route exact path="/ContactUs" component={ContactUs} />
           <Route exact path="/Events" component={Events} />
+          {/*Temp event page*/}
+          <Route exact path="/event/WomensWinterFestival" component={WWF} />
           <Route exact path="/SupportUs" component={SupportUs} />
 
           <Route path="/*" component={OtherPageContent} />

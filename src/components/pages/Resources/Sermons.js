@@ -7,14 +7,14 @@ import { getFromDrupalAPI } from '../../../utils/fetchJSON';
 
 import sermonSeriesImage from '../../../assets/sermonSeriesImage.jpg';
 
-const SERMON_LIMIT = 50;
+const SERMON_LIMIT = 1;
 
 class Sermons extends Component {
   constructor() {
     super();
     this.state = {
       sermons: null,
-      sermonSeries: null,
+      recentSeries: null,
       latestSermon: null
     }
   }
@@ -22,46 +22,59 @@ class Sermons extends Component {
   componentWillMount() {
     var that = this;
 
-    getFromDrupalAPI('all_sermon_series_api', function (data) {
-      that.setState({ sermonSeries: data });
-    });
-
     getFromDrupalAPI('all_sermons_api?limit=' + SERMON_LIMIT, function (data) {
       that.setState({ sermons: data });
       that.setState({ latestSermon: data[0] });
+    });
+
+    getFromDrupalAPI('recent_series_api', function (data) {
+      that.setState({ recentSeries: data });
     });
 
   }
   render() {
 
     if (!this.state.sermons || !this.state.latestSermon) {
-      var sermons = <tr><td>Loading, please wait.</td></tr>;
+      var recentSeries = <div>Loading, please wait.</div>;
       var latestSermon = <div>Loading, please wait.</div>
     }
     else {
-      var tdPadding = { padding: "0px 5px 0px 5px" };
-      var sermons = _.map(this.state.sermons, (sermon) => {
+      var recentSeries = _.map(this.state.recentSeries, (series) => {
         return (
-          <tr key={_.uniqueId()} className="odd even">
-            {sermon.node_title ? <td style={tdPadding} dangerouslySetInnerHTML={{ __html: sermon.node_url }} /> : <td style={tdPadding}></td>}
-            <td style={tdPadding}>{sermon.sermonseries ? decode(sermon.sermonseries) : ''}</td>
-            <td style={tdPadding}>{sermon.text ? decode(sermon.text) : ''}</td>
-            <td style={tdPadding}>{decode(sermon.preacher)}</td>
-            <td style={tdPadding}>{sermon.datepreached}</td>
-            <td style={tdPadding}><a href={sermon.url} target="_blank"> [Download]</a></td>
-          </tr>
+          <div key={_.uniqueId()} className="views-row views-row-1 views-row-odd views-row-first col-sm-3">
+
+            <div className="views-field views-field-field-thumbnail-image">
+              <div className="field-content">
+                <a href={"/series/" + series.series_id}>
+                  <img src={series.series_img} width="300" height="300" alt="" /></a>
+              </div>
+            </div>
+            <div className="views-field views-field-title">
+              <span className="field-content">
+                <a href={"/series/" + series.series_id}>{decode(series.node_title)}</a>
+              </span>
+            </div>
+          </div>
+
         )
       });
 
       var latestSermon = (<div className="views-row views-row-1 views-row-odd views-row-first views-row-last">
         <div className="views-field views-field-field-thumbnail-image">        <div className="field-content">
-          <a href={this.state.latestSermon.node_path}><img src={sermonSeriesImage} width="300" height="300" alt="" /></a></div>  </div>
+          <a href={this.state.latestSermon.node_path}><img src={this.state.latestSermon.sermon_img ? this.state.latestSermon.sermon_img : this.state.latestSermon.series_img} width="600" height="450" alt="" /></a></div>  </div>
         <div className="views-field views-field-title-1">
-          <span className="field-content">{this.state.latestSermon.sermonseries}</span>  </div>
+          <span className="field-content">{this.state.latestSermon.sermonseries ? <a href={'/series/' + this.state.latestSermon.series_id}>{decode(this.state.latestSermon.sermonseries)}</a> : ""}</span>  </div>
         <div>
           {this.state.latestSermon.node_url ? <span dangerouslySetInnerHTML={{ __html: this.state.latestSermon.node_url }} /> : <span></span>}  </div>
         <div className="views-field views-field-field-preacher">
           <div className="field-content">{decode(this.state.latestSermon.preacher)}</div>  </div>  </div>);
+
+      var currentSeries = (<section><div className="views-field views-field-field-thumbnail-image">
+        <div className="field-content">
+          <a href={'/series/' + this.state.latestSermon.series_id}><img src={this.state.latestSermon.series_img} width="600" height="450" alt="" /></a>
+        </div>  </div>
+        <div className="views-field views-field-title">
+          <span className="field-content"><a href={'/series/' + this.state.latestSermon.series_id}>{this.state.latestSermon.sermonseries}</a></span>  </div></section>)
     }
 
     return (
@@ -91,12 +104,6 @@ class Sermons extends Component {
           <div className="container">
             <div className="row">
 
-              {/* If the Sidebar First has content then it will be rendered */}
-
-
-              {/* /Sidebar First region */}
-
-              {/* Rendering of the main content */}
 
               <div id="main-content-region" className="main-content col-xs-12">
 
@@ -155,7 +162,7 @@ class Sermons extends Component {
                     </div>  </div>
                 </div>  </div>
               </div>
-              <div className="col-md-3 col-xs-12 text-center-sm">  <div className="region region-content-1-2">
+              <div className="col-md-offset-6 col-md-3 col-xs-12 text-center-sm">  <div className="region region-content-1-2">
 
                 <div id="block-views-sermon-series-block" className="block block-views">
 
@@ -167,21 +174,17 @@ class Sermons extends Component {
 
 
                       <div className="view-content">
-                        <div className="views-row views-row-1 views-row-odd views-row-first views-row-last text-center">
-
-                          <div className="views-field views-field-field-thumbnail-image">        <div className="field-content"><a href="/currentseries"><img src={sermonSeriesImage} width="300" height="300" alt="" /></a></div>  </div>
-                          <div className="views-field views-field-title">        <span className="field-content"><a href="/currentseries">Current Series Name</a></span>  </div>  </div>
+                        <div className="views-row views-row-1 views-row-odd views-row-first views-row-last">
+                          {currentSeries}
+                        </div>
                       </div>
-
-
-
-
-
-
-                    </div>  </div>
-                </div>  </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="col-md-3 col-xs-12 text-center-sm">  <div className="region region-content-1-3">
+              </div>
+
+              {/*<div className="col-md-3 col-xs-12 text-center-sm">  <div className="region region-content-1-3">
 
                 <div id="block-views-featured-sermon-1-block" className="block block-views">
 
@@ -236,7 +239,7 @@ class Sermons extends Component {
 
                     </div>  </div>
                 </div>  </div>
-              </div>
+    </div>*/}
             </div>
           </div>
         </div>
@@ -250,27 +253,12 @@ class Sermons extends Component {
                 <h2 className="header-lightBlue text-center-sm">Recent Series</h2>
 
                 <div className="content">
-                  <div className="view view-sermon-series view-id-sermon_series view-display-id-block_1 row view-dom-id-3caabb555162fe14980733c2e80b0a53">
+                  <div className="view view-sermon-series view-id-sermon_series view-display-id-block_1 row">
 
 
 
                     <div className="view-content">
-                      <div className="views-row views-row-1 views-row-odd views-row-first col-sm-3 text-center">
-
-                        <div className="views-field views-field-field-thumbnail-image">        <div className="field-content"><a href="/sermons/liberation-exodus"><img src={sermonSeriesImage} width="300" height="300" alt="" /></a></div>  </div>
-                        <div className="views-field views-field-title">        <span className="field-content"><a href="/Sermons">Recent Series 1</a></span>  </div>  </div>
-                      <div className="views-row views-row-2 views-row-even col-sm-3 text-center">
-
-                        <div className="views-field views-field-field-thumbnail-image">        <div className="field-content"><a href="/sermons/liberation-2018"><img src={sermonSeriesImage} width="300" height="300" alt="" /></a></div>  </div>
-                        <div className="views-field views-field-title">        <span className="field-content"><a href="/Sermons">Recent Series 2</a></span>  </div>  </div>
-                      <div className="views-row views-row-3 views-row-odd col-sm-3 text-center">
-
-                        <div className="views-field views-field-field-thumbnail-image">        <div className="field-content"><a href="/sermons/church-builder-luke-h"><img src={sermonSeriesImage} width="300" height="300" alt="" /></a></div>  </div>
-                        <div className="views-field views-field-title">        <span className="field-content"><a href="/Sermons">Recent Series 3</a></span>  </div>  </div>
-                      <div className="views-row views-row-4 views-row-even views-row-last col-sm-3 text-center">
-
-                        <div className="views-field views-field-field-thumbnail-image">        <div className="field-content"><a href="/sermons/church-camp-2018"><img src={sermonSeriesImage} width="300" height="300" alt="" /></a></div>  </div>
-                        <div className="views-field views-field-title">        <span className="field-content"><a href="/Sermons">Recent Series 4</a></span>  </div>  </div>
+                      {recentSeries}
                     </div>
 
 
@@ -281,8 +269,8 @@ class Sermons extends Component {
                   </div>  </div>
               </div>  </div>
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
     );
   }
 }
