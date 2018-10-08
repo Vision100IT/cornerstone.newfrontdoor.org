@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import quarryYouthLogo from '../../../assets/quarryYouthLogo.png';
 
+import FacebookFeed from './QuarryFacebookFeed';
+
 class QuarryYouth extends Component {
   render() {
     return (
@@ -37,7 +39,7 @@ class QuarryYouth extends Component {
                       <div className="content">
                         <div className="row">
 
-                          <div className="col-xs-12">
+                          <div className="col-md-8 col-xs-12">
                             <img className="quarry-logo" src={quarryYouthLogo} alt="" />
                             <h3 className="header-lightBlue" style={{ marginTop: "0" }}>Quarry Youth</h3>
 
@@ -47,7 +49,7 @@ class QuarryYouth extends Component {
                                 We want to equip them to engage well with those around them from a biblical worldview. <br /><br />
 
                               Our motto is: <strong>Win, Build, Send.</strong><br />
-                              We want to Win the youth to Christ, Build them up in their faith and equip them to live as Christians to be Sent out to reach those in their community.<br /><br />
+                              We want to <strong>Win</strong> the youth to Christ, <strong>Build</strong> them up in their faith and equip them to live as Christians to be <strong>Sent</strong> out to reach those in their community.<br /><br />
 
                               <strong>Time:</strong><br />
                               Friday Night @ 7-9pm<br />
@@ -64,6 +66,10 @@ class QuarryYouth extends Component {
                             </p>
 
 
+                          </div>
+
+                          <div className="col-md-3 col-xs-12" style={{ marginTop: "20px" }}>
+                            <FacebookFeed />
                           </div>
 
 
