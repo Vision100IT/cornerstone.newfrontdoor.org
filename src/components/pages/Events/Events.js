@@ -48,7 +48,7 @@ class Events extends Component {
                           <div className="row">
                             <Event href="/PrayerMeetings" image={prayerImg} title="Prayer Meetings" />
                             <Event href="/WorshipServices" image={entranceImg} title="Worship Services" />
-                            <Event href="/SystematicTheology" image={systematicTheologyImg} title="Systematic Theology" />
+                            <Event href="/SystematicTheologyCourse" image={systematicTheologyImg} title="Systematic Theology" />
                           </div>
 
                           <h4 className="header-lightBlue">Past Events</h4>
