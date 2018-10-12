@@ -119,8 +119,9 @@ line-height: 24px;
 }
 
 /*Fix for overflowing text on gmaps*/
-.gm-style-iw {
+.gm-style-iw, .gm-style-iw>div {
   width: auto !important;
+  overflow: hidden !important;
  }
 
  /* Size of images on our people*/
@@ -145,4 +146,8 @@ height: 200px;
 
    .sermon-page-image, .sermon-series-page-image{
      max-height: 400px !important;
+   }
+
+   .no-list-style{
+     list-style: none;
    }

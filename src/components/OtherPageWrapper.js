@@ -11,6 +11,7 @@ import QuarryYouth from './pages/GetInvolved/QuarryYouth';
 import StreetEvangelism from './pages/GetInvolved/StreetEvangelism';
 import WomensMinistry from './pages/GetInvolved/WomensMinistry';
 //import YoungAdults from './pages/GetInvolved/YoungAdults';
+import PrayerMeetings from './pages/GetInvolved/PrayerMeetings';
 
 import Cornerpost from './pages/Resources/Cornerpost';
 import EngagedCouples from './pages/Resources/EngagedCouples';
@@ -35,6 +36,8 @@ import WWF from './pages/Events/WWF';
 import SupportUs from './pages/SupportUs';
 import WomensWeekendAway from './pages/GetInvolved/WomensWeekendAway';
 
+
+
 class OtherPageWrapper extends Component {
   render() {
     return (
@@ -45,8 +48,9 @@ class OtherPageWrapper extends Component {
           <Route exact path="/QuarryYouth" component={QuarryYouth} />
           <Route exact path="/StreetEvangelism" component={StreetEvangelism} />
           <Route exact path="/WomensMinistry" component={WomensMinistry} />
-          <Route exact path="/PWWA" component={WomensWeekendAway} />
+          <Route exact path="/WomensWeekendAway" component={WomensWeekendAway} />
           {/*<Route exact path="/YoungAdults" component={YoungAdults} />*/}
+          <Route exact path="/PrayerMeetings" component={PrayerMeetings} />
 
           <Route exact path="/Cornerpost" component={Cornerpost} />
           <Route exact path="/EngagedCouples" component={EngagedCouples} />

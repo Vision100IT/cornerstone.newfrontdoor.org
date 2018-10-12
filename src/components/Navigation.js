@@ -132,15 +132,16 @@ class Navigation extends Component {
                                     <div className="tb-megamenu-column-inner mega-inner clearfix">
                                       <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
                                         <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/PrayerMeetings" >Prayer Meetings</a>
+                                        </li>
+                                        <li className="tb-megamenu-item level-2 mega">
                                           <a href="/GrowthGroups" >Growth Groups</a>
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/MensMinistry" >Men's Ministry</a>
                                         </li>
 
-                                        <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/WomensMinistry" >Women's Ministry</a>
-                                        </li>
+
                                       </ul>
                                     </div>
                                   </div>
@@ -150,9 +151,11 @@ class Navigation extends Component {
                                       <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
 
                                         {/*}<li className="tb-megamenu-item level-2 mega">
-              <a href="/YoungAdults" >Young Adults</a>
-              </li>*/}
-
+                                            <a href="/YoungAdults" >Young Adults</a>
+                                          </li>*/}
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/WomensMinistry" >Women's Ministry</a>
+                                        </li>
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/QuarryYouth" >Youth Group</a>
                                         </li>
@@ -161,9 +164,9 @@ class Navigation extends Component {
                                           <a href="/StreetEvangelism" >Street Evangelism</a>
                                         </li>
 
-                                        <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/PWWA" >Presbyterian Women's Weekend Away</a>
-                                        </li>
+                                        {/*<li className="tb-megamenu-item level-2 mega">
+                                          <a href="/WomensWeekendAway" >Women's Weekend Away</a>
+                                        </li>*/}
                                       </ul>
                                     </div>
                                   </div>

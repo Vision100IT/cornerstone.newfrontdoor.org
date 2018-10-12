@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 import _ from 'lodash';
-import congregation from '../../assets/congregation.png'
+import congregation from '../../assets/congregation_gs.png'
 
 /*
 const slides = [{"src": "https://summerleaschurch.org/sites/summerleaschurch.org/files/styles/image_full_width/public/community%20web%20slider.jpg?itok=wztd4SUb",

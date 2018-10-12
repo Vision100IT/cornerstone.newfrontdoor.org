@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import overviewImg from '../../../assets/systematicTheologyOverview.jpg'
+import overviewImg from '../../../assets/overview.png'
 import notes from '../../../assets/notes.png'
 import youtube from '../../../assets/youtube.jpg'
 
@@ -40,14 +40,14 @@ class SystematicTheologyCourse extends Component {
                       <div className="node node-page clearfix">
                         <div className="content text-center">
                           <div className="col-md-4" style={{ marginBottom: "50px" }}>
-                            <a href="/SystematicTheologyOverview"><img src={overviewImg} alt=""></img></a>
+                            <a href="/SystematicTheologyOverview"><img style={{ paddingTop: "15px" }} src={overviewImg} alt="Systematic Theology Overview"></img></a>
                           </div>
                           <div className="col-md-4" style={{ marginBottom: "50px" }}>
                             <a href="https://www.youtube.com/channel/UCF-sudt_zfl2Ni8eR9ayVHQ" target="_blank" rel="noreferrer noopener"><img src={youtube} alt=""></img></a><br />
                             Find recordings of our past lessons on Youtube.
                           </div>
                           <div className="col-md-4" style={{ marginBottom: "50px" }}>
-                            <a href="/SystematicTheologyNotes"><img src={notes} alt=""></img></a>
+                            <a href="/SystematicTheologyNotes"><img style={{ paddingTop: "15px" }} src={notes} alt="Systematic Theology Notes"></img></a>
                           </div>
 
 
