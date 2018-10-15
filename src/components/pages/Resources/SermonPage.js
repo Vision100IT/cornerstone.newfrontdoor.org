@@ -37,7 +37,7 @@ class SermonPage extends Component {
           else {
             sermonImg = sermon.series_full_img ? sermon.series_full_img : sermon.series_img
           }
-          sermonTitle = sermon.node_title;
+          sermonTitle = decode(sermon.node_title);
           return (
             <section key={_.uniqueId()}>
               <div className="content">
