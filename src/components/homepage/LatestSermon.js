@@ -43,8 +43,8 @@ class LatestSermon extends Component {
                     </div>
                   </div>
 
-                  <span>        <div><a href={sermon.node_path}>{sermon.node_title}</a></div>  </span>
-                  <span>        <div>{sermon.preacher}</div>  </span>
+                  <span>        <div><a href={sermon.node_path}>{decode(sermon.node_title)}</a></div>  </span>
+                  <span>        <div>{decode(sermon.preacher)}</div>  </span>
                   <span className="views-field views-field-field-sermon">
                     <span className="field-content">
                       {/*<div className="mediaelement-audio">

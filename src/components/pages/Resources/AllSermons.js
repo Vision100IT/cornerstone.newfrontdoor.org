@@ -120,7 +120,7 @@ class Sermons extends Component {
             <td style={tdPadding}>{sermon.text ? decode(sermon.text) : ''}</td>
             <td style={tdPadding}>{decode(sermon.preacher)}</td>
             <td style={tdPadding}>{sermon.datepreached}</td>
-            <td style={tdPadding}><a href={sermon.url} target="_blank"> [Download]</a></td>
+            <td style={tdPadding}><a href={sermon.url} target="_blank"><i class="fa fa-download"></i></a></td>
           </tr>
         )
       });
