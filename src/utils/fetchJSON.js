@@ -1,7 +1,5 @@
 import fetch from 'isomorphic-fetch';
-
-const DRUPAL_URL = "https://cornerstoneapi.newfrontdoor.org/api/views/";
-const DRUPAL_SEARCH_SERMONS = DRUPAL_URL+"all_sermons_api?display_id=services_1&filters";
+import config from 'react-global-configuration';
 
 //Example suffix: all_sermons_api?filters[preacher]=keith&filters[title]=reality
 
@@ -15,7 +13,7 @@ export function getFromDrupalAPI(url, callback){
   else{
     url += '?display_id=services_1'
   }
-  fetch(DRUPAL_URL+url)
+  fetch(config.get("DRUPAL_BASE_API_URL")+url)
   .then(resp => resp.json())
   .then(function(data) {
       callback(data);
@@ -26,6 +24,7 @@ export function getFromDrupalAPI(url, callback){
 }
 
 export function searchDrupalSermons(query, type, callback){
+  const DRUPAL_SEARCH_SERMONS = config.get("DRUPAL_BASE_API_URL")+"all_sermons_api?display_id=services_1&filters";
   fetch(DRUPAL_SEARCH_SERMONS+'['+type+']='+query)
   .then(resp => resp.json())
   .then(function(data) {

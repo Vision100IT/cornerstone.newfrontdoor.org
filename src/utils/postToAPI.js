@@ -1,10 +1,8 @@
 import fetch from 'isomorphic-fetch';
+import config from 'react-global-configuration';
 
-const DRUPAL_WEBFORM_SUBMISSION = "https://cornerstoneapi.newfrontdoor.org/webform_submission/submission";
-
-
-export function postToWebform(formData, callback){
-  fetch(DRUPAL_WEBFORM_SUBMISSION, {
+export function postToWebform(formData, callback) {
+  fetch(config.get("DRUPAL_BASE_URL") + "/webform_submission/submission", {
     method: "POST",
     body: formData
   })
