@@ -5,12 +5,13 @@ import Navigation from './components/Navigation';
 import HomePageWrapper from './components/homepage/HomePageWrapper';
 import OtherPageWrapper from './components/OtherPageWrapper';
 import Footer from './components/Footer';
+import config from 'react-global-configuration';
+import configuration from './config/config.js';
 
 import './assets/css/mediaelement/mediaelementplayer.min.css';
 
 import './assets/css/simplenews/simplenews.css';
 import './assets/css/alignmentstyles.css';
-
 
 import './assets/css/font-awesome/font-awesome.min.css';
 
@@ -30,6 +31,8 @@ import './assets/nestor/css/color/blue.css';
 
 import './assets/css/custom.css';
 import './assets/css/events.css';
+
+config.set(configuration);
 
 class App extends Component {
   render() {
