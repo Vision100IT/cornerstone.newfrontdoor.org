@@ -30,7 +30,8 @@ class Sermons extends Component {
       totalSermons: null,
       searchQuery: "",
       searchType: "title",
-      loadingSermons: true
+      loadingSermons: true,
+      sermonsRemaining: true
     }
 
     this.handleWaypointEnter = this.handleWaypointEnter.bind(this);
@@ -92,10 +93,15 @@ class Sermons extends Component {
   }
 
   handleWaypointEnter(){
-    if(!this.state.loadingSermons)
+    if(!this.state.loadingSermons && this.state.page < this.state.sermonPages)
     {
       this.setState({loadingSermons: true})
       this.loadMoreSermons(this.state.page)
+    }
+
+    if(this.state.page === this.state.sermonPages)
+    {
+      this.setState({sermonsRemaining: false})
     }
     
   }
@@ -157,7 +163,7 @@ class Sermons extends Component {
     }
 
     let loadingIcon = null;
-    if (this.state.loadingSermons && this.state.page !== this.state.sermonPages - 1 && this.state.viewingRefinedList === false) {
+    if (this.state.loadingSermons && this.state.sermonsRemaining) {
       loadingIcon = <i className="fa fa-spinner"></i>;
     }
     
@@ -251,7 +257,11 @@ class Sermons extends Component {
                         <span style={{ float: "left" }}>{prevSermonsLink}</span>
                         <span>{loadingIcon}</span>
                         {/*{showPageNumber}*/}
-                        <Waypoint onEnter={this.handleWaypointEnter}></Waypoint>
+
+                        {/*Only display the waypoint after number of pages has been set in state*/}
+                        {this.state.sermonPages ? <Waypoint onEnter={this.handleWaypointEnter}></Waypoint> : ''}
+                        
+                        {this.state.sermonsRemaining ? '' : 'No more sermons to load'}
                       </div>
 
 
