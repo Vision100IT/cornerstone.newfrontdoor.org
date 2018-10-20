@@ -163,6 +163,9 @@ class Sermons extends Component {
     }
 
     let loadingIcon = null;
+    if(!this.state.sermonPages){
+      loadingIcon = <i className="fa fa-spinner"></i>;
+    }
     if (this.state.loadingSermons && this.state.sermonsRemaining) {
       loadingIcon = <i className="fa fa-spinner"></i>;
     }
