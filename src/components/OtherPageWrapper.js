@@ -36,6 +36,7 @@ import WWF from './pages/Events/WWF';
 import SupportUs from './pages/SupportUs';
 import WomensWeekendAway from './pages/GetInvolved/WomensWeekendAway';
 
+import AllSermonsInfinite from './pages/Resources/AllSermonsInfinite';
 
 
 class OtherPageWrapper extends Component {
@@ -55,6 +56,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/Cornerpost" component={Cornerpost} />
           <Route exact path="/EngagedCouples" component={EngagedCouples} />
           <Route exact path="/AllSermons" component={AllSermons} />
+          <Route exact path="/AllSermonsInfinite" component={AllSermonsInfinite} />
           <Route exact path="/Sermons" component={Sermons} />
           <Route exact path="/node/:nid" component={SermonPage} />
           <Route exact path="/series/:nid" component={SermonSeriesPage} />
