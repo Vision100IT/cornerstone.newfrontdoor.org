@@ -68,6 +68,9 @@ class Sermons extends Component {
   loadMoreSermons(page) {
     var that = this;
     var offset = (page + 1) * PER_PAGE
+    if (this.state.sermonPages === page + 1) {
+      this.setState({ sermonsRemaining: false });
+    }
     this.setState({ page: page + 1 })
     getFromDrupalAPI('all_sermons_api?offset=' + offset + '&limit=' + PER_PAGE, function (data) {
       that.setState({ sermons: [...that.state.sermons, ...data], viewingRefinedList: false, loadingSermons: false })
@@ -92,18 +95,16 @@ class Sermons extends Component {
 
   }
 
-  handleWaypointEnter(){
-    if(!this.state.loadingSermons && this.state.page < this.state.sermonPages)
-    {
-      this.setState({loadingSermons: true})
+  handleWaypointEnter() {
+    if (!this.state.loadingSermons && this.state.page < this.state.sermonPages) {
+      this.setState({ loadingSermons: true })
       this.loadMoreSermons(this.state.page)
     }
 
-    if(this.state.page === this.state.sermonPages)
-    {
-      this.setState({sermonsRemaining: false})
+    if (this.state.page === this.state.sermonPages) {
+      this.setState({ sermonsRemaining: false })
     }
-    
+
   }
 
   loadSermonSeries(sermonSeriesNid) {
@@ -136,7 +137,7 @@ class Sermons extends Component {
   }
 
 
-  
+
   render() {
     if (!this.state.sermons) {
       var sermons = <tr><td>Loading, please wait.</td></tr>;
@@ -163,13 +164,13 @@ class Sermons extends Component {
     }
 
     let loadingIcon = null;
-    if(!this.state.sermonPages){
+    if (!this.state.sermonPages) {
       loadingIcon = <i className="fa fa-spinner"></i>;
     }
     if (this.state.loadingSermons && this.state.sermonsRemaining) {
       loadingIcon = <i className="fa fa-spinner"></i>;
     }
-    
+
 
     var sermonSeriesOptions;
     if (this.state.sermonSeries) {
@@ -262,9 +263,10 @@ class Sermons extends Component {
                         {/*{showPageNumber}*/}
 
                         {/*Only display the waypoint after number of pages has been set in state*/}
-                        {this.state.sermonPages ? <Waypoint onEnter={this.handleWaypointEnter}></Waypoint> : ''}
-                        
-                        {this.state.sermonsRemaining ? '' : 'No more sermons to load'}
+                        {this.state.sermonPages && !this.state.viewingRefinedList ? <Waypoint onEnter={this.handleWaypointEnter}></Waypoint> : ''}
+
+                        {this.state.sermonsRemaining && !this.state.loadingSermons && !this.state.viewingRefinedList ? <div className="text-center"><button className="btn btn-primary" onClick={this.handleWaypointEnter}>Load More...</button></div> : ''}
+                        {this.state.sermonsRemaining || this.state.viewingRefinedList ? '' : <div className="text-center">No more sermons to load</div>}
                       </div>
 
 
