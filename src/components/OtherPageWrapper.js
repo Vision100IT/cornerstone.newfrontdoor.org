@@ -35,6 +35,7 @@ import Events from './pages/Events/Events';
 import WWF from './pages/Events/WWF';
 import SupportUs from './pages/SupportUs';
 import WomensWeekendAway from './pages/GetInvolved/WomensWeekendAway';
+import MensCalendar from './pages/Events/MensCalendar';
 
 
 
@@ -59,6 +60,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/Sermons" component={Sermons} />
           <Route exact path="/node/:nid" component={SermonPage} />
           <Route exact path="/series/:nid" component={SermonSeriesPage} />
+          <Route exact path="/series/:nid/:title" component={SermonSeriesPage} />
           <Route exact path="/node/:nid/:title" component={SermonPage} />
           <Route exact path="/SystematicTheologyCourse" component={SystematicTheologyCourse} />
           <Route exact path="/SystematicTheologyOverview" component={SystematicTheologyOverview} />
@@ -75,6 +77,8 @@ class OtherPageWrapper extends Component {
           <Route exact path="/Events" component={Events} />
           {/*Temp event page*/}
           <Route exact path="/event/WomensWinterFestival" component={WWF} />
+          <Route exact path="/MensEvents" component={MensCalendar} />
+
           <Route exact path="/SupportUs" component={SupportUs} />
 
           <Route path="/*" component={OtherPageContent} />

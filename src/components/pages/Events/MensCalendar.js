@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import MensMinistryImg from '../../../assets/ministry-men2.jpg';
 
-
-class WWF extends Component {
+class MensCalendar extends Component {
 
     render() {
         return (
@@ -11,7 +11,7 @@ class WWF extends Component {
                         <div className="row">
                             <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                                 <div id="page-title-block" className="page-title block">
-                                    <h1>Women's Winter Festival</h1>
+                                    <h1>Men's Ministry Calendar 2018/2019</h1>
                                 </div>
                             </div>
 
@@ -35,31 +35,30 @@ class WWF extends Component {
                                     <div id="block-system-main" className="block block-system">
                                         <div className="content">
                                             <div className="node node-page clearfix">
-                                                <div className="content">
-                                                    <p>
-                                                        <strong>Event Date: </strong> Monday, June 4, 2018 to Saturday, August 4, 2018<br /><br />
+                                                <div className="content text-center">
+                                                    <img className="img img-responsive" src={MensMinistryImg} alt="" />
+                                                    <h4 className="header-lightBlue">WORK</h4>
+                                                    <strong>SAT 24 NOV 2018</strong><br />
+                                                    Waterworks Reserve Site 2<br />
+                                                    8:00am-10:00am
 
-                                                        <strong>Surprising Heroines of the Bible</strong><br /><br />
+                                                    <h4 className="header-lightBlue">LEADERSHIP</h4>
+                                                    <strong>SAT 9 FEB 2019</strong>
 
-                                                        <strong>Women's Winter Festival 2018</strong><br /><br />
+                                                    <h4 className="header-lightBlue">PROVISION</h4>
+                                                    <strong>SAT 23 MAR 2019</strong>
 
-                                                        Welcoming women of all ages, belief and backgrounds. Come and have your hearts warmed over winter with encouraging Bible talks, delicious soups and dessert, thoughtful discussion groups and great company.<br /><br />
+                                                    <h4 className="header-lightBlue">FATHERHOOD</h4>
+                                                    <strong>SAT 25 MAY 2019</strong>
 
-                                                        <strong>Talks on suprising Heroines by:</strong>
+                                                    <h4 className="header-lightBlue">A MAN’S ROLE IN RELATIONSHIPS</h4>
+                                                    <strong>SAT 3 AUG 2019</strong>
 
-                                                        <ul>
-                                                            <li>Christine Jolly | June 2</li>
-                                                            <li>Amanda-Sue Markham | July 7</li>
-                                                            <li>Felicity Ogilvie | August 4</li>
-                                                        </ul>
+                                                    <h4 className="header-lightBlue">MANAGING MONEY</h4>
+                                                    <strong>SAT 19 OCT 2019</strong>
 
-
-
-                                                        5pm - 8pm @ 45 Melville Street Hobart<br />
-                                                        $5 each night
-                                                </p>
-
-
+                                                    <h4 className="header-lightBlue">MANAGING TIME</h4>
+                                                    <strong>SAT 23 NOV 2019</strong>
                                                 </div>
 
 
@@ -83,4 +82,4 @@ class WWF extends Component {
     }
 }
 
-export default WWF;
+export default MensCalendar;
