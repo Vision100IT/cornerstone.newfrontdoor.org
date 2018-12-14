@@ -35,7 +35,7 @@ import Events from './pages/Events/Events';
 import WWF from './pages/Events/WWF';
 import SupportUs from './pages/SupportUs';
 import WomensWeekendAway from './pages/GetInvolved/WomensWeekendAway';
-import MensCalendar from './pages/Events/MensCalendar';
+//import MensCalendar from './pages/Events/MensCalendar';
 
 
 
@@ -77,7 +77,6 @@ class OtherPageWrapper extends Component {
           <Route exact path="/Events" component={Events} />
           {/*Temp event page*/}
           <Route exact path="/event/WomensWinterFestival" component={WWF} />
-          <Route exact path="/MensEvents" component={MensCalendar} />
 
           <Route exact path="/SupportUs" component={SupportUs} />
 

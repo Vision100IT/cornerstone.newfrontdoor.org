@@ -5,7 +5,6 @@ import WWFImg from '../../../assets/WWFImg.jpg'
 import systematicTheologyImg from '../../../assets/systematicTheology.png'
 import entranceImg from '../../../assets/Entrance.jpg';
 import prayerImg from '../../../assets/PrayerMeetings.png'
-import MensMinistryImg from '../../../assets/ministry-men2.jpg';
 
 import Event from '../../models/Event';
 
@@ -50,7 +49,6 @@ class Events extends Component {
                             <Event href="/PrayerMeetings" image={prayerImg} title="Prayer Meetings" />
                             <Event href="/WorshipServices" image={entranceImg} title="Worship Services" />
                             <Event href="/SystematicTheologyCourse" image={systematicTheologyImg} title="Systematic Theology" />
-                            <Event href="/MensEvents" image={MensMinistryImg} title="Mens Ministry Events" />
                           </div>
 
                           <h4 className="header-lightBlue">Past Events</h4>
