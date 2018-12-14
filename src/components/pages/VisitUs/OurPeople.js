@@ -104,8 +104,8 @@ class OurPeople extends Component {
                                 <h3 className="header-lightBlue text-center no-top-margin">Where are our ministry students now?</h3>
                                 <h4><strong>Paul Hutchens</strong>, Pastor, <a href="https://soulchurch.org.au/">Soul Church</a>.</h4>
                                 <h4><strong>R'jaye Rojas</strong>, Pastor, <a href="https://www.mspc.org.au/">Mount Stuart Presbyterian</a>.</h4>
-                                <h4><strong>Andrew Hutchens</strong>, Graduate, <a href="https://www.christcollegehobart.com/">Christ College</a>.</h4>
-                                <h4><strong>Michael Riske</strong>, current student, <a href="https://www.christcollegehobart.com/">Christ College</a>.</h4>
+                                <h4><strong>Andrew Hutchens</strong>, Graduate, <a href="https://christcollege.edu.au/">Christ College</a>.</h4>
+                                <h4><strong>Michael Riske</strong>, current student, <a href="https://christcollege.edu.au/">Christ College</a>.</h4>
                               </div>
                             </div>
 

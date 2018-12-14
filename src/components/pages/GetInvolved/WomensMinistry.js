@@ -42,6 +42,15 @@ class WomensMinistry extends Component {
                               <h2 className="header-lightBlue">Why T2 Women?</h2>
                               <p className="ministry-text"><strong>Biblically, a Titus 2 Woman is defined by , Titus 2:3-5,</strong><br />
                                 “Likewise, teach the older women to be reverent in the way they live, not to be slanderers, or addicted to much wine, but to teach what is good. Then they can train the younger women to love their husbands and children, to be self-controlled and pure, to be busy at home, to be kind, and to be subject to their husbands, so that no one will malign the word of God.”
+                              <br />
+
+                              </p>
+
+                              <h2 className="header-lightBlue">Women’s Weekend Away (WWA)</h2>
+                              <p className="ministry-text"><strong>What’s it all about?</strong><br /><br />
+                                One weekend a year, the Presbyterian Church of Tasmania hosts a weekend for all women to gather together for a time of biblical teaching, worshiping together and encouragement. <br /><br />
+                                For more information, visit the WWA Facebook page: <a href="https://www.facebook.com/WWATasmania/" target="_blank" rel="noreferrer noopener">/WWATasmania</a>.
+
                               <br /><br />
 
                               </p>

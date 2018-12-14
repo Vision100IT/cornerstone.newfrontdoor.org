@@ -54,8 +54,32 @@ class MensMinistry extends Component {
                                 If you would like to be placed on the list to receive email notifications of Men’s Ministry functions,
                             please email <a href="mailto:admin@cornerstonehobart.com">admin@cornerstonehobart.com</a>.
                             </p>
+
                             </div>
+
                           </div>
+
+                          <div className="row padding-top-15 text-center">
+                            <h3>Upcoming Events</h3>
+                            <h4 className="header-lightBlue">LEADERSHIP</h4>
+                            <strong>SAT 9 FEB 2019</strong>
+
+                            <h4 className="header-lightBlue">PROVISION</h4>
+                            <strong>SAT 23 MAR 2019</strong>
+
+                            <h4 className="header-lightBlue">FATHERHOOD</h4>
+                            <strong>SAT 25 MAY 2019</strong>
+
+                            <h4 className="header-lightBlue">A MAN’S ROLE IN RELATIONSHIPS</h4>
+                            <strong>SAT 3 AUG 2019</strong>
+
+                            <h4 className="header-lightBlue">MANAGING MONEY</h4>
+                            <strong>SAT 19 OCT 2019</strong>
+
+                            <h4 className="header-lightBlue">MANAGING TIME</h4>
+                            <strong>SAT 23 NOV 2019</strong>
+                          </div>
+
                         </div>
 
 
