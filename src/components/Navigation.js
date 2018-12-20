@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import logo from '../assets/logo-150px.png';
+import logo from '../assets/Logo-cs.png';
 
 class Navigation extends Component {
   render() {
