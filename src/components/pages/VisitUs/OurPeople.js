@@ -91,7 +91,7 @@ class OurPeople extends Component {
 
                             <div className="row">
                               <div className="col-md-6">
-                                <h4><strong>Joe Cox</strong>, Trainee to the Pastor</h4>
+                                <h4><strong>Joe Cox</strong>, Assistant to the Minister</h4>
                                 <h4><strong>David Gee</strong>, Evangelist</h4>
                                 <h4><strong>Cristiane Baker</strong>, Women’s Worker</h4>
                                 <h4><strong>Elya Richardson</strong>, Youth Worker</h4>
