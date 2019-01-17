@@ -61,8 +61,13 @@ class MensMinistry extends Component {
 
                           <div className="row padding-top-15 text-center">
                             <h3>Upcoming Events</h3>
+                            <h4 className="header-lightBlue">COMBINED MEN’S/WOMEN’S MINISTRY EVENT</h4>
+                            <strong>FAMILY ACCORDING TO GOD’S WILL</strong><br />
+                            <strong>GUEST SPEAKERS: SCOTT & LYNN WINKLER</strong><br />
+                            <strong>SAT 19 JAN 2019</strong>
+
                             <h4 className="header-lightBlue">LEADERSHIP</h4>
-                            <strong>SAT 9 FEB 2019</strong>
+                            <strong>SAT 16 FEB 2019</strong>
 
                             <h4 className="header-lightBlue">PROVISION</h4>
                             <strong>SAT 23 MAR 2019</strong>
