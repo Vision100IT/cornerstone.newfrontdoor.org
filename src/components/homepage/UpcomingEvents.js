@@ -27,7 +27,7 @@ class UpcomingEvents extends Component {
           <div key={_.uniqueId()} className="upcoming-event">
             <div><i className="icon ion-calendar upcoming-event-icon" /></div>
             <div className="upcoming-event-title">{decode(event.title)}</div>
-            <div className="upcoming-event-date">{event.startdate}</div>
+            <div className="upcoming-event-date">{event.dateonly ? event.startdate.slice(0, event.startdate.length - 7) : event.startdate}</div>
           </div>
         )
       });
