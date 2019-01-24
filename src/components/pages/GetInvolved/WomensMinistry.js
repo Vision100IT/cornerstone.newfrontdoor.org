@@ -64,7 +64,7 @@ class WomensMinistry extends Component {
                               </p>
 
                               <p>
-                                For more information contact our Women's worker, Cristiane Baker - phone: 0404 392 912 or email <a href="mailto:cbaker@cornerstone.com.au">cbaker@cornerstone.com.au</a>.
+                                For more information contact our Women's worker, Cristiane Baker - phone: 0404 392 912 or email <a href="mailto:cbaker@cornerstonehobart.com">cbaker@cornerstonehobart.com</a>.
                               </p>
 
                             </div>

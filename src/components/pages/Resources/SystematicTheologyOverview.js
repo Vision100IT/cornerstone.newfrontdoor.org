@@ -123,7 +123,7 @@ class SystematicTheologyOverview extends Component {
                             </div>
                           </div>
                           <br />
-                          <p><strong>Registration:</strong> For more information, or to register, send a text or email to Course Administrator Cristiane Baker on 0404 392 812, or <a href="mailto:c9baker@gmail.com">c9baker@gmail.com</a>. Alternatively, you can respond to the Facebook event page <a href="https://www.facebook.com/events/139209490053621/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+                          <p><strong>Registration:</strong> For more information, or to register, send a text or email to Course Administrator Cristiane Baker on 0404 392 812, or <a href="mailto:cbaker@cornerstonehobart.com">cbaker@cornerstonehobart.com</a>. Alternatively, you can respond to the Facebook event page <a href="https://www.facebook.com/events/139209490053621/" target="_blank" rel="noopener noreferrer">here</a>.</p>
                         </div>
                       </div>
 

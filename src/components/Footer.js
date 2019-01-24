@@ -35,7 +35,7 @@ class Footer extends Component {
                       <div className="footer-mail text-center">
                         <i className="icon ion-ios7-email-outline size-32 margin-bottom-20"></i>
                         <p><a href="mailto:admin@cornerstonehobart.com">admin@cornerstonehobart.com</a><br />
-                          <a href="mailto:campbell.markham@gmail.com">campbell.markham@gmail.com</a></p>
+                          <a href="mailto:pastor@cornerstonehobart.com">pastor@cornerstonehobart.com</a></p>
 
 
                       </div> {/* /footer-mail */}  </div>
