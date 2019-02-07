@@ -10,7 +10,7 @@ class SystematicTheologyOverview extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Systematic Theology Overview</h1>
+                  <h1>Systematic Theology Course</h1>
                 </div>
               </div>
 
@@ -38,92 +38,62 @@ class SystematicTheologyOverview extends Component {
                           <h3 className="header-lightBlue text-center">Two-year Systematic Theology Course, 2018-19</h3>
                           <p>
                             Systematic Theology is the study of the truths of the Bible, grouped and arranged according to a logical system.
-                            For example, the person of Jesus is studied in a subject called Christology, which pull together and arranges what the whole Bible teaches about who exactly Jesus is and what Jesus has done for the world.
-                            In another example, the study of Eschatology pulls together what the whole Bible teaches about what happens when we die and at the return of Jesus.
+                            Systematic Theology helps us to acquire a deeper and wider grasp of all the truths of the Bible, and how these truths integrate.
+                            When we deepen and widen our theology, we are transformed and equipped to withstand harmful falsehoods, and to know God’s truth and will for our lives.
+                            Studying Systematic Theology is putting into action the command of Paul in Romans 12:2, “Do not conform any longer to the pattern of this world, but be transformed by the renewing of your mind.”
                             </p>
                           <br />
                           <p>
-                            Systematic theology helps us, therefore, to acquire a deeper and wider grasp of all the truths of the Bible, and how these truths integrate.
-                            The study of systematic theology is of course very helpful for those who are in church leadership, and who have some kind of teaching role in the church: whether in Sunday school or youth group,
-                            in a one-on- one discipleship context, or in Sunday preaching. And when a Christian deepens and widens their theology, they are transformed and equipped to withstand harmful falsehoods, and to know God’s truth and will for their lives.
-                            They are putting into action the command of Paul in Romans 12:2, “Do not conform any longer to the pattern of this world, but be transformed by the renewing of your mind.”
-                            </p>
-                          <br />
-                          <p>
-                            The two-year study Systematic Theology Course being offered by Cornerstone Presbyterian Church in Hobart is intentionally demanding and comprehensive.
-                            The course consists of eight modules, each of which includes twelve hours of lectures. The course will constantly adhere to the maxim that Theology leads to Doxology.
-                              Theology (the study of God) must always lead to Doxology (the praise of God.) To remind us of this, every evening will begin with prayer and will end with sung praise.</p>
-                          <br />
-                          <div id="accordion">
-                            <div className="card">
-                              <div className="card-header" id="participationHeading">
-                                <h5 className="mb-0">
-                                  <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#participationCollapse" aria-expanded="false" aria-controls="participationCollapse">
-                                    There are two levels of participation for each module
-        </button>
-                                </h5>
-                              </div>
-                              <div id="participationCollapse" className="collapse" aria-labelledby="participationHeading" data-parent="#accordion">
-                                <div className="card-body">
-                                  <h5>Full</h5>
-                                  <ul>
-                                    <li>Attend six two-hour classes on Tuesday nights.</li>
-                                    <li>Participate in ten-minute review quizzes at the beginning of each lecture.</li>
-                                    <li>Complete lecture readings (about fifty pages per week).</li>
-                                    <li>Submit within two weeks of the end of the course a one to two thousand word non-academic essay on a given question.</li>
-                                  </ul>
-                                  <h5>Audit</h5>
-                                  <ul>
-                                    <li>Attend six two-hour classes on Tuesday nights.</li>
-                                    <li>Participate in ten-minute review quizzes at the beginning of each lecture.</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <br />
-                            <div className="card">
-                              <div className="card-header" id="generalInfoHeading">
-                                <h5 className="mb-0">
-                                  <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#generalInfoCollapse" aria-expanded="false" aria-controls="generalInfoCollapse">
-                                    General Information
-        </button>
-                                </h5>
-                              </div>
-                              <div id="generalInfoCollapse" className="collapse" aria-labelledby="generalInfoHeading" data-parent="#accordion">
-                                <div className="card-body">
-                                  <p>
-                                    The course is taught by Campbell Markham, who is an ordained minister in the Presbyterian Church of Australia, is passionate about God’s Word, and has been teaching the Bible full time for almost twenty years.
-                                    (Guest lecturers will be invited from time-to- time to teach specific subjects.) The Westminster Confession of Faith (1646), which is itself a classic systematic theology, forms the doctrinal standard of the course.
-                            </p>
-                                  <p>
-                                    <strong>Venue:</strong> Main auditorium upstairs at 45 Melville Street, Hobart (Alphacrucis College.)<br /><br />
-                                    <strong>Skype:</strong> Students can also participate by Skype connection from their home.<br /><br />
-                                    <strong>Time:</strong> 7-9 PM Tuesday nights. Including a 10 minute break, supper provided.<br /><br />
-                                    <strong>Cost:</strong> Free, though we ask wage-earners who are not attendees of Cornerstone Presbyterian Church to consider making an $60 donation per module to the Church to defray costs.
-                              (BSB: 037001. Acct: 586161. Ref: THEOLCOURSE)<br /><br />
-                                    <strong>For whom?</strong> Everyone who is keen to work hard to grow in their Bible knowledge!<br /><br />
-                                    <strong>Textbook:</strong> Those participating in the full program will need to purchase John Frame’s Systematic Theology (Presbyterian &amp;amp; Reformed Publishers, 2013). This normally retails at Koorong for $60 and is an excellent long-term reference tool.<br /><br />
-                                    <strong>Handouts:</strong> Full lecture notes are provided on the night, including electronic copies on the Facebook site or by email. Notes include a summary of the lecture and any extra reading material on top of John Frame’s book.<br /><br />
-                                    <strong>Modules:</strong> The complete course consists of eight units. Although the units must to some extent build upon each other, they are also designed to be self-contained to the extent that participants who cannot attend the whole course can profit by participating in individual units.
-                              </p>
-                                  <ul style={{ listStyle: "none" }}>
-                                    <li>Unit One Revelation & Inspiration Term 1 2018</li>
-                                    <li>Unit Two Theology I, The Person of God Term 2 2018</li>
-                                    <li>Unit Three Theology II, The Work of God Term 3 2018</li>
-                                    <li>Unit Four Anthropology Term 4 2018</li>
-                                    <li>Unit Five Christology Term 1 2019</li>
-                                    <li>Unit Six Soteriology Term 2 2019</li>
-                                    <li>Unit Seven Ecclesiology Term 3 2019</li>
-                                    <li>Unit Eight Eschatology Term 4 2019</li>
-                                  </ul>
+                            The course is taught by Campbell Markham, Pastor of Cornerstone Presbyterian Church Hobart.
+                            Campbell is an ordained minister in the Presbyterian Church of Australia, is passionate about God’s Word, and has been employed in fulltime Ministry for almost twenty years.
+                            Guest speakers may be invited from time-to- time to assist with specific topics. The Westminster Confession of Faith (1646), which is itself a classic systematic theology, forms the doctrinal standard of the course.
+                          </p>
 
-                                  <p><strong>Certification?</strong> The course is completely “in-house.” Those, however, who complete the “full” course will be issued a certificate of completion by Cornerstone Presbyterian Church.</p>
-                                </div>
-                              </div>
-                            </div>
+                          <h3 className="header-lightBlue no-bottom-margin">Theology leads to Doxology</h3>
+
+                          <div className="">Theology (the study of God) must always lead to Doxology (the praise of God.)</div>
+
+                          <h3 className="header-lightBlue no-bottom-margin">Course Details</h3>
+                          <h4 className="no-bottom-margin no-top-margin">There are two levels of Course Participation available:</h4>
+                          <div className="margin-top-10 margin-left-30">
+                            <h4 className="margin-top-5">Full</h4>
+                            <ul>
+                              <li>Attend lectures on Tuesday nights (in person or via our <a href="https://www.youtube.com/channel/UCF-sudt_zfl2Ni8eR9ayVHQ" target="_blank" rel="noreferrer noopener">YouTube channel</a>), including participating it ten-minute review quizzes at the beginning of each lecture.</li>
+                              <li>Complete the prescribed reading for each lecture (about fifty pages per week).</li>
+                              <li>Submit a non-academic essay (select from a short list of essay questions, essay to be approx. 1,000 to 2,000 words, due 2 weeks after the unit ends).</li>
+                            </ul>
+
+                            <h4 className="margin-top-5">Audit</h4>
+                            <ul>
+                              <li>Attend lectures on Tuesday nights (in person or via our <a href="https://www.youtube.com/channel/UCF-sudt_zfl2Ni8eR9ayVHQ" target="_blank" rel="noreferrer noopener">YouTube channel</a>), including participating it ten-minute review quizzes at the beginning of each lecture.</li>
+                              <li>Alternatively you can work through the units at your own pace using the hyperlinks to the notes and YouTube recordings provided below.</li>
+                            </ul>
                           </div>
-                          <br />
-                          <p><strong>Registration:</strong> For more information, or to register, send a text or email to Course Administrator Cristiane Baker on 0404 392 812, or <a href="mailto:cbaker@cornerstonehobart.com">cbaker@cornerstonehobart.com</a>. Alternatively, you can respond to the Facebook event page <a href="https://www.facebook.com/events/139209490053621/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+
+                          <h4 className="no-bottom-margin">Textbook</h4>
+                          <p>
+                            Those participating in the full program will need to purchase John Frame’s Systematic Theology (Presbyterian &amp; Reformed Publishers, 2013). This normally retails at Koorong for $60 and is an excellent long-term reference tool.
+                            </p>
+
+                          <h4 className="no-bottom-margin">Certification</h4>
+                          <p>
+                            The course is completely “in-house”. Those who complete the “full” course will be issued a certificate of completion by Cornerstone Presbyterian Church.
+                          </p>
+
+                          <h4 className="no-bottom-margin">Cost</h4>
+                          <p>
+                            Free
+                          </p>
+
+                          <h3 className="header-lightBlue no-bottom-margin">Additional Information</h3>
+                          <p>
+                            For lecture details (venue, dates, times, etc.) email <a href="mailto:systematictheology@cornerstonehobart.com">systematictheology@cornerstonehobart.com</a> or contact Course Coordinator, Cristiane Baker, on 0404 392 812.
+                          </p>
+
+                          <h3 className="header-lightBlue no-bottom-margin">Course Units</h3>
+                          <p>Units and resources coming soon.</p>
+                          <p>Until they are available here, lectures can be found on our <a href="https://www.youtube.com/channel/UCF-sudt_zfl2Ni8eR9ayVHQ" target="_blank" rel="noreferrer noopener">YouTube channel</a> and notes can be found linked to the description field of each of the lectures.</p>
                         </div>
                       </div>
 
@@ -142,7 +112,7 @@ class SystematicTheologyOverview extends Component {
 
             </div>
           </div>
-        </div>
+        </div >
       </section >
     );
   }

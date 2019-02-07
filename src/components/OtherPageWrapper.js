@@ -62,9 +62,10 @@ class OtherPageWrapper extends Component {
           <Route exact path="/series/:nid" component={SermonSeriesPage} />
           <Route exact path="/series/:nid/:title" component={SermonSeriesPage} />
           <Route exact path="/node/:nid/:title" component={SermonPage} />
-          <Route exact path="/SystematicTheologyCourse" component={SystematicTheologyCourse} />
-          <Route exact path="/SystematicTheologyOverview" component={SystematicTheologyOverview} />
-          <Route exact path="/SystematicTheologyNotes" component={SystematicTheologyNotes} />
+          <Route exact path="/SystematicTheologyCourse" component={SystematicTheologyOverview} />
+          {/*Temporarily removed pending full removal when full rework of the page is complete*/}
+          {/*<Route exact path="/SystematicTheologyOverview" component={SystematicTheologyOverview} />
+          <Route exact path="/SystematicTheologyNotes" component={SystematicTheologyNotes} />*/}
           <Route exact path="/WestminsterConfession" component={WestminsterConfession} />
 
           <Route exact path="/OurPeople" component={OurPeople} />
