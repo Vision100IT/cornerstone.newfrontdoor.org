@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 //import ParkingMap from '../../../assets/ParkingMap.jpg';
 import onSiteParking from '../../../assets/onSiteParking.jpg';
 import utasParking from '../../../assets/utasParking.jpg';
-import redCrossParking from '../../../assets/redCrossParking.jpg';
 
 class Parking extends Component {
 
@@ -53,18 +52,6 @@ class Parking extends Component {
                                   <li>The elderly.</li>
                                   <li>Those with reduced mobility.</li>
                                 </ul>
-                              </div>
-                            </div>
-
-                            <div className="row">
-                              <div className="col-xs-3">
-                                <img src={redCrossParking} style={{ paddingTop: "20px" }} alt=""></img>
-                              </div>
-                              <div className="col-xs-8">
-                                <h3 className="header-lightBlue no-bottom-margin">Red Cross Car Park:</h3>
-                                <p>
-                                  The Red Cross have given permission for us to use their small carpark directly across the road from church.
-                            </p>
                               </div>
                             </div>
 
