@@ -1,8 +1,69 @@
 import React, { Component } from 'react';
+import _ from 'lodash'
+import { decode } from 'he'
+import { getFromDrupalAPI } from '../../../utils/fetchJSON';
+import notesImg from '../../../assets/notes.png';
+import play from '../../../assets/play.png';
+import playpt1 from '../../../assets/playpt1.png';
+import playpt2 from '../../../assets/playpt2.png';
+
 
 class SystematicTheologyOverview extends Component {
+  constructor() {
+    super();
+    this.state = {
+      resources: null,
+    }
+  }
+
+  componentWillMount() {
+    var that = this;
+
+    getFromDrupalAPI('systematic_theology_resources_api', function (data) {
+      that.setState({ resources: data });
+    });
+  }
 
   render() {
+    var SysTheoResources;
+    if (!this.state.resources) {
+      SysTheoResources = <tr><td><i className="fa fa-spinner"></i></td></tr>;
+    }
+    else {
+      var tdPadding = { padding: "0px 5px 0px 5px" };
+      var unitTitles = []
+      var unitTitle;
+      SysTheoResources = _.map(this.state.resources, (resource) => {
+        unitTitle = "";
+        if (unitTitles.indexOf(resource.unit) === -1) {
+          unitTitles.push(resource.unit);
+          unitTitle = resource.unit;
+
+        }
+        if (resource.youtube) {
+          if (resource.youtube.indexOf(',') > 0) {
+            var splitLinks = resource.youtube.split(", ");
+            var multiPart1 = splitLinks[0];
+            var multiPart2 = splitLinks[1];
+          }
+          else if (resource.youtube !== []) {
+            var singleLink = resource.youtube;
+          }
+        }
+        return (
+          <tr key={_.uniqueId()} className="odd even systematic-theology-resources">
+            {unitTitle ? <td className="systematic-theology-resources unit-title" style={tdPadding}>{decode(unitTitle)}</td> : <td className="systematic-theology-resources" style={tdPadding}></td>}
+            {resource.node_title ? <td className="systematic-theology-resources   no-left-right-border" style={tdPadding}>{decode(resource.node_title)}</td> : <td className="systematic-theology-resources" style={tdPadding}></td>}
+            <td className="systematic-theology-resources no-left-right-border" style={tdPadding}>
+              {resource.notes ? <a href={resource.notes} target="_blank" rel="noreferrer noopener"><img className="notes-btn img img-responsive" src={notesImg} alt="" /></a> : ''}
+              {multiPart1 ? <a href={multiPart1} target="_blank" rel="noreferrer noopener"><img className="play-btn img img-responsive" src={playpt1} alt="" /></a> : ''}
+              {multiPart2 ? <a href={multiPart2} target="_blank" rel="noreferrer noopener"><img className="play-btn img img-responsive" src={playpt2} alt="" /></a> : ''}
+              {singleLink ? <a href={singleLink} target="_blank" rel="noreferrer noopener"><img className="play-btn img img-responsive" src={play} alt="" /></a> : ''}
+            </td>
+          </tr>
+        )
+      });
+    }
     return (
       <section>
         <div id="top-content-region" className="top-content padding-top-15 padding-bottom-15 block-15 bg-color-grayLight1">
@@ -91,9 +152,13 @@ class SystematicTheologyOverview extends Component {
                             For lecture details (venue, dates, times, etc.) email <a href="mailto:systematictheology@cornerstonehobart.com">systematictheology@cornerstonehobart.com</a> or contact Course Coordinator, Cristiane Baker, on 0404 392 812.
                           </p>
 
-                          <h3 className="header-lightBlue no-bottom-margin">Course Units</h3>
-                          <p>Units and resources coming soon.</p>
-                          <p>Until they are available here, lectures can be found on our <a href="https://www.youtube.com/channel/UCF-sudt_zfl2Ni8eR9ayVHQ" target="_blank" rel="noreferrer noopener">YouTube channel</a> and notes can be found linked to the description field of each of the lectures.</p>
+                          <h3 className="header-lightBlue">Course Units</h3>
+                          <table className="resources-table">
+                            <tbody className="systematic-theology-resources0">
+                              {SysTheoResources}
+                            </tbody>
+
+                          </table>
                         </div>
                       </div>
 

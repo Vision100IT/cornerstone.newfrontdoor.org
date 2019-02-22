@@ -19,9 +19,7 @@ import Sermons from './pages/Resources/Sermons';
 import AllSermonsInfinite from './pages/Resources/AllSermonsInfinite';
 import SermonPage from './pages/Resources/SermonPage';
 import SermonSeriesPage from './pages/Resources/SermonSeriesPage';
-import SystematicTheologyCourse from './pages/Resources/SystematicTheologyCourse';
 import SystematicTheologyOverview from './pages/Resources/SystematicTheologyOverview';
-import SystematicTheologyNotes from './pages/Resources/SystematicTheologyNotes';
 import WestminsterConfession from './pages/Resources/WestminsterConfession';
 
 import OurPeople from './pages/VisitUs/OurPeople';
@@ -63,9 +61,6 @@ class OtherPageWrapper extends Component {
           <Route exact path="/series/:nid/:title" component={SermonSeriesPage} />
           <Route exact path="/node/:nid/:title" component={SermonPage} />
           <Route exact path="/SystematicTheologyCourse" component={SystematicTheologyOverview} />
-          {/*Temporarily removed pending full removal when full rework of the page is complete*/}
-          {/*<Route exact path="/SystematicTheologyOverview" component={SystematicTheologyOverview} />
-          <Route exact path="/SystematicTheologyNotes" component={SystematicTheologyNotes} />*/}
           <Route exact path="/WestminsterConfession" component={WestminsterConfession} />
 
           <Route exact path="/OurPeople" component={OurPeople} />
