@@ -40,7 +40,7 @@ class WomensMinistry extends Component {
                             <div className=" col-md-12 col-xs-12">
                               <img className="img-responsive t2Women-img" src={t2Women} alt="" />
                               <h2 className="header-lightBlue">Why T2 Women?</h2>
-                              <p className="ministry-text"><strong>Biblically, a Titus 2 Woman is defined by , Titus 2:3-5,</strong><br />
+                              <p className="ministry-text"><strong>Biblically, a Titus 2 Woman is defined by , Titus 2:3-5,</strong><br /><br />
                                 “Likewise, teach the older women to be reverent in the way they live, not to be slanderers, or addicted to much wine, but to teach what is good. Then they can train the younger women to love their husbands and children, to be self-controlled and pure, to be busy at home, to be kind, and to be subject to their husbands, so that no one will malign the word of God.”
                               </p>
 
@@ -67,20 +67,18 @@ class WomensMinistry extends Component {
                                 For more information contact our Women's worker, Cristiane Baker - phone: 0404 392 912 or email <a href="mailto:cbaker@cornerstonehobart.com">cbaker@cornerstonehobart.com</a>.
                               </p>
 
+                              <h2 className="header-lightBlue">Women’s Weekend Away (WWA)</h2>
+                              <p className="ministry-text"><strong>What’s it all about?</strong><br /><br />
+                                One weekend a year, the Presbyterian Church of Tasmania hosts a weekend for all women to gather together for a time of biblical teaching, worshiping together and encouragement. <br />
+                                For more information, visit the WWA Facebook page: <a href="https://www.facebook.com/WWATasmania/" rel="noreferrer noopener" target="_blank">/WWATasmania</a>.
+
+                              </p>
+
                             </div>
 
                           </div>
                           <div className="row padding-top-15 text-center">
                             <h3>Upcoming Events</h3>
-                            <h4 className="header-lightBlue">COMBINED MEN’S/WOMEN’S MINISTRY EVENT</h4>
-                            <strong>FAMILY ACCORDING TO GOD’S WILL</strong><br />
-                            <strong>GUEST SPEAKERS: SCOTT & LYNN WINKLER</strong><br />
-                            <strong>SAT 19 JAN 2019</strong>
-
-                            <h4 className="header-lightBlue">T2 WOMEN’S MORNING TEA</h4>
-                            <strong>SPEAKERS: CRISTIANE & LIBBY</strong><br />
-                            <strong>SAT 30 MAR 2019</strong>
-
                             <h4 className="header-lightBlue">TASMANIAN WOMEN’S BIBLE CONFERENCE</h4>
                             <strong>IN THE PRESENCE OF GREATNESS</strong><br />
                             <strong>SAT 6 APR 2019</strong>
