@@ -100,9 +100,8 @@ class OurPeople extends Component {
 
 
                               <Person name="Libby Dilger" title="Treasurer" image={libbyImg} />
-
                               <Person name="Amy Glynn" title="" image={amyImg} />
-
+                              <div className="clearfix hideForPC"></div>
                               <Person name="Heinz Maarseveen" title="" image={heinzImg} />
                               <Person name="Jane Maarseveen" title="" image={janeImg} />
                               <div className="clearfix"></div>
