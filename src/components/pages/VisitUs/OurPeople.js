@@ -110,7 +110,6 @@ class OurPeople extends Component {
 
                             </div>
                           </div>
-                          <br /><br />
 
                           <div className="row">
                             <div className="col-md-12">
@@ -124,11 +123,6 @@ class OurPeople extends Component {
                               <div className="clearfix"></div>
                               <Person name="Campbell Markham" title="Pastor" image={campbellImg} />
                               <Person name="Elya Richardson" title="Youth Worker" image={elyaImg} />
-
-
-
-
-
 
                               <Person name="Trish Smith" title="" image={trishImg} />
 
@@ -154,10 +148,11 @@ class OurPeople extends Component {
                             <div className="col-md-12">
                               <h2 className="header-lightBlue text-center">Where are our ministry students now?</h2>
 
-                              <h4><strong>Paul Hutchens</strong>, Pastor, <a href="https://soulchurch.org.au/" target="_blank" rel="noreferrer noopener">Soul Church</a>.</h4>
-                              <h4><strong>R'jaye Rojas</strong>, Pastor, <a href="https://www.mspc.org.au/" target="_blank" rel="noreferrer noopener">Mount Stuart Presbyterian</a>.</h4>
                               <h4><strong>Andrew Hutchens</strong>, Graduate, <a href="https://christcollege.edu.au/" target="_blank" rel="noreferrer noopener">Christ College</a>.</h4>
+                              <h4><strong>Paul Hutchens</strong>, Pastor, <a href="https://soulchurch.org.au/" target="_blank" rel="noreferrer noopener">Soul Church</a>.</h4>
                               <h4><strong>Michael Riske</strong>, current student, <a href="https://christcollege.edu.au/" target="_blank" rel="noreferrer noopener">Christ College</a>.</h4>
+                              <h4><strong>R'jaye Rojas</strong>, Pastor, <a href="https://www.mspc.org.au/" target="_blank" rel="noreferrer noopener">Mount Stuart Presbyterian</a>.</h4>
+
 
                             </div>
                           </div>
