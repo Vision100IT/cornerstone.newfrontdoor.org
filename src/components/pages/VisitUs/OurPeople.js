@@ -82,9 +82,9 @@ class OurPeople extends Component {
 
                               <h2 className="header-lightBlue text-center">Deacons</h2>
                               <Person name="Amy Glynn" title="Deacon" image={amyImg} />
-                              <Person name="Jane Maarseven" title="Deacon" image={janeImg} />
+                              <Person name="Jane Maarseveen" title="Deacon" image={janeImg} />
                               <Person name="Trish Smith" title="Deacon" image={trishImg} />
-                              <Person name="David Van Emerick" title="Deacon" image={davidImg} />
+                              <Person name="David Van Emmerik" title="Deacon" image={davidImg} />
 
 
 
@@ -108,7 +108,7 @@ class OurPeople extends Component {
                               <div className="col-md-3"></div>
 
                               <Person name="Trish Smith" title="" image={trishImg} />
-                              <Person name="David Van Emerick" title="Secretary" image={davidImg} />
+                              <Person name="David Van Emmerik" title="Secretary" image={davidImg} />
 
                             </div>
                           </div>
