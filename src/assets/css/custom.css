@@ -211,3 +211,9 @@ font-family: 'Century Gothic';
 font-style: normal;
 font-size: 20px;
 }
+
+@media (min-width: 991px) {
+  .hideForPC{
+    display: none; 
+  }
+}
