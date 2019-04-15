@@ -100,12 +100,15 @@ class OurPeople extends Component {
 
 
                               <Person name="Libby Dilger" title="Treasurer" image={libbyImg} />
+
                               <Person name="Amy Glynn" title="" image={amyImg} />
-                              <div className="clearfix hideForPC"></div>
+
                               <Person name="Heinz Maarseveen" title="" image={heinzImg} />
                               <Person name="Jane Maarseveen" title="" image={janeImg} />
-                              <Person name="Trish Smith" title="" image={trishImg} />
+                              <div className="clearfix"></div>
+                              <div className="col-md-3"></div>
 
+                              <Person name="Trish Smith" title="" image={trishImg} />
                               <Person name="David Van Emerick" title="Secretary" image={davidImg} />
 
                             </div>
@@ -115,18 +118,19 @@ class OurPeople extends Component {
                             <div className="col-md-12">
                               <h2 className="header-lightBlue text-center">Church Staff</h2>
 
+                              <div className="row">
+                                <Person name="Cristiane Baker" title="Women's Worker" image={cristianeImg} />
+                                <Person name="Joe Cox" title="Assistant to the Minister" image={joeImg} />
+                                <Person name="Libby Dilger" title="Administrator" image={libbyImg} />
+                                <Person name="David Gee" title="Evangelist" image={Male} />
+                                <div className="clearfix"></div>
+                                <div className="col-md-3"></div>
+                                <Person name="Campbell Markham" title="Pastor" image={campbellImg} />
+                                <Person name="Elya Richardson" title="Youth Worker" image={elyaImg} />
 
-                              <Person name="Cristiane Baker" title="Women's Worker" image={cristianeImg} />
-                              <Person name="Joe Cox" title="Assistant to the Minister" image={joeImg} />
-                              <Person name="Libby Dilger" title="Administrator" image={libbyImg} />
-                              <Person name="David Gee" title="Evangelist" image={Male} />
-                              <div className="clearfix"></div>
-                              <Person name="Campbell Markham" title="Pastor" image={campbellImg} />
-                              <Person name="Elya Richardson" title="Youth Worker" image={elyaImg} />
+                              </div>
 
-                              <Person name="Trish Smith" title="" image={trishImg} />
 
-                              <Person name="David Van Emerick" title="Secretary" image={davidImg} />
 
                             </div>
                           </div>
