@@ -44,7 +44,7 @@ class SermonSeriesPage extends Component {
                 var sermons = _.map(this.state.sermons, (sermon) => {
                     return (
                         <tr key={_.uniqueId()} className="odd even">
-                            {sermon.node_title ? <td style={tdPadding} dangerouslySetInnerHTML={{ __html: sermon.node_url }} /> : <td style={tdPadding}></td>}
+                            {sermon.node_title ? <td style={tdPadding}><a href={'/sermon/' + sermon.nid}>{decode(sermon.node_title)}</a></td> : <td style={tdPadding}><a href={'/sermon/' + sermon.nid}>Untitlted</a></td>}
 
 
                             <td style={tdPadding}>{sermon.text ? decode(sermon.text) : ''}</td>
@@ -70,7 +70,7 @@ class SermonSeriesPage extends Component {
                         <div className="row">
                             <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                                 <div id="page-title-block" className="page-title block">
-                                    <h1>{seriesTitle !== "Series Title" ? seriesTitle : ""}</h1>
+                                    <h1>{seriesTitle !== "Series Title" ? decode(seriesTitle) : ""}</h1>
                                 </div>
                             </div>
 
