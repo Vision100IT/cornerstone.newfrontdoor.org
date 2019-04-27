@@ -61,11 +61,11 @@ class Sermons extends Component {
 
       var latestSermon = (<div className="views-row views-row-1 views-row-odd views-row-first views-row-last">
         <div className="views-field views-field-field-thumbnail-image">        <div className="field-content">
-          <a href={this.state.latestSermon.node_path}><img src={this.state.latestSermon.sermon_img ? this.state.latestSermon.sermon_img : this.state.latestSermon.series_img} width="600" height="450" alt="" /></a></div>  </div>
+          <a href={'/sermon/' + this.state.latestSermon.nid}><img src={this.state.latestSermon.sermon_img ? this.state.latestSermon.sermon_img : this.state.latestSermon.series_img} width="600" height="450" alt="" /></a></div>  </div>
         <div className="views-field views-field-title-1">
           <span className="field-content">{this.state.latestSermon.sermonseries ? <a href={'/series/' + this.state.latestSermon.series_id}>{decode(this.state.latestSermon.sermonseries)}</a> : ""}</span>  </div>
         <div>
-          {this.state.latestSermon.node_url ? <span dangerouslySetInnerHTML={{ __html: this.state.latestSermon.node_url }} /> : <span></span>}  </div>
+          {this.state.latestSermon.node_title ? <a href={'/sermon/' + this.state.latestSermon.nid}>{decode(this.state.latestSermon.node_title)}</a> : <a href={'/sermon/' + this.state.latestSermon.nid}>Untitled</a> }  </div>
         <div className="views-field views-field-field-preacher">
           <div className="field-content">{decode(this.state.latestSermon.preacher)}</div>  </div>  </div>);
 
