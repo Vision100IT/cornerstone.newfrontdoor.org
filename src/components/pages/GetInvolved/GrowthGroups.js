@@ -53,7 +53,15 @@ class GrowthGroup extends Component {
                             <div className=" col-md-6 col-xs-12">
                               <strong>Sunday:</strong><br /><br />
                               <ul>
-                                <li><strong>Young Women’s Group</strong> downstairs after church</li><br />
+                                <li><strong>Young Women’s Group</strong> straight after church</li><br />
+                              </ul>
+                              <strong>Monday:</strong><br /><br />
+                              <ul>
+                                <li>Ladies Group in Kingston Area at 10:00am to Midday</li><br />
+                              </ul>
+                              <strong>Tuesday:</strong><br /><br />
+                              <ul>
+                                <li><a href="/SystematicTheologyCourse">Systematic Theology Course</a></li><br />
                               </ul>
                               <strong>Wednesday:</strong><br /><br />
                               <ul>
@@ -62,10 +70,9 @@ class GrowthGroup extends Component {
                               </ul>
                               <strong>Thursday:</strong><br /><br />
                               <ul>
-                                <li><strong>Mums with Young Children</strong> in Howrah at 10:00am</li><br />
-                                <li><strong>Ladies Group</strong> in Kingston at 10:00am to Midday</li><br />
+                                <li><strong>Mums with Young Children</strong> in Howrah at 10:00am to Midday</li><br />
                                 <li><strong>Ladies Group</strong> in West Hobart at 2:00pm to 3:30pm</li><br />
-                                <li><strong>Teenagers and older</strong> in West Hobart at 7:30pm to 8:30pm</li><br />
+                                <li><strong>West Hobart</strong> at 7:30pm</li><br />
                                 <li><strong>Lindisfarne</strong> at 7:30pm</li><br />
                               </ul><br />
 

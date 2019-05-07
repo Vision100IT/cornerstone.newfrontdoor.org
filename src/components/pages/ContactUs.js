@@ -129,30 +129,30 @@ class ContactUs extends Component {
             <div className="row">
               <div id="main-content-region" className="main-content col-xs-12 col-md-8 col-md-offset-2">
 
-                <div id="block-block-54" class="block block-block">
+                <div id="block-block-54" className="block block-block">
 
 
-                  <div class="content">
+                  <div className="content">
                     If you have any questions about Cornerstone Presbyterian Church, want to visit us or would like more information on how to get involved, please contact us - we would love to hear from you.  </div>
                 </div>
 
 
-                <div id="block-block-45" class="block block-block">
+                <div id="block-block-45" className="block block-block">
 
 
-                  <div class="content">
-                    <div class="contacts">
-                      <div class="row">
+                  <div className="content">
+                    <div className="contacts">
+                      <div className="row">
 
-                        <div class="col-xs-12 col-sm-6">
+                        <div className="col-xs-12 col-sm-6">
                           <h5>Address</h5>
                           <p>Come visit us on Sundays @ 10am:</p>
-                          <p>Cornerstone Presbyterian Church<br />
-                            45 Melville St<br />
+                          <p><a href="https://goo.gl/maps/PAtkKDuPaQYGRUj7A" target="_blank" rel="noreferrer noopener">Cornerstone Presbyterian Church</a><br />
+                            67 Federal St,<br />
                             Hobart, Tasmania</p>
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 margin-top-xs-40">
+                        <div className="col-xs-12 col-sm-6 margin-top-xs-40">
                           <h5>Contact Us</h5>
                           <p><b>Facebook:</b> &nbsp;<a href="https://facebook.com/cornerstonehobart">/cornerstonehobart</a><br />
                             <b>Email:</b>&nbsp;<a href="mailto:admin@cornerstonehobart.com">admin@cornerstonehobart.com</a></p>

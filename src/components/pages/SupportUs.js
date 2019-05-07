@@ -40,7 +40,7 @@ class SupportUs extends Component {
                           <p>Please see here for details of our regular weekly prayer meetings.</p>*/}
 
                           <h4 className="header-lightBlue no-margin-bottom">Financial Support</h4>
-                          <p>Tithes and Offerings may be placed in the Blue Box (located on the table near the top of the stairs at the rear of the auditorium) on Sunday morning.<br /><br />
+                          <p>Tithes and Offerings may be placed in the “Blue Box” on Sunday morning.<br /><br />
 
                             Tithes and Offerings may also be deposited directly into the following account:</p>
                           <ul style={{ listStyle: "none" }}>

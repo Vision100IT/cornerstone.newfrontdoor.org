@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 //import ParkingMap from '../../../assets/ParkingMap.jpg';
-import onSiteParking from '../../../assets/onSiteParking.jpg';
-import utasParking from '../../../assets/utasParking.jpg';
+//import onSiteParking from '../../../assets/onSiteParking.jpg';
+//import utasParking from '../../../assets/utasParking.jpg';
 
 class Parking extends Component {
 
@@ -41,12 +41,9 @@ class Parking extends Component {
                         <div className="row">
                           <div className="col-md-12 col-xs-12">
                             <div className="row">
-                              <div className="col-xs-3">
-                                <img src={onSiteParking} style={{ paddingTop: "20px" }} alt=""></img>
-                              </div>
-                              <div className="col-xs-8">
+                              <div className="col-xs-12">
                                 <h3 className="header-lightBlue no-bottom-margin">On-Site Parking:</h3>
-                                <p>As we only have a small amount of on-site parking available, we ask that this be reserved for:</p>
+                                <p>There are a limited number of on-site parking spaces available inside the gates. We ask that these be reserved for:</p>
                                 <ul>
                                   <li>Families with babies and toddlers.</li>
                                   <li>The elderly.</li>
@@ -56,23 +53,13 @@ class Parking extends Component {
                             </div>
 
                             <div className="row">
-                              <div className="col-xs-3">
-                                <img src={utasParking} style={{ paddingTop: "20px" }} alt=""></img>
-                              </div>
-                              <div className="col-xs-8">
-                                <h3 className="header-lightBlue no-bottom-margin">UTAS Building:</h3>
+                              <div className="col-xs-12">
+                                <h3 className="header-lightBlue no-bottom-margin">Street Parking:</h3>
                                 <p>
-                                  Car parking is also available in the UTAS building. Proceed through the entry and up the ramp to the voucher parking area. Parking is free on Sundays.
+                                  There are unmetered parking spaces available in Federal Street.
                                 </p>
                               </div>
                             </div>
-
-
-                            <h3 className="header-lightBlue no-bottom-margin">Parking Meters:</h3>
-                            <p>
-                              1hr and 2hr Parking Meters are available in Melville St. Parking Attendants patrol the area regularly and the Hobart City Council strictly enforces the time limits. The fine for exceeding the time limit is approximately $40, even if you have revisited the meter and paid for additional time.
-                            </p>
-                            <br />
                           </div>
                           {/*<div className="col-md-4 col-xs-12">
                             <a href={ParkingMap} target="_blank" rel="noopener noreferrer"><img className="img-responsive img-full-width" src={ParkingMap} alt="Parking locations map" /> </a>

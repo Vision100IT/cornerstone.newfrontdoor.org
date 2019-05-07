@@ -39,15 +39,13 @@ class WorshipServices extends Component {
                           <div className="col-md-8 col-xs-12">
                             <h4 className="header-lightBlue no-bottom-margin no-top-margin">Sunday Mornings</h4>
                             <h4 className="header-lightBlue no-bottom-margin no-top-margin">10am-11:30am</h4>
-                            <h4 className="header-lightBlue no-bottom-margin no-top-margin">Alphacrucis College, 45 Melville St, Hobart</h4>
+                            <h4 className="header-lightBlue no-bottom-margin no-top-margin">Hellenic House, 67 Federal St, North Hobart</h4>
+
+
 
 
                             <p>
-                              Proceed through the main gate, the door is at the back of the carpark.
-                            </p>
-
-                            <p>
-                              Our auditorium is upstairs. Please let one of our welcome team know if you would like assistance with the stairs, or if you would like to use our chairlift.
+                              Hellenic House is the building directly ahead of you as you proceed through the main gates. There are a small number of steps leading up to the front door, with a mobility ramp on the left hand side.
                             </p>
 
                             <p>

@@ -31,17 +31,49 @@ import './assets/nestor/css/color/blue.css';
 
 import './assets/css/custom.css';
 import './assets/css/events.css';
+import './assets/css/notification.css';
+
+import SiteNotification from './components/SiteNotification';
 
 config.set(configuration);
 
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { showNotification: localStorage.getItem('showCornerstoneNotification') || true }
+
+
+  }
+
+  componentDidMount() {
+    const showNotification = localStorage.getItem('showCornerstoneNotification');
+    this.setState({ showNotification: !showNotification });
+    console.log(showNotification)
+  }
+
+  onNotificationClose = () => {
+    this.setState({ showNotification: false });
+    localStorage.setItem('showCornerstoneNotification', false)
+  };
+
   render() {
+    console.log(this.state)
     return (
       <Router>
         <div className="App">
           <Route path="*" component={Navigation} />
           <Route exact path="/" component={HomePageWrapper} />
           <Route path="/:path" component={OtherPageWrapper} />
+
+          <Route
+            path={'*'}
+            component={() => <SiteNotification
+              showNotification={this.state.showNotification}
+              onClose={this.onNotificationClose}
+            />}
+          />
+
           <Route path="*" component={Footer} />
         </div>
       </Router>

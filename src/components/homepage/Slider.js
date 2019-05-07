@@ -77,7 +77,10 @@ class Slider extends Component {
                     <div className="highlighted-slider-2">
                       <div className="flex-bullet-slider">
                         <ul className="slides">
-                          {slideshow}
+                          {/*{slideshow}*/}
+
+                          <img className="img-responsive img-full-width" src={congregation} width="1440" height="900" />
+
                         </ul>
                       </div>
                     </div>
