@@ -129,6 +129,7 @@ line-height: 24px;
 .gm-style-iw, .gm-style-iw>div {
   width: auto !important;
   overflow: hidden !important;
+  min-height: 205px;
  }
 
  /* Size of images on our people*/
