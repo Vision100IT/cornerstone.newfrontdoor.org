@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import StreetView from '../../models/StreetView';
 
-import EntranceImg from '../../../assets/Entrance.jpg';
+//import EntranceImg from '../../../assets/Entrance.jpg';
 
 class WorshipServices extends Component {
   render() {
@@ -36,7 +37,7 @@ class WorshipServices extends Component {
                     <div className="node node-page clearfix">
                       <div className="content">
                         <div className="row">
-                          <div className="col-md-8 col-xs-12">
+                          <div className="col-md-12 col-xs-12">
                             <h4 className="header-lightBlue no-bottom-margin no-top-margin">Sunday Mornings</h4>
                             <h4 className="header-lightBlue no-bottom-margin no-top-margin">10am-11:30am</h4>
                             <h4 className="header-lightBlue no-bottom-margin no-top-margin">Hellenic House, 67 Federal St, North Hobart</h4>
@@ -62,15 +63,27 @@ class WorshipServices extends Component {
                             </p>
                             <br />
                           </div>
-                          <div className="col-md-4 col-xs-12">
+                          {/*} <div className="col-md-4 col-xs-12">
                             <img className="img-responsive img-full-width" src={EntranceImg} alt="Cornerstone Entrance" />
 
-                            <a href="https://goo.gl/maps/NsYQcj7oGi52" target="_blank" rel="noopener noreferrer">
+                            <a href="https://goo.gl/maps/PAtkKDuPaQYGRUj7A" target="_blank" rel="noopener noreferrer">
                               <div className="col-xs-12 text-center directions-div">Get Directions</div>
                             </a>
-                          </div>
+                          </div>*/}
                         </div>
                       </div>
+                      <div className="row text-center">
+                        <a href="https://goo.gl/maps/PAtkKDuPaQYGRUj7A" target="_blank" rel="noopener noreferrer">
+                          <div className="col-xs-12 directions-div">Get Directions</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-xs-12 text-center">
+                        <StreetView />
+                      </div>
+
+
 
 
 

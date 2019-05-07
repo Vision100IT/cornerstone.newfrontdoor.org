@@ -119,6 +119,10 @@ line-height: 24px;
   font-size: 24px;
   line-height: 50px;
   color: #d3d3d3;
+  max-width: 400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*Fix for overflowing text on gmaps*/
@@ -214,4 +218,10 @@ font-size: 20px;
   .hideForPC{
     display: none; 
   }
+}
+
+.street-view-container{
+  margin-top: 50px;
+  display: inline-block;
+  max-width: 99%;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import StreetView from '../../models/StreetView';
 
 //import ParkingMap from '../../../assets/ParkingMap.jpg';
 //import onSiteParking from '../../../assets/onSiteParking.jpg';
@@ -61,6 +62,14 @@ class Parking extends Component {
                               </div>
                             </div>
                           </div>
+
+                          <div className="row">
+                            <div className="col-xs-12 text-center">
+                              <StreetView />
+                            </div>
+                          </div>
+
+
                           {/*<div className="col-md-4 col-xs-12">
                             <a href={ParkingMap} target="_blank" rel="noopener noreferrer"><img className="img-responsive img-full-width" src={ParkingMap} alt="Parking locations map" /> </a>
                            </div>*/}
@@ -80,7 +89,7 @@ class Parking extends Component {
             </div>
           </div>
         </div>
-      </section>
+      </section >
     );
   }
 }
