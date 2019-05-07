@@ -14,7 +14,7 @@ class WhereToFindUs extends Component {
                 <div id="map_canvas" className="google-map" style={{ maxHeight: "360px" }}></div>
                 <div><a href="https://goo.gl/maps/PAtkKDuPaQYGRUj7A" target="_blank" rel="noreferrer noopener">Cornerstone Presbyterian Church</a></div>
                 <div>67 Federal Street</div>
-                <div>Hobart, Tasmania</div>  </div>
+                <div>North Hobart, Tasmania</div>  </div>
             </div>
           </div>
         </div>

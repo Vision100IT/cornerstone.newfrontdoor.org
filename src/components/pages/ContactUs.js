@@ -149,7 +149,7 @@ class ContactUs extends Component {
                           <p>Come visit us on Sundays @ 10am:</p>
                           <p><a href="https://goo.gl/maps/PAtkKDuPaQYGRUj7A" target="_blank" rel="noreferrer noopener">Cornerstone Presbyterian Church</a><br />
                             67 Federal St,<br />
-                            Hobart, Tasmania</p>
+                            North Hobart, Tasmania</p>
                         </div>
 
                         <div className="col-xs-12 col-sm-6 margin-top-xs-40">
