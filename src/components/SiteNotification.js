@@ -7,7 +7,6 @@ import Popup from 'reactjs-popup';
 class SiteNotification extends Component {
     constructor(props) {
         super(props);
-        console.log(props);
     }
 
 
@@ -23,11 +22,12 @@ class SiteNotification extends Component {
         </a>
                                 {this.props.content}
 
-                                <div className="header"> <h3>Cornerstone Church is relocating...</h3> </div>
+                                <div className="header"> <h3>Service Information</h3> </div>
 
                                 <h5 className="text-center">
-                                    Sunday 12th May will be our last Service at 45 Melville St. <br /><br />
-                                    From Sunday 19th May we will be meeting at <a href="https://goo.gl/maps/PAtkKDuPaQYGRUj7A" target="blank" rel="noopener noreferrer">Hellenic House, 67 Federal St, North Hobart</a>.
+                                    Cornerstone’s Church Service on Sunday 9th June will be held at 10am at<br />
+
+                                    Blue Lagoon Camp, <a href="https://goo.gl/maps/85RniKV8QUd1rxt89" target="blank" rel="noopener noreferrer">41-55 Bally Park Rd, Dodges Ferry</a>.
 
                         </h5>
 

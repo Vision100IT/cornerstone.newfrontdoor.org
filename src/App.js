@@ -37,28 +37,27 @@ import SiteNotification from './components/SiteNotification';
 
 config.set(configuration);
 
+const notificationID = 'blueLagoonNotification';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { showNotification: localStorage.getItem('showCornerstoneNotification') || true }
+    this.state = { showNotification: localStorage.getItem(notificationID) || true }
 
 
   }
 
   componentDidMount() {
-    const showNotification = localStorage.getItem('showCornerstoneNotification');
+    const showNotification = localStorage.getItem(notificationID);
     this.setState({ showNotification: !showNotification });
-    console.log(showNotification)
   }
 
   onNotificationClose = () => {
     this.setState({ showNotification: false });
-    localStorage.setItem('showCornerstoneNotification', false)
+    localStorage.setItem(notificationID, false)
   };
 
   render() {
-    console.log(this.state)
     return (
       <Router>
         <div className="App">
