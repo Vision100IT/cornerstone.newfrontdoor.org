@@ -33,7 +33,7 @@ import './assets/css/custom.css';
 import './assets/css/events.css';
 import './assets/css/notification.css';
 
-import SiteNotification from './components/SiteNotification';
+//import SiteNotification from './components/SiteNotification';
 
 config.set(configuration);
 
@@ -65,13 +65,13 @@ class App extends Component {
           <Route exact path="/" component={HomePageWrapper} />
           <Route path="/:path" component={OtherPageWrapper} />
 
-          <Route
+          {/*<Route
             path={'*'}
             component={() => <SiteNotification
               showNotification={this.state.showNotification}
               onClose={this.onNotificationClose}
             />}
-          />
+            />*/}
 
           <Route path="*" component={Footer} />
         </div>
