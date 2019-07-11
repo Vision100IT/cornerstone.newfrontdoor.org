@@ -79,20 +79,6 @@ class WomensMinistry extends Component {
                           </div>
                           <div className="row padding-top-15 text-center">
                             <h3>Upcoming Events</h3>
-                            <h4 className="header-lightBlue">TASMANIAN WOMEN’S BIBLE CONFERENCE</h4>
-                            <strong>IN THE PRESENCE OF GREATNESS</strong><br />
-                            <strong>SAT 6 APR 2019</strong>
-
-                            <h4 className="header-lightBlue">WOMEN’S WINTER FESTIVAL</h4>
-                            <strong>SAT 1 JUN 2019</strong>
-
-                            <h4 className="header-lightBlue">EQUIP WOMEN’S CONFERENCE</h4>
-                            <strong>LIVE STREAMED AT CORNERSTONE</strong><br />
-                            <strong>SAT 22 JUN 2019</strong>
-
-                            <h4 className="header-lightBlue">WOMEN’S WINTER FESTIVAL</h4>
-                            <strong>SAT 6 JUL 2019</strong>
-
                             <h4 className="header-lightBlue">WOMEN’S WINTER FESTIVAL</h4>
                             <strong>SAT 3 AUG 2019</strong>
 
