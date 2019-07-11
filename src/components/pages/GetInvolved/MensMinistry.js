@@ -61,11 +61,8 @@ class MensMinistry extends Component {
 
                           <div className="row padding-top-15 text-center">
                             <h3>Upcoming Events</h3>
-                            <h4 className="header-lightBlue">FATHERHOOD</h4>
-                            <strong>SAT 25 MAY 2019</strong>
-
                             <h4 className="header-lightBlue">A MAN’S ROLE IN RELATIONSHIPS</h4>
-                            <strong>SAT 3 AUG 2019</strong>
+                            <strong>SAT 10 AUG 2019</strong>
 
                             <h4 className="header-lightBlue">MANAGING MONEY</h4>
                             <strong>SAT 19 OCT 2019</strong>
