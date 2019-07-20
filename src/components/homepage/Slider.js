@@ -31,7 +31,7 @@ const slides = [{
 class Slider extends Component {
   render() {
 
-    var slideshow = _.map(slides, (slide) => {
+    var slideshow = slides.map(slide => {
 
       if (slide.caption !== null) {
         return (

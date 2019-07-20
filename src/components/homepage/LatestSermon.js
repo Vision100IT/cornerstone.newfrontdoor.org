@@ -1,6 +1,5 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import _ from 'lodash';
 import AudioPlayer from 'react-responsive-audio-player';
 import { decode } from 'he'
 
@@ -30,9 +29,9 @@ class LatestSermon extends Component {
     }
     else {
       var sermonDetails = <div>Sermon deets locked</div>
-      var sermonDetails = _.map(this.state.latestSermon, (sermon) => {
+      var sermonDetails = this.state.latestSermon.map(sermon => {
         return (
-          <div key={_.uniqueId()} className="content">
+          <div key={sermon.node_title + " - " + sermon.preacher} className="content">
             <div className="view view-latest-sermon view-id-latest_sermon view-display-id-block view-dom-id-78390e62fd38513a05d7e159bfdf897a">
               <div className="view-content">
                 <div className="views-row views-row-1 views-row-odd views-row-first views-row-last">

@@ -41,7 +41,7 @@ class SermonSeriesPage extends Component {
                 var seriesImg = this.state.seriesImgFull ? this.state.seriesImgFull : this.state.seriesImgThumb;
                 seriesTitle = this.state.sermons[0].sermonseries;
                 var tdPadding = { padding: "0px 5px 0px 5px" };
-                var sermons = _.map(this.state.sermons, (sermon) => {
+                var sermons = this.state.sermons.map(sermon => {
                     return (
                         <tr key={_.uniqueId()} className="odd even">
                             {sermon.node_title ? <td style={tdPadding}><a href={'/sermon/' + sermon.nid}>{decode(sermon.node_title)}</a></td> : <td style={tdPadding}><a href={'/sermon/' + sermon.nid}>Untitlted</a></td>}

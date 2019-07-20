@@ -112,7 +112,7 @@ class Sermons extends Component {
     }
     else {
       var tdPadding = { padding: "0px 5px 0px 5px" };
-      var sermons = _.map(this.state.sermons, (sermon) => {
+      var sermons = this.state.sermons.map(sermon => {
         return (
           <tr key={_.uniqueId()} className="odd even">
             {sermon.node_title ? <td style={tdPadding} dangerouslySetInnerHTML={{ __html: sermon.node_url }} /> : <td style={tdPadding}></td>}
@@ -142,7 +142,7 @@ class Sermons extends Component {
 
     var sermonSeriesOptions;
     if (this.state.sermonSeries) {
-      sermonSeriesOptions = _.map(this.state.sermonSeries, (sermonSeries) => {
+      sermonSeriesOptions = this.state.sermonSeries.map(sermonSeries => {
         return (
           <option key={sermonSeries.nid} value={sermonSeries.nid}>{decode(sermonSeries.node_title)}</option>
         )

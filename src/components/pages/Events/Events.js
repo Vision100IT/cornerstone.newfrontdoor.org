@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-
+import Calendar, { drupalClient } from '@newfrontdoor/calendar';
 import WWAImg from '../../../assets/WWAImg.jpg'
 import WWFImg from '../../../assets/WWFImg.jpg'
 import systematicTheologyImg from '../../../assets/systematicTheology.png'
 import entranceImg from '../../../assets/Entrance.jpg';
-import prayerImg from '../../../assets/PrayerMeetings.png'
+import prayerImg from '../../../assets/PrayerMeetings.png';
+import config from 'react-global-configuration';
 
 import Event from '../../models/Event';
 
@@ -43,6 +44,11 @@ class Events extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
+
+                        <Calendar
+                          client={drupalClient(config.get("DRUPAL_EVENTS"))}
+                          initialView={'month'}
+                        />
 
                           <h4 className="header-lightBlue">Current Events</h4>
                           <div className="row">

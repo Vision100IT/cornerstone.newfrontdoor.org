@@ -29,7 +29,7 @@ class SermonPage extends Component {
     var sermonTitle = "Sermon Title";
     if (this.state.sermon) {
       if (this.state.sermon.length > 0) {
-        var sermonDetails = _.map(this.state.sermon, (sermon) => {
+        var sermonDetails = this.state.sermon.map(sermon => {
           var sermonImg;
           if (sermon.sermon_img || sermon.sermon_full_img) {
             sermonImg = sermon.sermon_full_img ? sermon.sermon_full_img : sermon.sermon_img;

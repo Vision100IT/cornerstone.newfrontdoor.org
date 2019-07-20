@@ -33,7 +33,7 @@ class SystematicTheologyOverview extends Component {
       var tdPadding = { padding: "0px 5px 0px 5px" };
       var unitTitles = []
       var unitTitle;
-      SysTheoResources = _.map(this.state.resources, (resource) => {
+      SysTheoResources = this.state.resources.map(resource => {
         unitTitle = "";
         if (unitTitles.indexOf(resource.unit) === -1) {
           unitTitles.push(resource.unit);
