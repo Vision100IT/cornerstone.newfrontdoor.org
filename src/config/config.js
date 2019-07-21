@@ -1,3 +1,5 @@
+import configuration from 'react-global-configuration';
+
 const BASE_URL = "https://cornerstoneapi.newfrontdoor.org";
 
 const config = {
@@ -6,5 +8,7 @@ const config = {
     DRUPAL_WEBFORM_SUBMISSION: BASE_URL + "/webform_submission/submission",
     DRUPAL_EVENTS: BASE_URL + "/api/views/all_events_api"
 }
+
+configuration.set(config);
 
 export default config;

@@ -9,6 +9,8 @@ import config from 'react-global-configuration';
 
 import Event from '../../models/Event';
 
+const client = drupalClient(config.get("DRUPAL_EVENTS"))
+
 class Events extends Component {
 
   render() {
@@ -46,7 +48,7 @@ class Events extends Component {
                         <div className="content">
 
                         <Calendar
-                          client={drupalClient(config.get("DRUPAL_EVENTS"))}
+                          client={client}
                           initialView={'month'}
                         />
 
