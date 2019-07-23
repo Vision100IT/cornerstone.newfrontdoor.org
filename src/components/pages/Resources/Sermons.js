@@ -39,7 +39,7 @@ class Sermons extends Component {
       var latestSermon = <div>Loading, please wait.</div>
     }
     else {
-      var recentSeries = this.state.recentSeries.map(series => {
+      var recentSeries = _.map(this.state.recentSeries, (series) => {
         return (
           <div key={_.uniqueId()} className="views-row views-row-1 views-row-odd views-row-first col-sm-3">
 
