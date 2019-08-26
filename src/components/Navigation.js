@@ -226,9 +226,9 @@ class Navigation extends Component {
                             </div>
                           </li>
 
-                          {/*<li className="tb-megamenu-item level-1 mega">
+                          <li className="tb-megamenu-item level-1 mega">
                             <a href="/Events" >Events</a>
-                                      </li>*/}
+                          </li>
 
                           <li className="tb-megamenu-item level-1 mega">
                             <a href="/SupportUs" >Support Us</a>

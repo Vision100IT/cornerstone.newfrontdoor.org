@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import Calendar, { drupalClient } from '@newfrontdoor/calendar';
-import WWAImg from '../../../assets/WWAImg.jpg'
-import WWFImg from '../../../assets/WWFImg.jpg'
-import systematicTheologyImg from '../../../assets/systematicTheology.png'
-import entranceImg from '../../../assets/Entrance.jpg';
-import prayerImg from '../../../assets/PrayerMeetings.png';
 import config from 'react-global-configuration';
-
-import Event from '../../models/Event';
 
 const client = drupalClient(config.get("DRUPAL_EVENTS"))
 
@@ -47,24 +40,10 @@ class Events extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                        <Calendar
-                          client={client}
-                          initialView={'month'}
-                        />
-
-                          <h4 className="header-lightBlue">Current Events</h4>
-                          <div className="row">
-                            <Event href="/PrayerMeetings" image={prayerImg} title="Prayer Meetings" />
-                            <Event href="/WorshipServices" image={entranceImg} title="Worship Services" />
-                            <Event href="/SystematicTheologyCourse" image={systematicTheologyImg} title="Systematic Theology" />
-                          </div>
-
-                          <h4 className="header-lightBlue">Past Events</h4>
-                          <div className="row">
-                            <Event href="https://www.facebook.com/WWATasmania/" target="_blank" rel="noreferrer noopener" image={WWAImg} title="Women’s Weekend Away" />
-                            <Event href="/event/WomensWinterFestival" image={WWFImg} title="Women’s Winter Festival" />
-
-                          </div>
+                          <Calendar
+                            client={client}
+                            initialView={'month'}
+                          />
                         </div>
 
 

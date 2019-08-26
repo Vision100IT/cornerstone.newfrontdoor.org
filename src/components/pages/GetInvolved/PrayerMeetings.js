@@ -50,11 +50,6 @@ class PrayerMeetings extends Component {
                                                                 <li><strong>When:</strong> 9:15am - 9:45am</li>
                                                                 <li><strong>Where:</strong> St John’s, <a href="https://goo.gl/maps/oA5CstHpSyq" target="_blank" rel="noreferrer noopener">188 Macquarie Street</a></li>
                                                             </ul>
-                                                            <h3 className="header-lightBlue no-bottom-margin">Wednesday Morning</h3>
-                                                            <ul className="no-list-style">
-                                                                <li><strong>When:</strong> 7:30am - 8:15am</li>
-                                                                <li><strong>Where:</strong> Variable, please <a href="/ContactUs">contact us</a> for details.</li>
-                                                            </ul>
                                                         </div>
                                                     </div>
 

@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { ThemeProvider } from 'mineral-ui/themes';
