@@ -6,7 +6,7 @@
     "@emotion/core": "^10.0.14",
     "@emotion/is-prop-valid": "^0.8.2",
     "@emotion/styled": "^10.0.14",
-    "@newfrontdoor/calendar": "^1.4.6",
+    "@newfrontdoor/calendar": "^1.4.7",
     "ajv": "^6.0.0",
     "emotion-theming": "^10.0.14",
     "isomorphic-fetch": "^2.2.1",
