@@ -78,22 +78,9 @@ class WomensMinistry extends Component {
 
                           </div>
                           <div className="row padding-top-15 text-center">
-                            <h3>Upcoming Events</h3>
-                            <h4 className="header-lightBlue">WOMEN’S WINTER FESTIVAL</h4>
-                            <strong>SAT 3 AUG 2019</strong>
-
-                            <h4 className="header-lightBlue">WOMEN’S WEEKEND AWAY</h4>
-                            <strong>CAMP CLAYTON, ULVERSTONE</strong><br />
-                            <strong>6-8 SEP 2019</strong>
-
-                            <h4 className="header-lightBlue">T2 WOMEN’S MORNING TEA</h4>
-                            <strong>SAT 2 NOV 2019</strong>
-
-                            <h4 className="header-lightBlue">EQUIP LEADERS CONFERENCE</h4>
-                            <strong>SYDNEY</strong><br />
-                            <strong>13-15 NOV 2019</strong>
-
-
+                          <h3>Upcoming Events</h3>
+                            Upcoming Women’s Ministry Events are included on our <a href="/Events">Calendar of Events</a>.
+                          
                           </div>
 
                         </div>

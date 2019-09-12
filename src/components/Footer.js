@@ -21,6 +21,7 @@ class Footer extends Component {
                       <div className="footer-address text-center">
                         <i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>
                         <p><a href="https://goo.gl/maps/PAtkKDuPaQYGRUj7A" target="_blank" rel="noreferrer noopener">Cornerstone Presbyterian Church</a><br />67 Federal St, North Hobart TAS 7000</p>
+                        <p>Postal Address: <br/>PO Box 4742, Bathurst Street PO, Hobart 7000</p>
                       </div> {/* /footer-address */}  </div>
                   </div>  </div>
               </div> {/* /footer-first-column-region */}
@@ -53,7 +54,8 @@ class Footer extends Component {
                         <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i>
                         <i className="icon ion-social-rss-outline size-32 margin-bottom-20" style={{ marginLeft: "10px" }}></i>
                         <p><a href="https://www.facebook.com/cornerstonehobart/">facebook.com/CornerstoneHobart</a><br />
-                          <a href="https://itunes.apple.com/au/podcast/cornerstone-presbyterian-church/id1447574546?mt=2" target="_blank" rel="noreferrer noopener">Subscribe to Our Podcast</a></p>
+                          <a href="https://itunes.apple.com/au/podcast/cornerstone-presbyterian-church/id1447574546?mt=2" target="_blank" rel="noreferrer noopener">Subscribe to Our Podcast<br/></a>
+                          <a href="http://campbellmarkham1970.blogspot.com/" target="_blank" rel="noreferrer noopener">Pastor's Blog</a></p>
                       </div>  </div>
                   </div>  </div>
               </div> {/* /footer-third-column-region */}

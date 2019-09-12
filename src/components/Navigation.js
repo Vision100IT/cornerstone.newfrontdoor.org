@@ -194,11 +194,6 @@ class Navigation extends Component {
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/Sermons" title="Sermons">Sermons</a>
                                         </li>
-
-                                        <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/Cornerpost" >Cornerpost</a>
-                                        </li>
-
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/SystematicTheologyCourse" >Systematic Theology Course</a>
                                         </li>

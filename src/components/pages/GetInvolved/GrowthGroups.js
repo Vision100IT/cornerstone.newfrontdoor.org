@@ -55,10 +55,6 @@ class GrowthGroup extends Component {
                               <ul>
                                 <li><strong>Young Women’s Group</strong> straight after church</li><br />
                               </ul>
-                              <strong>Monday:</strong><br /><br />
-                              <ul>
-                                <li>Ladies Group in Kingston Area at 10:00am to Midday</li><br />
-                              </ul>
                               <strong>Tuesday:</strong><br /><br />
                               <ul>
                                 <li><a href="/SystematicTheologyCourse">Systematic Theology Course</a></li><br />
@@ -71,6 +67,7 @@ class GrowthGroup extends Component {
                               <strong>Thursday:</strong><br /><br />
                               <ul>
                                 <li><strong>Mums with Young Children</strong> in Howrah at 10:00am to Midday</li><br />
+                                <li><strong>Ladies Group</strong> in Kingston Area at 10:00am to Midday</li><br />
                                 <li><strong>Ladies Group</strong> in West Hobart at 2:00pm to 3:30pm</li><br />
                                 <li><strong>West Hobart</strong> at 7:30pm</li><br />
                                 <li><strong>Lindisfarne</strong> at 7:30pm</li><br />

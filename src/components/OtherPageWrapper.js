@@ -13,7 +13,6 @@ import WomensMinistry from './pages/GetInvolved/WomensMinistry';
 //import YoungAdults from './pages/GetInvolved/YoungAdults';
 import PrayerMeetings from './pages/GetInvolved/PrayerMeetings';
 
-import Cornerpost from './pages/Resources/Cornerpost';
 import EngagedCouples from './pages/Resources/EngagedCouples';
 import Sermons from './pages/Resources/Sermons';
 import AllSermonsInfinite from './pages/Resources/AllSermonsInfinite';
@@ -52,7 +51,6 @@ class OtherPageWrapper extends Component {
           {/*<Route exact path="/YoungAdults" component={YoungAdults} />*/}
           <Route exact path="/PrayerMeetings" component={PrayerMeetings} />
 
-          <Route exact path="/Cornerpost" component={Cornerpost} />
           <Route exact path="/EngagedCouples" component={EngagedCouples} />
           <Route exact path="/AllSermons" component={AllSermonsInfinite} />
           <Route exact path="/Sermons" component={Sermons} />
