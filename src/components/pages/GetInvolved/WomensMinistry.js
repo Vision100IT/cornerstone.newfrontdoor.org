@@ -77,10 +77,9 @@ class WomensMinistry extends Component {
                             </div>
 
                           </div>
-                          <div className="row padding-top-15 text-center">
-                          <h3>Upcoming Events</h3>
-                            Upcoming Women’s Ministry Events are included on our <a href="/Events">Calendar of Events</a>.
-                          
+                          <div className="row padding-top-40 text-center">
+                          <h4>Upcoming Women’s Ministry Events are included on our <a href="/Events">Calendar of Events</a>.</h4>
+                            
                           </div>
 
                         </div>

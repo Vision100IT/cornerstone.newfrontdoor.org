@@ -59,11 +59,10 @@ class MensMinistry extends Component {
 
                           </div>
 
-                          <div className="row padding-top-15 text-center">
-                            <h3>Upcoming Events</h3>
-                            Upcoming Men’s Ministry Events are included on our <a href="/Events">Calendar of Events</a>.
+                          <div className="row padding-top-40 text-center">
+                          <h4>Upcoming Men’s Ministry Events are included on our <a href="/Events">Calendar of Events</a>.</h4>
+                            
                           </div>
-
                         </div>
 
 
