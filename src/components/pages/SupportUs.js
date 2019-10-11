@@ -40,15 +40,28 @@ class SupportUs extends Component {
                           <p>Please see here for details of our regular weekly prayer meetings.</p>*/}
 
                           <h4 className="header-lightBlue no-margin-bottom">Financial Support</h4>
-                          <p>Tithes and Offerings may be placed in the “Blue Box” on Sunday morning.<br /><br />
+                          <p>There are three methods available for payment of Tithes and Offerings:</p>
+                          <ol>
+                            <li>Tithes and Offerings paid by Cash/Cheque may be placed in the “Blue Box” on Sunday morning.</li>
+                            <br />
+                            <li>Tithes and Offerings may be deposited directly into the following account:</li>
+                            <br />
+                            <ul style={{ listStyle: "none" }}>
+                              <li>BSB: 037-001</li>
+                              <li>Account Number: 586161</li>
+                              <li>Account Name: Cornerstone Church</li>
+                              <li>Reference: Your Name (this may need to be abbreviated if your name is too long) and what the payment is for. E.g. J.Bloggs-Offering</li>
+                            </ul>
+                            <br />
+                            <li>Tithes and Offerings may also be made through by following the link below (processing fees apply):</li>
+                            <br />
+                            <ul style={{ listStyle: "none" }}>
+                              <li><a href="https://tithe.ly/give?c=924155" rel="noreferrer noopener" target="_blank">Give using Tithe.ly</a></li>
+                            </ul>
+                          </ol>
 
-                            Tithes and Offerings may also be deposited directly into the following account:</p>
-                          <ul style={{ listStyle: "none" }}>
-                            <li>BSB: 037-001</li>
-                            <li>Account Number: 586161</li>
-                            <li>Account Name: Cornerstone Church</li>
-                            <li>Reference: Your Name (this may need to be abbreviated if your name is too long) and what the payment is for. E.g. J.Bloggs-Offering</li>
-                          </ul>
+
+
                           <h4 className="header-lightBlue no-margin-bottom">Anti-Discrimination Defence Fund</h4>
                           <p>
                             An Anti-Discrimination Defence Fund was established in 2017 in response to changes to the Anti-Discrimination Act.
