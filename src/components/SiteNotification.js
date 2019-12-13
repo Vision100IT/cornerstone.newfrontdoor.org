@@ -22,14 +22,24 @@ class SiteNotification extends Component {
         </a>
                                 {this.props.content}
 
-                                <div className="header"> <h3>Service Information</h3> </div>
+                                <div className="header"><h3>Service Information</h3></div>
+
+                                <h4 className="text-center">Sunday 22nd December</h4>
 
                                 <h5 className="text-center">
-                                    Cornerstone’s Church Service on Sunday 9th June will be held at 10am at<br />
+                                    <p>Cornerstone Church Service will be held in the Calvin Primary School Multipurpose Hall (<a href="https://goo.gl/maps/PLML6hB21KLJMs8f6" target="_blank" rel="noreferrer noopener">35 Maranoa Rd, Kingston</a>)</p>
 
-                                    Blue Lagoon Camp, <a href="https://goo.gl/maps/85RniKV8QUd1rxt89" target="blank" rel="noopener noreferrer">41-55 Bally Park Rd, Dodges Ferry</a>.
+                                    <p>Parking available in Denison Street and in the Woolworths shopping centre</p>
 
-                        </h5>
+                                    <p>Service commences at 10am and will be followed by morning tea</p>
+
+                                    <p>Preacher: Derrick Clack (Psalm 90)</p>
+
+                                    <p><em>Note: There will be no Crèche or Cornerpebble at this service</em></p>
+
+
+
+                                </h5>
 
 
 

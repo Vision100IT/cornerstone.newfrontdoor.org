@@ -34,16 +34,14 @@ import './assets/css/custom.css';
 import './assets/css/events.css';
 import './assets/css/notification.css';
 
-//import SiteNotification from './components/SiteNotification';
+import SiteNotification from './components/SiteNotification';
 
-const notificationID = 'blueLagoonNotification';
+const notificationID = '2019DecCornerstoneService';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = { showNotification: localStorage.getItem(notificationID) || true }
-
-
   }
 
   componentDidMount() {
@@ -65,13 +63,13 @@ class App extends Component {
             <Route exact path="/" component={HomePageWrapper} />
             <Route path="/:path" component={OtherPageWrapper} />
 
-            {/*<Route
+            <Route
               path={'*'}
               component={() => <SiteNotification
                 showNotification={this.state.showNotification}
                 onClose={this.onNotificationClose}
               />}
-              />*/}
+            />
 
             <Route path="*" component={Footer} />
           </div>
