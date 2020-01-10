@@ -119,13 +119,13 @@ class OurPeople extends Component {
 
                               <div className="row">
                                 <Person name="Cristiane Baker" title="Women's Worker" image={cristianeImg} />
-                                <Person name="Joe Cox" title="Assistant to the Minister" image={joeImg} />
                                 <Person name="Libby Dilger" title="Administrator" image={libbyImg} />
                                 <Person name="David Gee" title="Evangelist" image={Male} />
+                                <Person name="Campbell Markham" title="Pastor" image={campbellImg} />
                                 <div className="clearfix"></div>
                                 <div className="col-md-3"></div>
-                                <Person name="Campbell Markham" title="Pastor" image={campbellImg} />
                                 <Person name="Elya Richardson" title="Youth Worker" image={elyaImg} />
+                                <Person name="Michael Riske" title="Assistant to the Minister" image={Male} />
 
                               </div>
 
@@ -139,8 +139,8 @@ class OurPeople extends Component {
                           <div className="row">
                             <div className="col-md-12">
                               <h2 className="header-lightBlue text-center">Volunteers</h2>
-                              <h4><strong>Bethany Armstrong</strong>, Breaking the Silence Coordinator</h4>
-                              <h4><strong>Thomas Elkhair</strong>, Music Team Coordinator</h4>
+                              <h4><strong>Tessa Groenewold</strong>, Breaking the Silence Coordinator</h4>
+                              <h4><strong>Jacco & Miranda Vonk</strong>, Music Team Coordinators</h4>
                               <h4><strong>Anna Gee</strong>, Corner Pebble (Sunday School) Leader</h4>
                               <br />
                             </div>
@@ -153,7 +153,7 @@ class OurPeople extends Component {
 
                               <h4><strong>Andrew Hutchens</strong>, Graduate, <a href="https://christcollege.edu.au/" target="_blank" rel="noreferrer noopener">Christ College</a>.</h4>
                               <h4><strong>Paul Hutchens</strong>, Pastor, <a href="https://soulchurch.org.au/" target="_blank" rel="noreferrer noopener">Soul Church</a>.</h4>
-                              <h4><strong>Michael Riske</strong>, current student, <a href="https://christcollege.edu.au/" target="_blank" rel="noreferrer noopener">Christ College</a>.</h4>
+                              <h4><strong>Michael Riske</strong>, current student, <a href="https://christcollege.edu.au/" target="_blank" rel="noreferrer noopener">Christ College</a>; Part time Assistant to the Minister, Cornerstone Church Hobart.</h4>
                               <h4><strong>R'jaye Rojas</strong>, Pastor, <a href="https://www.mspc.org.au/" target="_blank" rel="noreferrer noopener">Mount Stuart Presbyterian</a>.</h4>
 
 
