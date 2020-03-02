@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 import MensMinistryImg from '../../../assets/ministry-men2.jpg';
 
@@ -41,7 +40,7 @@ class MensMinistry extends Component {
                               <p className="ministry-text" style={{ fontWeight: "bold" }}>
                                 <em>Proverbs 29:23: "A man's pride brings him low, but a man of lowly spirit gains honor"</em>
                               </p>
-                              <img src={MensMinistryImg} width="258" height="196" />
+                              <img src={MensMinistryImg} width="258" height="196" alt="" />
 
                             </div>
                             <div className=" col-md-8 col-xs-12">
@@ -60,8 +59,8 @@ class MensMinistry extends Component {
                           </div>
 
                           <div className="row padding-top-40 text-center">
-                          <h4>Upcoming Men’s Ministry Events are included on our <a href="/Events">Calendar of Events</a>.</h4>
-                            
+                            <h4>Upcoming Men’s Ministry Events are included on our <a href="/Events">Calendar of Events</a>.</h4>
+
                           </div>
                         </div>
 

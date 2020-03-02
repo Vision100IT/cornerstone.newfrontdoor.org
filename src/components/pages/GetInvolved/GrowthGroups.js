@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 
 import BibleStudy from "../../../assets/GrowthGroups.jpg";
@@ -39,7 +38,7 @@ class GrowthGroup extends Component {
                         <div className="content">
                           <div className="row">
                             <div className=" col-md-6 col-xs-12">
-                              <img className="img-responsive img-full-width" style={{ paddingRight: "50px" }} src={BibleStudy} width="585" height="309" /><br /><br />
+                              <img className="img-responsive img-full-width" style={{ paddingRight: "50px" }} src={BibleStudy} width="585" height="309" alt="" /><br /><br />
                               <p>
                                 <strong>Matthew 18:20:<br />
                                   <em>"For where two or three come together in my name, there I am with them.."</em></ strong>

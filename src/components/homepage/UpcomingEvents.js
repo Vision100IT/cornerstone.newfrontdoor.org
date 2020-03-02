@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 import _ from 'lodash';
 import { decode } from 'he';

@@ -6,7 +6,7 @@ import cristianeImg from '../../../assets/people/Baker,Cristiane.png';
 import jamesImg from '../../../assets/people/Baker,James.png';
 import simonImg from '../../../assets/people/Boonstra,Simon.png';
 import derrickImg from '../../../assets/people/Clack,Derrick.png';
-import joeImg from '../../../assets/people/Cox,Joe.png';
+//import joeImg from '../../../assets/people/Cox,Joe.png';
 import libbyImg from '../../../assets/people/Dilger,Libby.png';
 import amyImg from '../../../assets/people/Glynn,Amy.png';
 import heinzImg from '../../../assets/people/Maarseveen,Heinz.png';

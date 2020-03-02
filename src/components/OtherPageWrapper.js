@@ -1,8 +1,5 @@
-/* eslint-disable */
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-import Navigation from './Navigation';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';//eslint-disable-line
 import OtherPageContent from './OtherPageContent';
 
 import GrowthGroups from './pages/GetInvolved/GrowthGroups';
@@ -28,7 +25,7 @@ import WhatWeBelieve from './pages/VisitUs/WhatWeBelieve';
 import WorshipServices from './pages/VisitUs/WorshipServices';
 
 import ContactUs from './pages/ContactUs';
-import Events from './pages/Events/Events';
+import Events from './pages/Events/EventsElvanto';
 import WWF from './pages/Events/WWF';
 import SupportUs from './pages/SupportUs';
 import WomensWeekendAway from './pages/GetInvolved/WomensWeekendAway';

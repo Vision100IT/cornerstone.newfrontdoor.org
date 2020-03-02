@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 
 class Footer extends Component {
@@ -54,7 +53,7 @@ class Footer extends Component {
                         <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i>
                         <i className="icon ion-social-rss-outline size-32 margin-bottom-20" style={{ marginLeft: "10px" }}></i>
                         <p><a href="https://www.facebook.com/cornerstonehobart/">facebook.com/CornerstoneHobart</a><br />
-                          <a href="https://itunes.apple.com/au/podcast/cornerstone-presbyterian-church/id1447574546?mt=2" target="_blank" rel="noreferrer noopener">Subscribe to Our Podcast<br/></a>
+                          <a href="https://itunes.apple.com/au/podcast/cornerstone-presbyterian-church/id1447574546?mt=2" target="_blank" rel="noreferrer noopener">Subscribe to Our Podcast<br /></a>
                           <a href="http://campbellmarkham1970.blogspot.com/" target="_blank" rel="noreferrer noopener">Pastor's Blog</a></p>
                       </div>  </div>
                   </div>  </div>

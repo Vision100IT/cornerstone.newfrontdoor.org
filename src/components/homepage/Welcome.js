@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 
 
@@ -10,22 +9,14 @@ class Welcome extends Component {
           <div className="container">
             <div className="row">
               <div id="main-content-region" className="main-content col-xs-12">
-
-                  <div className="region region-content">
-
-
-
-
-        <div className="content">
-          <div className="node node-page clearfix">
-
-        <div className="content">
-        </div>
-
-        </div>
-        </div>
-        </div>
-
+                <div className="region region-content">
+                  <div className="content">
+                    <div className="node node-page clearfix">
+                      <div className="content">
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div> {/* /main-content-region */}
             </div> {/* /row */}
           </div> {/* /container */}
