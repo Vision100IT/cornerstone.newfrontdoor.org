@@ -22,23 +22,16 @@ class SiteNotification extends Component {
         </a>
                                 {this.props.content}
 
-                                <div className="header"><h3>Service Information</h3></div>
-
-                                <h4 className="text-center">Sunday 22nd December</h4>
+                                <div className="header"><h3>Welcome to Cornerstone Hobart</h3></div>
 
                                 <h5 className="text-center">
-                                    <p>Cornerstone Church Service will be held in the Calvin Primary School Multipurpose Hall (<a href="https://goo.gl/maps/PLML6hB21KLJMs8f6" target="_blank" rel="noreferrer noopener">35 Maranoa Rd, Kingston</a>)</p>
+                                    <p>At Cornerstone, we want to remain socially and spiritually connected, however we do recognise the prudence of physical distancing and the need to flatten the curve of the spread of COVID-19.</p>
 
-                                    <p>Parking available in Denison Street and in the Woolworths shopping centre</p>
+                                    <p>God willing, we will continue to worship together each Sunday morning, but rather than physically gathering at the Hellenic Hall, our service will be broadcast on YouTube.</p>
 
-                                    <p>Service commences at 10am and will be followed by morning tea</p>
+                                    <p>Whether you arrange to get together with a small group in someone’s home, or choose to stay at home with just your own household, please tune in at 10am each Sunday and let’s continue to worship together!</p>
 
-                                    <p>Preacher: Derrick Clack (Psalm 90)</p>
-
-                                    <p><em>Note: There will be no Crèche or Cornerpebble at this service</em></p>
-
-
-
+                                    <p>You will find our YouTube broadcasts <a href="https://www.youtube.com/channel/UCF-sudt_zfl2Ni8eR9ayVHQ/playlists">here</a>.</p>
                                 </h5>
 
 
