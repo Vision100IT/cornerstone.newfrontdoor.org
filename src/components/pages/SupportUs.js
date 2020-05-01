@@ -60,7 +60,17 @@ class SupportUs extends Component {
                             </ul>
                           </ol>
 
-
+                          <h4 className="header-lightBlue no-margin-bottom">Deacons Fund</h4>
+                          <p>A Deacons fund was established in 2020 to provide practical help to those in our church and local community.</p>
+                          <p>Tax deductible donations can be made into the following account:</p>
+                          <br />
+                          <ul style={{ listStyle: "none" }}>
+                            <li>BSB: 067-002</li>
+                            <li>Account Number: 10183412</li>
+                            <li>Account Name: Presbyterian Emergency Fund</li>
+                            <li>Description: Your Name CStone (E.g. J.Bloggs CStone)</li>
+                            <li><strong>Note: A tax receipt will only be issued if we can clearly identify your name.</strong></li>
+                          </ul>
 
                           <h4 className="header-lightBlue no-margin-bottom">Anti-Discrimination Defence Fund</h4>
                           <p>

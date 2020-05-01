@@ -226,3 +226,15 @@ font-size: 20px;
   display: inline-block;
   max-width: 99%;
 }
+
+.course-item-margin{
+  margin-left: 100px;
+}
+
+@media (max-width: 685px)
+{
+  .course-item-margin
+  {
+    margin-left: 0px;
+  }
+}

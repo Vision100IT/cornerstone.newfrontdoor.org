@@ -29,6 +29,7 @@ import Events from './pages/Events/EventsElvanto';
 import WWF from './pages/Events/WWF';
 import SupportUs from './pages/SupportUs';
 import WomensWeekendAway from './pages/GetInvolved/WomensWeekendAway';
+import BibleCourses from './pages/Resources/BibleCourses';
 //import MensCalendar from './pages/Events/MensCalendar';
 
 
@@ -58,6 +59,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/series/:nid/:title" component={SermonSeriesPage} />
           <Route exact path="/node/:nid/:title" component={SermonPage} />
           <Route exact path="/SystematicTheologyCourse" component={SystematicTheologyOverview} />
+          <Route exact path="/BibleCourses" component={BibleCourses} />
           <Route exact path="/WestminsterConfession" component={WestminsterConfession} />
 
           <Route exact path="/OurPeople" component={OurPeople} />

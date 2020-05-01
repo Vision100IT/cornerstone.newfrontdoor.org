@@ -37,47 +37,23 @@ class GrowthGroup extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
                           <div className="row">
-                            <div className=" col-md-6 col-xs-12">
-                              <img className="img-responsive img-full-width" style={{ paddingRight: "50px" }} src={BibleStudy} width="585" height="309" alt="" /><br /><br />
-                              <p>
-                                <strong>Matthew 18:20:<br />
-                                  <em>"For where two or three come together in my name, there I am with them.."</em></ strong>
+                            <div className="col-xs-12">
+                              <div className="text-center">
+                                <img className="img-responsive img-full-width" style={{ paddingRight: "50px", maxWidth: "500px" }} src={BibleStudy} width="585" height="309" alt="" />
+                              </div>
+                              <br /><br />
+                              <p className="ministry-text">
+                                <strong>Psalm 119:11:<br />
+                                  <em>"I have hidden your word in my heart that I might not sin against you.”</em></ strong>
                               </p>
-                              <p>
-                                If you would like additional information on one of our Growth Groups, please email your details to <a href="mailto:admin@cornerstonehobart.com">admin@cornerstonehobart.com</a> and a Growth Group Leader will contact you.
+                              <p className="ministry-text">
+                                We hold a number of growth groups throughout the week. Please see <a href="/events">our calendar</a> for details of group meeting dates and times. If you would like additional information on growth groups in your area, please email your details to <a href="mailto:groups@cornerstonehobart.com">groups@cornerstonehobart.com</a> and a Growth Group Leader will contact you.
                               </p>
                               <br />
                               <br />
                             </div>
-                            <div className=" col-md-6 col-xs-12">
-                              <strong>Sunday:</strong><br /><br />
-                              <ul>
-                                <li><strong>Young Women’s Group</strong> straight after church</li><br />
-                              </ul>
-                              <strong>Tuesday:</strong><br /><br />
-                              <ul>
-                                <li><a href="/SystematicTheologyCourse">Systematic Theology Course</a></li><br />
-                              </ul>
-                              <strong>Wednesday:</strong><br /><br />
-                              <ul>
-                                <li><strong>Ladies Group</strong> in Howrah at 10:00am to Midday</li><br />
-                                <li><strong>Kingston</strong> at 7:30pm (two groups to choose from)</li><br />
-                              </ul>
-                              <strong>Thursday:</strong><br /><br />
-                              <ul>
-                                <li><strong>Mums with Young Children</strong> in Howrah at 10:00am to Midday</li><br />
-                                <li><strong>Ladies Group</strong> in Kingston Area at 10:00am to Midday</li><br />
-                                <li><strong>Ladies Group</strong> in West Hobart at 2:00pm to 3:30pm</li><br />
-                                <li><strong>West Hobart</strong> at 7:30pm</li><br />
-                                <li><strong>Lindisfarne</strong> at 7:30pm</li><br />
-                              </ul><br />
 
 
-                              <strong>Youth Group</strong><br /><br />
-                              <a href="/QuarryYouth">Quarry Youth</a> is our youth group that is for students in Years 6-12 that meets at Hope Christian Centre 45 Tasma St. Hobart on Fridays at 7pm to 9pm. <br />
-                              You can find more information about this group <a href="/QuarryYouth">here.</a><br /><br />
-
-                            </div>
                           </div>
 
                         </div>

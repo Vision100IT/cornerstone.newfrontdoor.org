@@ -18,6 +18,8 @@ import elyaImg from '../../../assets/people/Richardson,Elya.png';
 import nathanielImg from '../../../assets/people/Richardson,Nathaniel.png';
 import trishImg from '../../../assets/people/Smith,Trish.png';
 import davidImg from '../../../assets/people/VanEmmerik,David.png';
+import michaelImg from '../../../assets/people/Riske,Michael.png';
+
 
 
 import Person from '../../models/Person';
@@ -125,7 +127,7 @@ class OurPeople extends Component {
                                 <div className="clearfix"></div>
                                 <div className="col-md-3"></div>
                                 <Person name="Elya Richardson" title="Youth Worker" image={elyaImg} />
-                                <Person name="Michael Riske" title="Assistant to the Minister" image={Male} />
+                                <Person name="Michael Riske" title="Associate Pastor" image={michaelImg} />
 
                               </div>
 
@@ -153,7 +155,7 @@ class OurPeople extends Component {
 
                               <h4><strong>Andrew Hutchens</strong>, Graduate, <a href="https://christcollege.edu.au/" target="_blank" rel="noreferrer noopener">Christ College</a>.</h4>
                               <h4><strong>Paul Hutchens</strong>, Pastor, <a href="https://soulchurch.org.au/" target="_blank" rel="noreferrer noopener">Soul Church</a>.</h4>
-                              <h4><strong>Michael Riske</strong>, current student, <a href="https://christcollege.edu.au/" target="_blank" rel="noreferrer noopener">Christ College</a>; Part time Assistant to the Minister, Cornerstone Church Hobart.</h4>
+                              <h4><strong>Michael Riske</strong>, current student, <a href="https://christcollege.edu.au/" target="_blank" rel="noreferrer noopener">Christ College</a>; Associate Pastor, Cornerstone Church Hobart.</h4>
                               <h4><strong>R'jaye Rojas</strong>, Pastor, <a href="https://www.mspc.org.au/" target="_blank" rel="noreferrer noopener">Mount Stuart Presbyterian</a>.</h4>
 
 

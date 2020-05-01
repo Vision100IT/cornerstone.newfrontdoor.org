@@ -39,17 +39,10 @@ class PrayerMeetings extends Component {
                                                     <div className="row">
 
                                                         <div className="col-xs-12">
-                                                            <h3 className="header-lightBlue no-bottom-margin">Sunday Morning</h3>
-                                                            <ul className="no-list-style">
-                                                                <li><strong>When:</strong> 9:15am – 9:45am</li>
-                                                                <li><strong>Where:</strong> Where: Cornerstone Church, <a href="https://goo.gl/maps/66x2a9wQWzrcdY2QA" target="_blank" rel="noreferrer noopener">67 Federal St, North Hobart</a> </li>
-                                                            </ul>
-
-                                                            <h3 className="header-lightBlue no-bottom-margin">Tuesday Morning</h3>
-                                                            <ul className="no-list-style">
-                                                                <li><strong>When:</strong> 9:15am - 9:45am</li>
-                                                                <li><strong>Where:</strong> St John’s, <a href="https://goo.gl/maps/oA5CstHpSyq" target="_blank" rel="noreferrer noopener">188 Macquarie Street</a></li>
-                                                            </ul>
+                                                            <h3 className="header-lightBlue no-bottom-margin">Why pray together?</h3>
+                                                            <br />
+                                                            <p className="ministry-text">Prayer meetings demonstrate the unity of the Church as the body of Christ. Every time we say the Lord’s Prayer, repeating those words “Our Father,” we are reminded of our obligation to pray together.</p>
+                                                            <p className="ministry-text">Please see <a href="/events">our calendar</a> for our upcoming prayer meetings</p>
                                                         </div>
                                                     </div>
 

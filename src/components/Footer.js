@@ -19,8 +19,11 @@ class Footer extends Component {
                     <div className="content">
                       <div className="footer-address text-center">
                         <i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>
-                        <p><a href="https://goo.gl/maps/PAtkKDuPaQYGRUj7A" target="_blank" rel="noreferrer noopener">Cornerstone Presbyterian Church</a><br />67 Federal St, North Hobart TAS 7000</p>
-                        <p>PO Box 4742, Bathurst Street PO, Hobart 7000</p>
+                        <p>
+                          <a href="https://goo.gl/maps/PAtkKDuPaQYGRUj7A" target="_blank" rel="noreferrer noopener">Cornerstone Presbyterian Church</a><br />
+                          67 Federal St, North Hobart TAS 7000<br />
+                          PO Box 4742, Bathurst Street PO, Hobart 7000
+                        </p>
                       </div> {/* /footer-address */}  </div>
                   </div>  </div>
               </div> {/* /footer-first-column-region */}

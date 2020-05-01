@@ -197,6 +197,9 @@ class Navigation extends Component {
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/SystematicTheologyCourse" >Systematic Theology Course</a>
                                         </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/BibleCourses" >Bible Courses</a>
+                                        </li>
                                       </ul>
                                     </div>
                                   </div>
@@ -222,7 +225,7 @@ class Navigation extends Component {
                           </li>
 
                           <li className="tb-megamenu-item level-1 mega">
-                            <a href="/Events" >Events</a>
+                            <a href="/Events" >Calendar</a>
                           </li>
 
                           <li className="tb-megamenu-item level-1 mega">
