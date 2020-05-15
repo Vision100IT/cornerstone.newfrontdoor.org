@@ -50,7 +50,7 @@ class EventsElvanto extends Component {
                           {loading}
                           <div id="elvanto-calendar-8176"></div>
                           <Script
-                            url="https://tithely-5d81b10dadb1d-924155.elvanto.com.au/calendar_embed.js?c[]=aa8432a3-6bea-4c8f-8ddc-a48c2648494c&ca[]=services&ca[]=groups&fd=s&el_id=8176"
+                            url="https://cornerstonehobart.elvanto.com.au/calendar_embed.js?c[]=aa8432a3-6bea-4c8f-8ddc-a48c2648494c&ca[]=services&ca[]=groups&fd=s&el_id=8176"
                             /*onCreate={this.handleScriptCreate.bind(this)}
                             onError={this.handleScriptError.bind(this)}*/
                             onLoad={this.handleScriptLoad.bind(this)}

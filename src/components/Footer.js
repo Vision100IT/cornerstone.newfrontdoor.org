@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ElvantoLogo from '../assets/elvanto-icon-white.svg'
 
 class Footer extends Component {
   render() {
@@ -55,6 +56,7 @@ class Footer extends Component {
                       <div className="footer-phone text-center">
                         <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i>
                         <i className="icon ion-social-rss-outline size-32 margin-bottom-20" style={{ marginLeft: "10px" }}></i>
+                        <a href="https://cornerstonehobart.elvanto.com.au/login" target="_blank" rel="noreferrer noopener"><img style={{ height: "24px", width: "24px", marginLeft: "7px", verticalAlign: "baseline" }} src={ElvantoLogo} alt="" /></a>
                         <p><a href="https://www.facebook.com/cornerstonehobart/">facebook.com/CornerstoneHobart</a><br />
                           <a href="https://itunes.apple.com/au/podcast/cornerstone-presbyterian-church/id1447574546?mt=2" target="_blank" rel="noreferrer noopener">Subscribe to Our Podcast<br /></a>
                           <a href="http://campbellmarkham1970.blogspot.com/" target="_blank" rel="noreferrer noopener">Pastor's Blog</a></p>

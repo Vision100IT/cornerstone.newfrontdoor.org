@@ -31,7 +31,7 @@ class UpcomingEventsElvanto extends Component {
                 {upcomingEvents}
                 <div id="elvanto-events-8928"></div>
                 <Script
-                  url="https://tithely-5d81b10dadb1d-924155.elvanto.com.au/calendar_embed.js?c[]=aa8432a3-6bea-4c8f-8ddc-a48c2648494c&ca[]=services&events=1&upcoming[count]=2&upcoming[timeframe]=m&max=5&el_id=8928"
+                  url="https://cornerstonehobart.elvanto.com.au/calendar_embed.js?c[]=aa8432a3-6bea-4c8f-8ddc-a48c2648494c&ca[]=services&events=1&upcoming[count]=2&upcoming[timeframe]=m&max=5&el_id=8928"
                   /*onCreate={this.handleScriptCreate.bind(this)}
                   onError={this.handleScriptError.bind(this)}*/
                   onLoad={this.handleScriptLoad.bind(this)}
