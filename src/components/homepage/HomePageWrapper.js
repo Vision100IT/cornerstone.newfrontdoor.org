@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Slider from './Slider';
 import Welcome from './Welcome';
 import HomePageContent from './HomePageContent';
-import SiteNotification from '../SiteNotification';
+//import SiteNotification from '../SiteNotification';
 
 class HomePageWrapper extends Component {
   constructor(props) {
@@ -25,10 +25,10 @@ class HomePageWrapper extends Component {
           <Slider />
           <Welcome />
           <HomePageContent />
-          <SiteNotification
+          {/*<SiteNotification
             showNotification={this.state.showNotification}
             onClose={this.onNotificationClose}
-          />
+          />*/}
         </div>
       </section>
     );
